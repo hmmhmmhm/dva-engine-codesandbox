@@ -1,4 +1,5 @@
-import * as Script from '../script'
+
+import * as Script from '../src/script'
 
 console.log(`Script`)
 console.log(Script)

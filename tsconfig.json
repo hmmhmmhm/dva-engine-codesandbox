@@ -16,7 +16,7 @@
     },
     "importHelpers": true,
     "sourceMap": false,
-    "declaration": true,
+    "declaration": false,
     "inlineSourceMap": false,
     "noImplicitAny": false,
     "module": "commonjs",
@@ -40,11 +40,14 @@
     "esModuleInterop": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "allowJs": true
   },
   "include": [
     "./bin/**/*",
     "./src/**/*",
+    "./public/**/*",
+    "./transform/**/*",
     "./test/**/*"
   ],
   "exclude": [

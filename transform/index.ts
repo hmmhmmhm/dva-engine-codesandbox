@@ -152,12 +152,6 @@ export default Hook({
             }
         }
 
-        /*
-        if(node.getText() == '!Value.attacker()'){
-            console.log(Helper.statementTypeAnalyze(node))
-        }
-        */
-
         /**
          * @TODO
          * If Statement Remover
@@ -175,7 +169,7 @@ export default Hook({
     }) => {
 
         // Data Check
-        if(!data.interfaceVaraible) return
+        if(!data.interfaceVaraible) return sourceFile
 
         // Export Assignment
         let exportDecl = 
@@ -198,6 +192,8 @@ export default Hook({
             let modulePath = ``
             for(let i= 0; i<= subCount; i++) modulePath += `../`
             modulePath = `${modulePath}bin/dva`
+
+            if(!data.nativeIterfaceVaraible) return sourceFile
 
             // Require Statement
             let importInject = 
