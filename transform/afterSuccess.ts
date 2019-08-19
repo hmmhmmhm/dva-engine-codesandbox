@@ -1,7 +1,10 @@
 import { getLogger } from './logger'
-import { exec } from 'child_process'
-import { mkdirSync, writeFileSync } from 'fs'
+import cp, { exec, spawn } from 'child_process'
+import { mkdirSync, writeFileSync, readFileSync } from 'fs'
 import { resolve } from 'path'
+
+
+let parcelHandler: cp.ChildProcess | undefined = undefined
 
 const Logger = getLogger()
 export const resultParse = (result) => {
@@ -16,13 +19,37 @@ export const resultParse = (result) => {
         return
     }
 
-    let collectedCodes: string[] = Rule.collectedCodes
+    let collectedCodes: string = Rule.collectedCodes.join(`\n\n`)
+    let afterTemplate = String(readFileSync(`${process.cwd()}/transform/afterTemplate.ts`))
+    let indexCode = afterTemplate.replace(`%collectedCode%`, collectedCodes)
 
     try{ mkdirSync(`${process.cwd()}/release`) } catch(e) {}
-    writeFileSync(`${process.cwd()}/release/script.ows`, collectedCodes.join(`\n\n`))
+    writeFileSync(`${process.cwd()}/release/index.js`, indexCode)
 
     console.log(``)
     Logger.debug(`Finished initialization sequence.`)
+
+    if(parcelHandler){
+        // close
+        parcelHandler.kill()
+        parcelHandler = undefined
+    }
+    // parcel public/index.html --open
+    Logger.debug(`Parcel Server Running...`)
+    parcelHandler = exec(`parcel release/index.html`)
+
+    console.log(``)
+    if(parcelHandler.stdout)
+        parcelHandler.stdout.on('data', (data) => {
+            console.log(data)
+        })
+    if(parcelHandler.stderr)
+        parcelHandler.stderr.on('data', (data) => {
+            console.log(data)
+        })
+    parcelHandler.on('close', (code) => {
+        Logger.debug(`Parcel Server Closed.`)
+    })
 }
 
 export const clearRequireCache = () => {

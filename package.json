@@ -2,7 +2,7 @@
   "name": "node-sandbox",
   "version": "1.0.0",
   "description": "Simple Node Sandbox",
-  "main": "src/index.ts",
+  "main": "src/script.ts",
   "scripts": {
     "start": "ts-node ./transform/watch.ts"
   },
@@ -11,6 +11,7 @@
     "cross-spawn": "^6.0.5",
     "folder-logger": "^1.0.4",
     "node-cleanup": "^2.1.2",
+    "parcel": "^1.12.3",
     "temp-dir": "^2.0.0",
     "ts-node": "^8.3.0",
     "tsc-watch": "^2.4.0",

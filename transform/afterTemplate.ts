@@ -1,19 +1,4 @@
-
-import * as Script from '../src/script'
-
-console.log(`Script`)
-console.log(Script)
-
-let collectedCode = ``
-try{
-    // Collect Transpiled Codes
-    // @ts-ignore
-    collectedCode = Script.default.collectedCodes.join(`\n`)
-
-    // Clear After Collected Data
-    // @ts-ignore
-    Script.default.collectedCodes = []
-}catch(e){}
+let collectedCode = `%collectedCode%`
 
 let appElement = document.getElementById("app")
 if(appElement){
