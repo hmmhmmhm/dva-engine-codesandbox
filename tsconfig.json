@@ -47,20 +47,12 @@
     "./bin/**/*",
     "./src/**/*",
     "./public/**/*",
-    "./transform/**/*",
-    "./test/**/*"
+    "./transform/**/*"
   ],
   "exclude": [
     "./dist/**/*",
     "./bin/dist/**/*"
   ],
-  "awesomeTypescriptLoaderOptions": {
-    "reportFiles": [
-      "./src/**/*",
-      "./bin/**/*",
-      "./test/**/*",
-    ]
-  },
   "typeRoots": [
     "./node_modules/@types"
   ]
