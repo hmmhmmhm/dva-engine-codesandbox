@@ -1,5 +1,5 @@
 import { getLogger } from './logger'
-import cp, { exec, spawn } from 'child_process'
+import cp, { exec } from 'child_process'
 import { mkdirSync, writeFileSync, readFileSync } from 'fs'
 import { resolve } from 'path'
 
@@ -26,30 +26,7 @@ export const resultParse = (result) => {
     try{ mkdirSync(`${process.cwd()}/release`) } catch(e) {}
     writeFileSync(`${process.cwd()}/release/index.js`, indexCode)
 
-    console.log(``)
     Logger.debug(`Finished initialization sequence.`)
-
-    if(parcelHandler){
-        // close
-        parcelHandler.kill()
-        parcelHandler = undefined
-    }
-    // parcel public/index.html --open
-    Logger.debug(`Parcel Server Running...`)
-    parcelHandler = exec(`parcel release/index.html`)
-
-    console.log(``)
-    if(parcelHandler.stdout)
-        parcelHandler.stdout.on('data', (data) => {
-            console.log(data)
-        })
-    if(parcelHandler.stderr)
-        parcelHandler.stderr.on('data', (data) => {
-            console.log(data)
-        })
-    parcelHandler.on('close', (code) => {
-        Logger.debug(`Parcel Server Closed.`)
-    })
 }
 
 export const clearRequireCache = () => {

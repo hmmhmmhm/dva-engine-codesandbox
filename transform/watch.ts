@@ -1,5 +1,6 @@
 import nodeCleanup from 'node-cleanup'
 import spawn from 'cross-spawn'
+import cp, { exec } from 'child_process'
 
 import { manipulate, detectState, print } from 'tsc-watch/lib/stdout-manipulator'
 import { getLogger } from './logger'
@@ -31,6 +32,25 @@ const tscProcess = spawn(bin, ['--watch'])
 
 Logger.debug(`Start main engine operating sequence...`)
 
+// parcel public/index.html --open
+console.log(``)
+Logger.debug(`Parcel Server Running...`)
+console.log(``)
+
+let parcelHandler = exec(`parcel release/index.html`)
+
+if(parcelHandler.stdout)
+    parcelHandler.stdout.on('data', (data) => {
+        console.log(data)
+    })
+if(parcelHandler.stderr)
+    parcelHandler.stderr.on('data', (data) => {
+        console.log(data)
+    })
+parcelHandler.on('close', (code) => {
+    Logger.debug(`Parcel Server Closed.`)
+})
+
 tscProcess.stdout.on('data', buffer => {
 
     const lines = manipulate(buffer)
@@ -57,10 +77,10 @@ tscProcess.stdout.on('data', buffer => {
 
                 if (firstTime) {
                     firstTime = false
-                    setTimeout(loadUserScript, 4000)
+                    loadUserScript()
 
                 } else {
-                    setTimeout(loadUserScript, 4000)
+                    loadUserScript()
                 }
             }
         })
