@@ -1329,9 +1329,6 @@ team: string | number | any[]
 declare const globalVariable: (
 
 
-
-
-
 ) => any[];
 
 /**
@@ -1388,9 +1385,6 @@ value2: string | number | any[]
  * 이벤트의 VICTIM이 받는 피해량입니다.
  */
 declare const eventDamage: (
-
-
-
 
 
 ) => number;
@@ -1494,9 +1488,6 @@ value: string | number | any[]
 declare const lastDamageModificationId: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -1506,9 +1497,6 @@ declare const lastDamageModificationId: (
 declare const lastDamageOverTimeId: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -1516,9 +1504,6 @@ declare const lastDamageOverTimeId: (
  * HEAL OVER TIME 액션의 ID입니다.
  */
 declare const lastHealOverTimeId: (
-
-
-
 
 
 ) => number;
@@ -1532,18 +1517,12 @@ declare const lastHealOverTimeId: (
 declare const lastTextId: (
 
 
-
-
-
 ) => number;
 
 /**
  * 경기의 현재 라운드입니다. 1부터 증가합니다.
  */
 declare const matchRound: (
-
-
-
 
 
 ) => number;
@@ -1727,9 +1706,6 @@ team: string | number | any[]
 declare const objectiveIndex: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -1738,18 +1714,12 @@ declare const objectiveIndex: (
 declare const payloadProgressPercentage: (
 
 
-
-
-
 ) => number;
 
 /**
  * 활성화된 거점에서, 점령 중인 거점의 점령 진척도입니다.(비율로 표시)
  */
 declare const pointCapturePercentage: (
-
-
-
 
 
 ) => number;
@@ -2052,9 +2022,6 @@ player: string | number | any[]
 declare const serverLoad: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -2066,9 +2033,6 @@ declare const serverLoad: (
 declare const serverLoadAverage: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -2078,9 +2042,6 @@ declare const serverLoadAverage: (
  * 종료될 가능성이 크게 증가합니다.
  */
 declare const serverLoadPeak: (
-
-
-
 
 
 ) => number;
@@ -2323,9 +2284,6 @@ endPos: string | number | any[]
 declare const backward: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -2398,9 +2356,6 @@ value2: string | number | any[]
 declare const down: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -2432,18 +2387,12 @@ team: string | number | any[]
 declare const forward: (
 
 
-
-
-
 ) => number;
 
 /**
  * 좌측을 가리키는 방향 벡터(1, 0,0)의 약칭입니다.
  */
 declare const left: (
-
-
-
 
 
 ) => number;
@@ -2490,9 +2439,6 @@ number: string | number | any[]
  * 월드 내의 활성화 된 화물 위치입니다.
  */
 declare const payloadPosition: (
-
-
-
 
 
 ) => number;
@@ -2635,9 +2581,6 @@ IncludePlayerOwnedObjects: string | number | any[]
 declare const right: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -2660,18 +2603,12 @@ player: string | number | any[]
 declare const totalTimeElapsed: (
 
 
-
-
-
 ) => number;
 
 /**
  * 위를 가리키는 방향 벡터(0, 1, 0)의 약칭입니다.
  */
 declare const up: (
-
-
-
 
 
 ) => number;
@@ -3026,9 +2963,6 @@ team: string | number | any[]
 declare const allHeroes: (
 
 
-
-
-
 ) => any[];
 
 /**
@@ -3116,9 +3050,6 @@ count: string | number | any[]
  * 요소가 없는 배열입니다.
  */
 declare const emptyArray: (
-
-
-
 
 
 ) => any[];
@@ -3335,9 +3266,6 @@ declare namespace array_d {
 declare const Null: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -3345,9 +3273,6 @@ declare const Null: (
  * ATTACKER 또는 VICTIM과 동일할 수 있습니다.
  */
 declare const eventPlayer: (
-
-
-
 
 
 ) => string;
@@ -3359,9 +3284,6 @@ declare const eventPlayer: (
 declare const victim: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -3369,9 +3291,6 @@ declare const victim: (
  * VICTIM 또는 EVENT PLAYER와 동일할 수 있습니다.
  */
 declare const attacker: (
-
-
-
 
 
 ) => string;
@@ -3535,18 +3454,12 @@ declare namespace beamReevaluation_d {
 declare const False: (
 
 
-
-
-
 ) => string;
 
 /**
  * TRUE의 부울 값입니다.
  */
 declare const True: (
-
-
-
 
 
 ) => string;
@@ -3661,9 +3574,6 @@ entity: string | number | any[]
 declare const eventWasCriticalHit: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -3712,18 +3622,12 @@ player: string | number | any[]
 declare const isAssemblingHeroes: (
 
 
-
-
-
 ) => string;
 
 /**
  * 경기 중 라운드 전환 시기인지 여부입니다.
  */
 declare const isBetweenRounds: (
-
-
-
 
 
 ) => string;
@@ -3807,9 +3711,6 @@ player: string | number | any[]
 declare const isControlModePointLocked: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -3827,9 +3728,6 @@ player: string | number | any[]
  * 현재 깃발 뺏기 게임이 승자 결정전인지 여부입니다.
  */
 declare const isCTFModeInSuddenDeath: (
-
-
-
 
 
 ) => string;
@@ -3893,9 +3791,6 @@ team: string | number | any[]
  * 경기의 주요 단계(전투 및 점수 산정이 허용되는 시기)가 진행 중인지 여부입니다.
  */
 declare const isGameInProgress: (
-
-
-
 
 
 ) => string;
@@ -3963,9 +3858,6 @@ barriers: string | number | any[]
 declare const isInSetup: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -4005,9 +3897,6 @@ viewAngle: string | number | any[]
  * 경기가 완료되었는지 여부입니다.
  */
 declare const isMatchComplete: (
-
-
-
 
 
 ) => string;
@@ -4201,9 +4090,6 @@ player: string | number | any[]
  * 기다리고 있는지 여부입니다.
  */
 declare const isWaitingForPlayers: (
-
-
-
 
 
 ) => string;
@@ -4848,9 +4734,6 @@ declare namespace effectReevaluation_d {
  * 생성된 효과 또는 아이콘 개체에 대한 참조입니다.
  */
 declare const lastCreatedEntity: (
-
-
-
 
 
 ) => string;
@@ -5723,9 +5606,6 @@ team: string | number | any[]
 declare const controlModeScoringTeam: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -5840,9 +5720,6 @@ value: string | number | any[]
 declare const currentArrayElement: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -5873,9 +5750,6 @@ array: string | number | any[]
  * 현재 게임 모드 단계의 잔여 시간(초)입니다.
  */
 declare const matchTime: (
-
-
-
 
 
 ) => string;
@@ -6418,9 +6292,6 @@ declare namespace index_d$1 {
 declare const abort: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -6443,9 +6314,6 @@ condition: string | number | any[]
 declare const abortIfConditionIsFalse: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -6454,9 +6322,6 @@ declare const abortIfConditionIsFalse: (
  * 모든 조건이 FALSE인 경우 다음 액션을 진행합니다.
  */
 declare const abortIfConditionIsTrue: (
-
-
-
 
 
 ) => string;
@@ -7050,6 +6915,11 @@ clipping: string | number | any[],
  */
 reevaluation: string | number | any[],
 /**
+ * 사용할 IN-WORLD TEXT 의 색상을 명시합니다.
+ * - `Type.Color.`
+ */
+textColor: string | number | any[],
+/**
  * 관전자가 텍스트를 보거나 볼 수 없게 설정합니다.
  * - `Type.Spectators.`
  */
@@ -7089,9 +6959,6 @@ amount: string | number | any[]
  * 이 액션은 개별 전투 모드에서는 효과가 없습니다.
  */
 declare const declareMatchDraw: (
-
-
-
 
 
 ) => string;
@@ -7138,9 +7005,6 @@ team: string | number | any[]
 declare const destroyAllDummyBot: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -7148,9 +7012,6 @@ declare const destroyAllDummyBot: (
  * 모든 효과 개체를 제거합니다.
  */
 declare const destroyAllEffects: (
-
-
-
 
 
 ) => string;
@@ -7162,9 +7023,6 @@ declare const destroyAllEffects: (
 declare const destroyAllHudText: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -7174,9 +7032,6 @@ declare const destroyAllHudText: (
 declare const destroyAllIcons: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -7184,9 +7039,6 @@ declare const destroyAllIcons: (
  * 생성된 월드 내 텍스트를 모두 제거합니다.
  */
 declare const destroyAllInWorldText: (
-
-
-
 
 
 ) => string;
@@ -7280,9 +7132,6 @@ textId: string | number | any[]
 declare const disableBuiltInGameModeAnnouncer: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -7294,9 +7143,6 @@ declare const disableBuiltInGameModeAnnouncer: (
 declare const disableBuiltInGameModeCompletion: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -7306,9 +7152,6 @@ declare const disableBuiltInGameModeCompletion: (
  * 사용하지 않도록 합니다.
  */
 declare const disableBuiltInGameModeMusic: (
-
-
-
 
 
 ) => string;
@@ -7336,9 +7179,6 @@ players: string | number | any[]
  * 점수 변경이 가능하도록 합니다.
  */
 declare const disableBuiltInGameModeScoring: (
-
-
-
 
 
 ) => string;
@@ -7398,9 +7238,6 @@ button: string | number | any[]
 declare const enableBuiltInGameModeAnnouncer: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -7410,9 +7247,6 @@ declare const enableBuiltInGameModeAnnouncer: (
 declare const enableBuiltInGameModeCompletion: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -7420,9 +7254,6 @@ declare const enableBuiltInGameModeCompletion: (
  * 액션의 효과를 취소합니다.
  */
 declare const enableBuiltInGameModeMusic: (
-
-
-
 
 
 ) => string;
@@ -7446,9 +7277,6 @@ players: string | number | any[]
  * 액션의 효과를 취소합니다.
  */
 declare const enableBuiltInGameModeScoring: (
-
-
-
 
 
 ) => string;
@@ -7490,9 +7318,6 @@ player: string | number | any[]
  * 게임이 진행 중일 때만 작동합니다.
  */
 declare const goToAssembleHeroes: (
-
-
-
 
 
 ) => string;
@@ -7558,9 +7383,6 @@ killer: string | number | any[]
 declare const loop: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -7588,9 +7410,6 @@ condition: string | number | any[]
 declare const loopIfConditionIsFalse: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -7601,9 +7420,6 @@ declare const loopIfConditionIsFalse: (
  * 이 액션 사이에 WAIT 액션을 실행해야 합니다.
  */
 declare const loopIfConditionIsTrue: (
-
-
-
 
 
 ) => string;
@@ -7809,9 +7625,6 @@ score: string | number | any[]
  * 일시정지의 영향을 받지 않습니다.
  */
 declare const pauseMatchTime: (
-
-
-
 
 
 ) => string;
@@ -9140,9 +8953,6 @@ player: string | number | any[]
 declare const stopAllDamageModifications: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -9396,9 +9206,6 @@ position: string | number | any[]
  * 일시정지된 경기시간을 재개합니다.
  */
 declare const unpauseMatchTime: (
-
-
-
 
 
 ) => string;
@@ -9738,9 +9545,6 @@ player: string | number | any[]
 declare const onGoingGlobal: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -9938,9 +9742,6 @@ declare namespace index_d$3 {
 declare const eventHealing: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -9948,9 +9749,6 @@ declare const eventHealing: (
  * HEALER 또는 EVENT PLAYER와 동일할 수 있습니다.
  */
 declare const healee: (
-
-
-
 
 
 ) => string;
@@ -9962,9 +9760,6 @@ declare const healee: (
 declare const healer: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -9972,9 +9767,6 @@ declare const healer: (
  * 이 값은 현재 방장이 경기를 떠나면 변경됩니다.
  */
 declare const hostPlayer: (
-
-
-
 
 
 ) => string;
@@ -11974,9 +11766,6 @@ team: string | number | any[]
 declare const globalVariable$1: (
 
 
-
-
-
 ) => any[];
 
 /**
@@ -12041,9 +11830,6 @@ value2: string | number | any[]
  * for the event currently being processed by this rule.
  */
 declare const eventDamage$1: (
-
-
-
 
 
 ) => number;
@@ -12166,9 +11952,6 @@ value: string | number | any[]
 declare const lastDamageModificationId$1: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -12179,9 +11962,6 @@ declare const lastDamageModificationId$1: (
 declare const lastDamageOverTimeId$1: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -12190,9 +11970,6 @@ declare const lastDamageOverTimeId$1: (
  * event player (or executed at the global level).
  */
 declare const lastHealOverTimeId$1: (
-
-
-
 
 
 ) => number;
@@ -12206,9 +11983,6 @@ declare const lastHealOverTimeId$1: (
 declare const lastTextId$1: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -12216,9 +11990,6 @@ declare const lastTextId$1: (
  * up from 1. This will return a numerical value
  */
 declare const matchRound$1: (
-
-
-
 
 
 ) => number;
@@ -12432,9 +12203,6 @@ team: string | number | any[]
 declare const objectiveIndex$1: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -12444,9 +12212,6 @@ declare const objectiveIndex$1: (
 declare const payloadProgressPercentage$1: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -12454,9 +12219,6 @@ declare const payloadProgressPercentage$1: (
  * the active control point (expressed as a percentage).
  */
 declare const pointCapturePercentage$1: (
-
-
-
 
 
 ) => number;
@@ -12811,9 +12573,6 @@ player: string | number | any[]
 declare const serverLoad$1: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -12827,9 +12586,6 @@ declare const serverLoad$1: (
 declare const serverLoadAverage$1: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -12841,9 +12597,6 @@ declare const serverLoadAverage$1: (
  * because it is consuming too many resources.
  */
 declare const serverLoadPeak$1: (
-
-
-
 
 
 ) => number;
@@ -13042,9 +12795,6 @@ endPos: string | number | any[]
 declare const backward$1: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -13135,9 +12885,6 @@ value2: string | number | any[]
 declare const down$1: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -13172,9 +12919,6 @@ team: string | number | any[]
 declare const forward$1: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -13182,9 +12926,6 @@ declare const forward$1: (
  * 0, 0), which points to the left.
  */
 declare const left$1: (
-
-
-
 
 
 ) => number;
@@ -13238,9 +12979,6 @@ number: string | number | any[]
  * The position in the world of the active payload.
  */
 declare const payloadPosition$1: (
-
-
-
 
 
 ) => number;
@@ -13406,9 +13144,6 @@ IncludePlayerOwnedObjects: string | number | any[]
 declare const right$1: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -13435,9 +13170,6 @@ player: string | number | any[]
 declare const totalTimeElapsed$1: (
 
 
-
-
-
 ) => number;
 
 /**
@@ -13445,9 +13177,6 @@ declare const totalTimeElapsed$1: (
  * 1, 0). Which points upward.
  */
 declare const up$1: (
-
-
-
 
 
 ) => number;
@@ -13681,9 +13410,6 @@ team: string | number | any[]
 declare const allHeroes$1: (
 
 
-
-
-
 ) => any[];
 
 /**
@@ -13786,9 +13512,6 @@ count: string | number | any[]
  * An array with no elements.
  */
 declare const emptyArray$1: (
-
-
-
 
 
 ) => any[];
@@ -14033,9 +13756,6 @@ declare namespace array_d$1 {
 declare const Null$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -14043,9 +13763,6 @@ declare const Null$1: (
  * by the event, may be the same as the attacker or victim.
  */
 declare const eventPlayer$1: (
-
-
-
 
 
 ) => string;
@@ -14059,9 +13776,6 @@ declare const eventPlayer$1: (
 declare const victim$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -14070,9 +13784,6 @@ declare const victim$1: (
  * May be the same as the victim or the event player.
  */
 declare const attacker$1: (
-
-
-
 
 
 ) => string;
@@ -14230,18 +13941,12 @@ declare namespace beamReevaluation_d$1 {
 declare const False$1: (
 
 
-
-
-
 ) => string;
 
 /**
  * The Boolean value of true.
  */
 declare const True$1: (
-
-
-
 
 
 ) => string;
@@ -14371,9 +14076,6 @@ entity: string | number | any[]
 declare const eventWasCriticalHit$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -14429,18 +14131,12 @@ player: string | number | any[]
 declare const isAssemblingHeroes$1: (
 
 
-
-
-
 ) => string;
 
 /**
  * Whether the match is between rounds.
  */
 declare const isBetweenRounds$1: (
-
-
-
 
 
 ) => string;
@@ -14540,9 +14236,6 @@ player: string | number | any[]
 declare const isControlModePointLocked$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -14563,9 +14256,6 @@ player: string | number | any[]
  * flag is in sudden death.
  */
 declare const isCTFModeInSuddenDeath$1: (
-
-
-
 
 
 ) => string;
@@ -14647,9 +14337,6 @@ team: string | number | any[]
 declare const isGameInProgress$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -14723,9 +14410,6 @@ barriers: string | number | any[]
 declare const isInSetup$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -14774,9 +14458,6 @@ viewAngle: string | number | any[]
  * Whether the match has finished.
  */
 declare const isMatchComplete$1: (
-
-
-
 
 
 ) => string;
@@ -15000,9 +14681,6 @@ player: string | number | any[]
  * to join before starting.
  */
 declare const isWaitingForPlayers$1: (
-
-
-
 
 
 ) => string;
@@ -15390,9 +15068,6 @@ declare namespace effectReevaluation_d$1 {
  * at the global level).
  */
 declare const lastCreatedEntity$1: (
-
-
-
 
 
 ) => string;
@@ -16024,9 +15699,6 @@ team: string | number | any[]
 declare const controlModeScoringTeam$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -16146,9 +15818,6 @@ value: string | number | any[]
 declare const currentArrayElement$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -16185,9 +15854,6 @@ array: string | number | any[]
  * return a numerical value.
  */
 declare const matchTime$1: (
-
-
-
 
 
 ) => string;
@@ -16546,9 +16212,6 @@ declare namespace index_d$7 {
 declare const abort$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -16575,9 +16238,6 @@ condition: string | number | any[]
 declare const abortIfConditionIsFalse$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -16587,9 +16247,6 @@ declare const abortIfConditionIsFalse$1: (
  * the next action.
  */
 declare const abortIfConditionIsTrue$1: (
-
-
-
 
 
 ) => string;
@@ -17266,6 +16923,11 @@ clipping: string | number | any[],
  */
 reevaluation: string | number | any[],
 /**
+ * Specifies the color of the in-world text to use.
+ * - `Type.Color.`
+ */
+textColor: string | number | any[],
+/**
  * Whether spectators can see the text or not.
  * - `Type.Spectators.`
  */
@@ -17306,9 +16968,6 @@ amount: string | number | any[]
  * action has no effect in free-for-all modes.
  */
 declare const declareMatchDraw$1: (
-
-
-
 
 
 ) => string;
@@ -17360,18 +17019,12 @@ team: string | number | any[]
 declare const destroyAllDummyBot$1: (
 
 
-
-
-
 ) => string;
 
 /**
  * Destroys all effect entities created by create effect.
  */
 declare const destroyAllEffects$1: (
-
-
-
 
 
 ) => string;
@@ -17383,18 +17036,12 @@ declare const destroyAllEffects$1: (
 declare const destroyAllHudText$1: (
 
 
-
-
-
 ) => string;
 
 /**
  * Destroys all icon entities created by create icon.
  */
 declare const destroyAllIcons$1: (
-
-
-
 
 
 ) => string;
@@ -17404,9 +17051,6 @@ declare const destroyAllIcons$1: (
  * create in-world effect.
  */
 declare const destroyAllInWorldText$1: (
-
-
-
 
 
 ) => string;
@@ -17492,9 +17136,6 @@ textId: string | number | any[]
 declare const disableBuiltInGameModeAnnouncer$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -17505,9 +17146,6 @@ declare const disableBuiltInGameModeAnnouncer$1: (
 declare const disableBuiltInGameModeCompletion$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -17515,9 +17153,6 @@ declare const disableBuiltInGameModeCompletion$1: (
  * or the match ends.
  */
 declare const disableBuiltInGameModeMusic$1: (
-
-
-
 
 
 ) => string;
@@ -17543,9 +17178,6 @@ players: string | number | any[]
  * scores to be changed by scripting commands.
  */
 declare const disableBuiltInGameModeScoring$1: (
-
-
-
 
 
 ) => string;
@@ -17606,9 +17238,6 @@ button: string | number | any[]
 declare const enableBuiltInGameModeAnnouncer$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -17618,9 +17247,6 @@ declare const enableBuiltInGameModeAnnouncer$1: (
 declare const enableBuiltInGameModeCompletion$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -17628,9 +17254,6 @@ declare const enableBuiltInGameModeCompletion$1: (
  * game mode music action.
  */
 declare const enableBuiltInGameModeMusic$1: (
-
-
-
 
 
 ) => string;
@@ -17654,9 +17277,6 @@ players: string | number | any[]
  * game mode scoring action.
  */
 declare const enableBuiltInGameModeScoring$1: (
-
-
-
 
 
 ) => string;
@@ -17696,9 +17316,6 @@ player: string | number | any[]
  * mode. Only works if a game is in progress.
  */
 declare const goToAssembleHeroes$1: (
-
-
-
 
 
 ) => string;
@@ -17763,9 +17380,6 @@ killer: string | number | any[]
 declare const loop$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -17798,9 +17412,6 @@ condition: string | number | any[]
 declare const loopIfConditionIsFalse$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -17812,9 +17423,6 @@ declare const loopIfConditionIsFalse$1: (
  * the start of the action list and this action.
  */
 declare const loopIfConditionIsTrue$1: (
-
-
-
 
 
 ) => string;
@@ -18015,9 +17623,6 @@ score: string | number | any[]
  * are unaffected by the pause.
  */
 declare const pauseMatchTime$1: (
-
-
-
 
 
 ) => string;
@@ -19454,9 +19059,6 @@ player: string | number | any[]
 declare const stopAllDamageModifications$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -19713,9 +19315,6 @@ position: string | number | any[]
 declare const unpauseMatchTime$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -19906,9 +19505,6 @@ player: string | number | any[]
 declare const onGoingGlobal$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -20081,9 +19677,6 @@ declare namespace index_d$9 {
 declare const eventHealing$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -20092,9 +19685,6 @@ declare const eventHealing$1: (
  * same as the healer or the event player.
  */
 declare const healee$1: (
-
-
-
 
 
 ) => string;
@@ -20107,9 +19697,6 @@ declare const healee$1: (
 declare const healer$1: (
 
 
-
-
-
 ) => string;
 
 /**
@@ -20118,9 +19705,6 @@ declare const healer$1: (
  * current host player leaves the match.
  */
 declare const hostPlayer$1: (
-
-
-
 
 
 ) => string;

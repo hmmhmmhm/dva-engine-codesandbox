@@ -6234,11 +6234,16 @@
 	 */
 	reevaluation, 
 	/**
+	 * 사용할 IN-WORLD TEXT 의 색상을 명시합니다.
+	 * - `Type.Color.`
+	 */
+	textColor, 
+	/**
 	 * 관전자가 텍스트를 보거나 볼 수 없게 설정합니다.
 	 * - `Type.Spectators.`
 	 */
 	spectators) {
-	    return "Create In World Text(" + visibleTo + ", " + header + ", " + position + ", " + scale + ", " + clipping + ", " + reevaluation + ", " + spectators + ")";
+	    return "Create In World Text(" + visibleTo + ", " + header + ", " + position + ", " + scale + ", " + clipping + ", " + reevaluation + ", " + textColor + ", " + spectators + ")";
 	};
 	});
 
@@ -18011,11 +18016,16 @@
 	 */
 	reevaluation, 
 	/**
+	 * Specifies the color of the in-world text to use.
+	 * - `Type.Color.`
+	 */
+	textColor, 
+	/**
 	 * Whether spectators can see the text or not.
 	 * - `Type.Spectators.`
 	 */
 	spectators) {
-	    return "Create In World Text(" + visibleTo + ", " + header + ", " + position + ", " + scale + ", " + clipping + ", " + reevaluation + ", " + spectators + ")";
+	    return "Create In World Text(" + visibleTo + ", " + header + ", " + position + ", " + scale + ", " + clipping + ", " + reevaluation + ", " + textColor + ", " + spectators + ")";
 	};
 	});
 
