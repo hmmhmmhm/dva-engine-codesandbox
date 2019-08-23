@@ -233,8 +233,8 @@
 	var heroConstant = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -242,11 +242,22 @@
 	unwrapExports(heroConstant);
 	var heroConstant_1 = heroConstant.Default;
 
+	var slotRange = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * @param num Type Any Number.
+	 * Then can see list of available number lists. */
+	exports.Default = function (num) { return num; };
+	});
+
+	unwrapExports(slotRange);
+	var slotRange_1 = slotRange.Default;
+
 	var teamConstant = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -257,8 +268,8 @@
 	var variable = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -269,8 +280,8 @@
 	var eventPlayer = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -3163,14 +3174,38 @@
 	var barrier = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
 
 	unwrapExports(barrier);
 	var barrier_1 = barrier.Default;
+
+	var beam = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * @param str Type '
+	 * Then can see list of available string lists.
+	 */
+	exports.Default = function (str) { return str; };
+	});
+
+	unwrapExports(beam);
+	var beam_1 = beam.Default;
+
+	var beamReevaluation = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * @param str Type '
+	 * Then can see list of available string lists.
+	 */
+	exports.Default = function (str) { return str; };
+	});
+
+	unwrapExports(beamReevaluation);
+	var beamReevaluation_1 = beamReevaluation.Default;
 
 	var _false = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
@@ -4207,8 +4242,8 @@
 	var button = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4219,8 +4254,8 @@
 	var clipping = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4231,8 +4266,8 @@
 	var color = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4243,8 +4278,8 @@
 	var communication = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4265,8 +4300,8 @@
 	var damageModificationReevaluation = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4305,8 +4340,8 @@
 	var effect = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4317,8 +4352,8 @@
 	var effectReevaluation = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4354,8 +4389,8 @@
 	var facingReevaluation = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4420,8 +4455,8 @@
 	var hudTextReevaluation = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4432,8 +4467,8 @@
 	var icon = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4444,8 +4479,8 @@
 	var iconReevaluation = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4456,8 +4491,8 @@
 	var invisibleTo = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4468,8 +4503,8 @@
 	var inWorldTextReevaluation = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4480,8 +4515,8 @@
 	var location_1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4492,8 +4527,8 @@
 	var losCheck = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4504,8 +4539,8 @@
 	var motion = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4525,8 +4560,8 @@
 	var objectiveDescriptionReevaluation = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4537,8 +4572,8 @@
 	var operator = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4549,8 +4584,8 @@
 	var playEffect = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4570,8 +4605,8 @@
 	var reevaluation = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4582,8 +4617,8 @@
 	var relative = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4594,8 +4629,8 @@
 	var roundingType = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4603,11 +4638,23 @@
 	unwrapExports(roundingType);
 	var roundingType_1 = roundingType.Default;
 
+	var spectators = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * @param str Type '
+	 * Then can see list of available string lists.
+	 */
+	exports.Default = function (str) { return str; };
+	});
+
+	unwrapExports(spectators);
+	var spectators_1 = spectators.Default;
+
 	var startAcceleratingReevaluation = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4615,11 +4662,35 @@
 	unwrapExports(startAcceleratingReevaluation);
 	var startAcceleratingReevaluation_1 = startAcceleratingReevaluation.Default;
 
+	var startThrottleBehavior = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * @param str Type '
+	 * Then can see list of available string lists.
+	 */
+	exports.Default = function (str) { return str; };
+	});
+
+	unwrapExports(startThrottleBehavior);
+	var startThrottleBehavior_1 = startThrottleBehavior.Default;
+
+	var startThrottleReevaluation = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * @param str Type '
+	 * Then can see list of available string lists.
+	 */
+	exports.Default = function (str) { return str; };
+	});
+
+	unwrapExports(startThrottleReevaluation);
+	var startThrottleReevaluation_1 = startThrottleReevaluation.Default;
+
 	var status = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4789,8 +4860,8 @@
 	var text = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -4811,8 +4882,8 @@
 	var transformation = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -5201,8 +5272,8 @@
 	var variableOperation = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -5213,8 +5284,8 @@
 	var waitBehavior = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -5227,6 +5298,8 @@
 
 	var HeroConstant = tslib_es6.__importStar(heroConstant);
 	exports.HeroConstant = HeroConstant;
+	var SlotRange = tslib_es6.__importStar(slotRange);
+	exports.SlotRange = SlotRange;
 	var TeamConstant = tslib_es6.__importStar(teamConstant);
 	exports.TeamConstant = TeamConstant;
 	var Variable = tslib_es6.__importStar(variable);
@@ -5241,6 +5314,10 @@
 	exports.AssisterParam = AssisterParam;
 	var Barrier = tslib_es6.__importStar(barrier);
 	exports.Barrier = Barrier;
+	var Beam = tslib_es6.__importStar(beam);
+	exports.Beam = Beam;
+	var BeamReevaluation = tslib_es6.__importStar(beamReevaluation);
+	exports.BeamReevaluation = BeamReevaluation;
 	var Bool = tslib_es6.__importStar(bool);
 	exports.Bool = Bool;
 	var Button = tslib_es6.__importStar(button);
@@ -5309,8 +5386,14 @@
 	exports.Relative = Relative;
 	var RoundingType = tslib_es6.__importStar(roundingType);
 	exports.RoundingType = RoundingType;
+	var Spectators = tslib_es6.__importStar(spectators);
+	exports.Spectators = Spectators;
 	var StartAcceleratingReevaluation = tslib_es6.__importStar(startAcceleratingReevaluation);
 	exports.StartAcceleratingReevaluation = StartAcceleratingReevaluation;
+	var StartThrottleBehavior = tslib_es6.__importStar(startThrottleBehavior);
+	exports.StartThrottleBehavior = StartThrottleBehavior;
+	var StartThrottleReevaluation = tslib_es6.__importStar(startThrottleReevaluation);
+	exports.StartThrottleReevaluation = StartThrottleReevaluation;
 	var Status = tslib_es6.__importStar(status);
 	exports.Status = Status;
 	var String = tslib_es6.__importStar(string$1);
@@ -5339,60 +5422,66 @@
 
 	unwrapExports(type);
 	var type_1 = type.HeroConstant;
-	var type_2 = type.TeamConstant;
-	var type_3 = type.Variable;
-	var type_4 = type.EventPlayer;
-	var type_5 = type.Add;
-	var type_6 = type.Array;
-	var type_7 = type.AssisterParam;
-	var type_8 = type.Barrier;
-	var type_9 = type.Bool;
-	var type_10 = type.Button;
-	var type_11 = type.Clipping;
-	var type_12 = type.Color;
-	var type_13 = type.Communication;
-	var type_14 = type.DamageModificationId;
-	var type_15 = type.DamageModificationReevaluation;
-	var type_16 = type.DamageOverTimeId;
-	var type_17 = type.DestinationParam;
-	var type_18 = type.Divide;
-	var type_19 = type.Effect;
-	var type_20 = type.EffectReevaluation;
-	var type_21 = type.Entity;
-	var type_22 = type.FacingReevaluation;
-	var type_23 = type.HealOverTimeId;
-	var type_24 = type.Hero;
-	var type_25 = type.HudTextReevaluation;
-	var type_26 = type.Icon;
-	var type_27 = type.IconReevaluation;
-	var type_28 = type.InvisibleTo;
-	var type_29 = type.InWorldTextReevaluation;
-	var type_30 = type.Location;
-	var type_31 = type.LosCheck;
-	var type_32 = type.Motion;
-	var type_33 = type.Multiply;
-	var type_34 = type.Number;
-	var type_35 = type.ObjectiveDescriptionReevaluation;
-	var type_36 = type.Operator;
-	var type_37 = type.PlayEffect;
-	var type_38 = type.Player;
-	var type_39 = type.PlayersParam;
-	var type_40 = type.Reevaluation;
-	var type_41 = type.Relative;
-	var type_42 = type.RoundingType;
-	var type_43 = type.StartAcceleratingReevaluation;
-	var type_44 = type.Status;
-	var type_45 = type.String;
-	var type_46 = type.StringParam;
-	var type_47 = type.Subtract;
-	var type_48 = type.Team;
-	var type_49 = type.Text;
-	var type_50 = type.TextId;
-	var type_51 = type.Transformation;
-	var type_52 = type.Value;
-	var type_53 = type.VariableOperation;
-	var type_54 = type.Vector;
-	var type_55 = type.WaitBehavior;
+	var type_2 = type.SlotRange;
+	var type_3 = type.TeamConstant;
+	var type_4 = type.Variable;
+	var type_5 = type.EventPlayer;
+	var type_6 = type.Add;
+	var type_7 = type.Array;
+	var type_8 = type.AssisterParam;
+	var type_9 = type.Barrier;
+	var type_10 = type.Beam;
+	var type_11 = type.BeamReevaluation;
+	var type_12 = type.Bool;
+	var type_13 = type.Button;
+	var type_14 = type.Clipping;
+	var type_15 = type.Color;
+	var type_16 = type.Communication;
+	var type_17 = type.DamageModificationId;
+	var type_18 = type.DamageModificationReevaluation;
+	var type_19 = type.DamageOverTimeId;
+	var type_20 = type.DestinationParam;
+	var type_21 = type.Divide;
+	var type_22 = type.Effect;
+	var type_23 = type.EffectReevaluation;
+	var type_24 = type.Entity;
+	var type_25 = type.FacingReevaluation;
+	var type_26 = type.HealOverTimeId;
+	var type_27 = type.Hero;
+	var type_28 = type.HudTextReevaluation;
+	var type_29 = type.Icon;
+	var type_30 = type.IconReevaluation;
+	var type_31 = type.InvisibleTo;
+	var type_32 = type.InWorldTextReevaluation;
+	var type_33 = type.Location;
+	var type_34 = type.LosCheck;
+	var type_35 = type.Motion;
+	var type_36 = type.Multiply;
+	var type_37 = type.Number;
+	var type_38 = type.ObjectiveDescriptionReevaluation;
+	var type_39 = type.Operator;
+	var type_40 = type.PlayEffect;
+	var type_41 = type.Player;
+	var type_42 = type.PlayersParam;
+	var type_43 = type.Reevaluation;
+	var type_44 = type.Relative;
+	var type_45 = type.RoundingType;
+	var type_46 = type.Spectators;
+	var type_47 = type.StartAcceleratingReevaluation;
+	var type_48 = type.StartThrottleBehavior;
+	var type_49 = type.StartThrottleReevaluation;
+	var type_50 = type.Status;
+	var type_51 = type.String;
+	var type_52 = type.StringParam;
+	var type_53 = type.Subtract;
+	var type_54 = type.Team;
+	var type_55 = type.Text;
+	var type_56 = type.TextId;
+	var type_57 = type.Transformation;
+	var type_58 = type.Value;
+	var type_59 = type.VariableOperation;
+	var type_60 = type.Vector;
+	var type_61 = type.WaitBehavior;
 
 	var abort = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
@@ -5777,6 +5866,108 @@
 	unwrapExports(communicate);
 	var communicate_1 = communicate.communicate;
 
+	var createBeamEffect = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * 월드 내에 BEAM 효과 개체를 생성합니다.
+	 * 이 효과 개체는 제거하기 전까지 지속됩니다.
+	 * 이 효과를 참조하려면 LAST CREATED ENTITY 값을 사용하면 됩니다.
+	 * 개체가 너무 많이 생성될 경우 이 액션이 실패할 수 있습니다.
+	 */
+	exports.createBeamEffect = function (
+	/**
+	 * 해당 효과를 보게 될 플레이어입니다.
+	 * - `Type.Player.`
+	 */
+	visibleTo, 
+	/**
+	 * 생성할 효과의 형태입니다.
+	 * - `Type.Beam.`
+	 */
+	beamType, 
+	/**
+	 * 효과의 시작 위치입니다. 이 값이 플레이어인 경우
+	 * 해당 효과는 플레이어를 따라다니고, 그 이외의 경우
+	 * 이 값은 월드 내의 위치로 해석됩니다.
+	 * - `Type.Vector.`
+	 */
+	startPosition, 
+	/**
+	 * 효과의 종료 위치입니다. 이 값이 플레이어인 경우
+	 * 해당 효과는 플레이어를 따라다니고, 그 이외의 경우
+	 * 이 값은 월드 내의 위치로 해석됩니다.
+	 * - `Type.Vector.`
+	 */
+	endPosition, 
+	/**
+	 * 생성될 BEAM 효과의 색상입니다. 특정 팀을 선택한 경우,
+	 * 해당 팀이 보는 사람에게 적인지 여부에 따라 빨강
+	 * 또는 파랑으로 효과 색상이 설정됩니다. 효과음에는
+	 * 적용되지 않습니다. 오직 'GOOD', 그리고
+	 * 'BAD' BEAM 효과에만 색상이 적용됩니다.
+	 * - `Type.Color.`
+	 */
+	color, 
+	/**
+	 * 이 액션의 입력 정보 중 어떤 항목을 지속적으로
+	 * 재확인 할 것인지 지정합니다. 해당 효과는 입력 정보의
+	 * 새로운 값을 계속 묻게 되며, 재확인 한 값을 사용합니다.
+	 * - `Type.BeamReevaluation.`
+	 */
+	reevaluation) {
+	    return "Create Beam Effect(" + visibleTo + ", " + beamType + ", " + startPosition + ", " + endPosition + ", " + color + ", " + reevaluation + ")";
+	};
+	});
+
+	unwrapExports(createBeamEffect);
+	var createBeamEffect_1 = createBeamEffect.createBeamEffect;
+
+	var createDummyBot = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * 슬롯이 활성화 된 이상 새로운 봇을
+	 * 특정 팀의 특정 슬롯에 추가합니다.
+	 * 봇은 WORKSHOP ACTION을 실행한다면
+	 * 이동하거나 발사하거나 기술 만을 사용합니다.
+	 */
+	exports.createDummyBot = function (
+	/**
+	 * 봇이 될 영웅입니다. 만약 하나 이상의
+	 * 영웅에게 적용되면 무작위로 선택됩니다.
+	 * - `Type.Hero.`
+	 */
+	hero, 
+	/**
+	 * 봇을 생성할 팀입니다. 'All' 설정은
+	 * 섬멸전 게임 모드에서만 작동하며,
+	 * 'Team' 설정은 팀 기반의 게임 모드에서만 작동합니다.
+	 * - `Type.Team.`
+	 */
+	team, 
+	/**
+	 * 봇을 받을 플레이어 슬롯(첫 번째 가능한 슬롯 -1)입니다.
+	 * 대기실 설정에 따라 각 팀에는 최대 6개까지,
+	 * 개별 전투 모드 팀에서는 최대 12개 까지 봇을 추가할 수 있습니다.
+	 * - `Type.SlotRange.`
+	 */
+	slot, 
+	/**
+	 * 봇이 생성될 최초 위치입니다.
+	 * - `Type.Vector.`
+	 */
+	position, 
+	/**
+	 * 봇이 바라보고 있을 최초 방향입니다.
+	 * - `Type.Vector.`
+	 */
+	facing) {
+	    return "Create Dummy Bot(" + hero + ", " + team + ", " + slot + ", " + position + ", " + facing + ")";
+	};
+	});
+
+	unwrapExports(createDummyBot);
+	var createDummyBot_1 = createDummyBot.createDummyBot;
+
 	var createEffect = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
@@ -5918,8 +6109,13 @@
 	 * 계속 묻게 되며, 재확인한 값을 사용합니다.
 	 * - `Type.HudTextReevaluation.`
 	 */
-	reevaluation) {
-	    return "Create Hud Text(" + visibleTo + ", " + header + ", " + subHeader + ", " + text + ", " + location + ", " + sortOrder + ", " + headerColor + ", " + subHeaderColor + ", " + textColor + ", " + reevaluation + ")";
+	reevaluation, 
+	/**
+	 * 관전자가 텍스트를 보거나 볼 수 없게 설정합니다.
+	 * - `Type.Spectators.`
+	 */
+	spectators) {
+	    return "Create Hud Text(" + visibleTo + ", " + header + ", " + subHeader + ", " + text + ", " + location + ", " + sortOrder + ", " + headerColor + ", " + subHeaderColor + ", " + textColor + ", " + reevaluation + ", " + spectators + ")";
 	};
 	});
 
@@ -6036,8 +6232,13 @@
 	 * 계속 묻게 되며, 재확인한 값을 사용합니다.
 	 * - `Type.InWorldTextReevaluation.`
 	 */
-	reevaluation) {
-	    return "Create In World Text(" + visibleTo + ", " + header + ", " + position + ", " + scale + ", " + clipping + ", " + reevaluation + ")";
+	reevaluation, 
+	/**
+	 * 관전자가 텍스트를 보거나 볼 수 없게 설정합니다.
+	 * - `Type.Spectators.`
+	 */
+	spectators) {
+	    return "Create In World Text(" + visibleTo + ", " + header + ", " + position + ", " + scale + ", " + clipping + ", " + reevaluation + ", " + spectators + ")";
 	};
 	});
 
@@ -6150,6 +6351,19 @@
 	unwrapExports(declareTeamVictory);
 	var declareTeamVictory_1 = declareTeamVictory.declareTeamVictory;
 
+	var destroyAllDummyBot = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * 모든 더미 봇들을 경기에서 제외합니다.
+	 */
+	exports.destroyAllDummyBot = function () {
+	    return "Destroy All Dummy Bot";
+	};
+	});
+
+	unwrapExports(destroyAllDummyBot);
+	var destroyAllDummyBot_1 = destroyAllDummyBot.destroyAllDummyBot;
+
 	var destroyAllEffects = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
@@ -6205,6 +6419,31 @@
 
 	unwrapExports(destroyAllInWorldText);
 	var destroyAllInWorldText_1 = destroyAllInWorldText.destroyAllInWorldText;
+
+	var destroyDummyBot = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * 특정 더미 봇을 경기에서 제외합니다.
+	 */
+	exports.destroyDummyBot = function (
+	/**
+	 * DUMMY 봇을 제거할 팀입니다. 'All' 설정은
+	 * 개별 전투 게임 모드에서만, 'Team' 설정은
+	 * 팀 기반 게임 모드에서만 작동합니다.
+	 * - `Type.Team.`
+	 */
+	team, 
+	/**
+	 * DUMMY 봇을 제거할 슬롯입니다.
+	 * - `Type.SlotRange.`
+	 */
+	slot) {
+	    return "Destroy Dummy Bot(" + team + ", " + slot + ")";
+	};
+	});
+
+	unwrapExports(destroyDummyBot);
+	var destroyDummyBot_1 = destroyDummyBot.destroyDummyBot;
 
 	var destroyEffect = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
@@ -8546,6 +8785,57 @@
 	unwrapExports(startHoldingButton);
 	var startHoldingButton_1 = startHoldingButton.startHoldingButton;
 
+	var startThrottleInDirection = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * 특정 방향으로 움직이기 시작할 때
+	 * 플레이어의 쓰로틀(방향 입력 값 조정)
+	 * 을 설정하거나 추가합니다.
+	 * 기존 방향의 쓰로틀은 취소합니다.
+	 */
+	exports.startThrottleInDirection = function (
+	/**
+	 * 스로틀이 설정되거나 추가될 플레이어입니다.
+	 * - `Type.Player.`
+	 */
+	player, 
+	/**
+	 * 스로틀이 설정되거나 추가될 단위 방향입니다.
+	 * 이 값은 내부적으로 정규화 됩니다.
+	 * - `Type.Vector.`
+	 */
+	direction, 
+	/**
+	 * 스로틀 정도(또는 스로틀에 변화할 정도)입니다.
+	 * VALUE 1은 완전한 스로틀을 의미합니다.
+	 * - `Type.Number.`
+	 */
+	magnitude, 
+	/**
+	 * 방향이 플레이어의 월드 좌표 또는 로컬 좌표 중
+	 * 어느 쪽에 대해 상대적인지 여부를 지정합니다.
+	 * - `Type.Relative.`
+	 */
+	relative, 
+	/**
+	 * 이미 존재하는 스로틀이 교체되거나 추가될 여부입니다.
+	 * - `Type.StartThrottleBehavior.`
+	 */
+	behavior, 
+	/**
+	 * 이 액션의 입력 정보 중 어떤 항목을 지속적으로
+	 * 재확인할 것인지 지정합니다. 해당 액션은 입력 정보의
+	 * 새로운 값을 계속 묻게 되며, 재확인한 값을 사용합니다.
+	 * - `Type.StartThrottleReevaluation.`
+	 */
+	reevaluation) {
+	    return "Start Throttle In Direction(" + player + ", " + direction + ", " + magnitude + ", " + relative + ", " + behavior + ", " + reevaluation + ")";
+	};
+	});
+
+	unwrapExports(startThrottleInDirection);
+	var startThrottleInDirection_1 = startThrottleInDirection.startThrottleInDirection;
+
 	var startTransformingThrottle = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
@@ -8917,6 +9207,25 @@
 	unwrapExports(stopHoldingButton);
 	var stopHoldingButton_1 = stopHoldingButton.stopHoldingButton;
 
+	var stopThrottleInDirection = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * START THROTTLE IN DIRECTION 으로
+	 * 인해 발생된 행위를 취소합니다.
+	 */
+	exports.stopThrottleInDirection = function (
+	/**
+	 * 기본 스로틀 조작으로 복원될 플레이어입니다.
+	 * - `Type.Player.`
+	 */
+	player) {
+	    return "Stop Throttle In Direction(" + player + ")";
+	};
+	});
+
+	unwrapExports(stopThrottleInDirection);
+	var stopThrottleInDirection_1 = stopThrottleInDirection.stopThrottleInDirection;
+
 	var stopTransformingThrottle = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
@@ -9020,6 +9329,8 @@
 	tslib_es6.__exportStar(chasePlayerVariableOverTime, exports);
 	tslib_es6.__exportStar(clearStatus, exports);
 	tslib_es6.__exportStar(communicate, exports);
+	tslib_es6.__exportStar(createBeamEffect, exports);
+	tslib_es6.__exportStar(createDummyBot, exports);
 	tslib_es6.__exportStar(createEffect, exports);
 	tslib_es6.__exportStar(createHudText, exports);
 	tslib_es6.__exportStar(createIcon, exports);
@@ -9029,10 +9340,12 @@
 	tslib_es6.__exportStar(declarePlayerVictory, exports);
 	tslib_es6.__exportStar(declareRoundVictory, exports);
 	tslib_es6.__exportStar(declareTeamVictory, exports);
+	tslib_es6.__exportStar(destroyAllDummyBot, exports);
 	tslib_es6.__exportStar(destroyAllEffects, exports);
 	tslib_es6.__exportStar(destroyAllHudText, exports);
 	tslib_es6.__exportStar(destroyAllIcons, exports);
 	tslib_es6.__exportStar(destroyAllInWorldText, exports);
+	tslib_es6.__exportStar(destroyDummyBot, exports);
 	tslib_es6.__exportStar(destroyEffect, exports);
 	tslib_es6.__exportStar(destroyHudText, exports);
 	tslib_es6.__exportStar(destroyIcon, exports);
@@ -9115,6 +9428,7 @@
 	tslib_es6.__exportStar(startForcingThrottle, exports);
 	tslib_es6.__exportStar(startHealOverTime, exports);
 	tslib_es6.__exportStar(startHoldingButton, exports);
+	tslib_es6.__exportStar(startThrottleInDirection, exports);
 	tslib_es6.__exportStar(startTransformingThrottle, exports);
 	tslib_es6.__exportStar(stopAccelerating, exports);
 	tslib_es6.__exportStar(stopAllDamageModifications, exports);
@@ -9131,6 +9445,7 @@
 	tslib_es6.__exportStar(stopForcingThrottle, exports);
 	tslib_es6.__exportStar(stopHealOverTime, exports);
 	tslib_es6.__exportStar(stopHoldingButton, exports);
+	tslib_es6.__exportStar(stopThrottleInDirection, exports);
 	tslib_es6.__exportStar(stopTransformingThrottle, exports);
 	tslib_es6.__exportStar(teleport, exports);
 	tslib_es6.__exportStar(unpauseMatchTime, exports);
@@ -9488,6 +9803,24 @@
 	unwrapExports(hostPlayer);
 	var hostPlayer_1 = hostPlayer.hostPlayer;
 
+	var isDummyBot = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * 플레이어의 DUMMY 봇 여부입니다.
+	 */
+	exports.isDummyBot = function (
+	/**
+	 * 고려할 플레이어입니다.
+	 * - `Type.Player.`
+	 */
+	player) {
+	    return "Is Dummy Bot(" + player + ")";
+	};
+	});
+
+	unwrapExports(isDummyBot);
+	var isDummyBot_1 = isDummyBot.isDummyBot;
+
 	var value$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 
@@ -9571,6 +9904,7 @@
 	tslib_es6.__exportStar(isCrouching, exports);
 	tslib_es6.__exportStar(isCTFModeInSuddenDeath, exports);
 	tslib_es6.__exportStar(isDead, exports);
+	tslib_es6.__exportStar(isDummyBot, exports);
 	tslib_es6.__exportStar(isFiringPrimary, exports);
 	tslib_es6.__exportStar(isFiringSecondary, exports);
 	tslib_es6.__exportStar(isFlagAtBase, exports);
@@ -11136,8 +11470,8 @@
 	var heroConstant$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -11145,11 +11479,22 @@
 	unwrapExports(heroConstant$1);
 	var heroConstant_1$1 = heroConstant$1.Default;
 
+	var slotRange$1 = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * @param num Type Any Number.
+	 * Then can see list of available number lists. */
+	exports.Default = function (num) { return num; };
+	});
+
+	unwrapExports(slotRange$1);
+	var slotRange_1$1 = slotRange$1.Default;
+
 	var teamConstant$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -11160,8 +11505,8 @@
 	var variable$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -11172,8 +11517,8 @@
 	var eventPlayer$2 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -14381,14 +14726,38 @@
 	var barrier$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
 
 	unwrapExports(barrier$1);
 	var barrier_1$1 = barrier$1.Default;
+
+	var beam$1 = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * @param str Type '
+	 * Then can see list of available string lists.
+	 */
+	exports.Default = function (str) { return str; };
+	});
+
+	unwrapExports(beam$1);
+	var beam_1$1 = beam$1.Default;
+
+	var beamReevaluation$1 = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * @param str Type '
+	 * Then can see list of available string lists.
+	 */
+	exports.Default = function (str) { return str; };
+	});
+
+	unwrapExports(beamReevaluation$1);
+	var beamReevaluation_1$1 = beamReevaluation$1.Default;
 
 	var _false$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
@@ -15529,8 +15898,8 @@
 	var button$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15541,8 +15910,8 @@
 	var clipping$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15553,8 +15922,8 @@
 	var color$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15565,8 +15934,8 @@
 	var communication$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15587,8 +15956,8 @@
 	var damageModificationReevaluation$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15627,8 +15996,8 @@
 	var effect$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15639,8 +16008,8 @@
 	var effectReevaluation$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15677,8 +16046,8 @@
 	var facingReevaluation$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15746,8 +16115,8 @@
 	var hudTextReevaluation$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15758,8 +16127,8 @@
 	var icon$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15770,8 +16139,8 @@
 	var iconReevaluation$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15782,8 +16151,8 @@
 	var invisibleTo$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15794,8 +16163,8 @@
 	var inWorldTextReevaluation$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15806,8 +16175,8 @@
 	var location_1$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15818,8 +16187,8 @@
 	var losCheck$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15830,8 +16199,8 @@
 	var motion$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15851,8 +16220,8 @@
 	var objectiveDescriptionReevaluation$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15863,8 +16232,8 @@
 	var operator$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15875,8 +16244,8 @@
 	var playEffect$2 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15896,8 +16265,8 @@
 	var reevaluation$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15908,8 +16277,8 @@
 	var relative$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15920,8 +16289,8 @@
 	var roundingType$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15929,11 +16298,23 @@
 	unwrapExports(roundingType$1);
 	var roundingType_1$1 = roundingType$1.Default;
 
+	var spectators$1 = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * @param str Type '
+	 * Then can see list of available string lists.
+	 */
+	exports.Default = function (str) { return str; };
+	});
+
+	unwrapExports(spectators$1);
+	var spectators_1$1 = spectators$1.Default;
+
 	var startAcceleratingReevaluation$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -15941,11 +16322,35 @@
 	unwrapExports(startAcceleratingReevaluation$1);
 	var startAcceleratingReevaluation_1$1 = startAcceleratingReevaluation$1.Default;
 
+	var startThrottleBehavior$1 = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * @param str Type '
+	 * Then can see list of available string lists.
+	 */
+	exports.Default = function (str) { return str; };
+	});
+
+	unwrapExports(startThrottleBehavior$1);
+	var startThrottleBehavior_1$1 = startThrottleBehavior$1.Default;
+
+	var startThrottleReevaluation$1 = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * @param str Type '
+	 * Then can see list of available string lists.
+	 */
+	exports.Default = function (str) { return str; };
+	});
+
+	unwrapExports(startThrottleReevaluation$1);
+	var startThrottleReevaluation_1$1 = startThrottleReevaluation$1.Default;
+
 	var status$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -16122,8 +16527,8 @@
 	var text$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -16144,8 +16549,8 @@
 	var transformation$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -16556,8 +16961,8 @@
 	var variableOperation$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -16568,8 +16973,8 @@
 	var waitBehavior$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
-	 * @param str 문자열 값입니다. `''`를 입력해서
-	 * 사용가능한 문자열 목록을 확인 할 수 있습니다.
+	 * @param str Type '
+	 * Then can see list of available string lists.
 	 */
 	exports.Default = function (str) { return str; };
 	});
@@ -16582,6 +16987,8 @@
 
 	var HeroConstant = tslib_es6.__importStar(heroConstant$1);
 	exports.HeroConstant = HeroConstant;
+	var SlotRange = tslib_es6.__importStar(slotRange$1);
+	exports.SlotRange = SlotRange;
 	var TeamConstant = tslib_es6.__importStar(teamConstant$1);
 	exports.TeamConstant = TeamConstant;
 	var Variable = tslib_es6.__importStar(variable$1);
@@ -16596,6 +17003,10 @@
 	exports.AssisterParam = AssisterParam;
 	var Barrier = tslib_es6.__importStar(barrier$1);
 	exports.Barrier = Barrier;
+	var Beam = tslib_es6.__importStar(beam$1);
+	exports.Beam = Beam;
+	var BeamReevaluation = tslib_es6.__importStar(beamReevaluation$1);
+	exports.BeamReevaluation = BeamReevaluation;
 	var Bool = tslib_es6.__importStar(bool$1);
 	exports.Bool = Bool;
 	var Button = tslib_es6.__importStar(button$1);
@@ -16664,8 +17075,14 @@
 	exports.Relative = Relative;
 	var RoundingType = tslib_es6.__importStar(roundingType$1);
 	exports.RoundingType = RoundingType;
+	var Spectators = tslib_es6.__importStar(spectators$1);
+	exports.Spectators = Spectators;
 	var StartAcceleratingReevaluation = tslib_es6.__importStar(startAcceleratingReevaluation$1);
 	exports.StartAcceleratingReevaluation = StartAcceleratingReevaluation;
+	var StartThrottleBehavior = tslib_es6.__importStar(startThrottleBehavior$1);
+	exports.StartThrottleBehavior = StartThrottleBehavior;
+	var StartThrottleReevaluation = tslib_es6.__importStar(startThrottleReevaluation$1);
+	exports.StartThrottleReevaluation = StartThrottleReevaluation;
 	var Status = tslib_es6.__importStar(status$1);
 	exports.Status = Status;
 	var String = tslib_es6.__importStar(string$3);
@@ -16694,60 +17111,66 @@
 
 	unwrapExports(type$1);
 	var type_1$1 = type$1.HeroConstant;
-	var type_2$1 = type$1.TeamConstant;
-	var type_3$1 = type$1.Variable;
-	var type_4$1 = type$1.EventPlayer;
-	var type_5$1 = type$1.Add;
-	var type_6$1 = type$1.Array;
-	var type_7$1 = type$1.AssisterParam;
-	var type_8$1 = type$1.Barrier;
-	var type_9$1 = type$1.Bool;
-	var type_10$1 = type$1.Button;
-	var type_11$1 = type$1.Clipping;
-	var type_12$1 = type$1.Color;
-	var type_13$1 = type$1.Communication;
-	var type_14$1 = type$1.DamageModificationId;
-	var type_15$1 = type$1.DamageModificationReevaluation;
-	var type_16$1 = type$1.DamageOverTimeId;
-	var type_17$1 = type$1.DestinationParam;
-	var type_18$1 = type$1.Divide;
-	var type_19$1 = type$1.Effect;
-	var type_20$1 = type$1.EffectReevaluation;
-	var type_21$1 = type$1.Entity;
-	var type_22$1 = type$1.FacingReevaluation;
-	var type_23$1 = type$1.HealOverTimeId;
-	var type_24$1 = type$1.Hero;
-	var type_25$1 = type$1.HudTextReevaluation;
-	var type_26$1 = type$1.Icon;
-	var type_27$1 = type$1.IconReevaluation;
-	var type_28$1 = type$1.InvisibleTo;
-	var type_29$1 = type$1.InWorldTextReevaluation;
-	var type_30$1 = type$1.Location;
-	var type_31$1 = type$1.LosCheck;
-	var type_32$1 = type$1.Motion;
-	var type_33$1 = type$1.Multiply;
-	var type_34$1 = type$1.Number;
-	var type_35$1 = type$1.ObjectiveDescriptionReevaluation;
-	var type_36$1 = type$1.Operator;
-	var type_37$1 = type$1.PlayEffect;
-	var type_38$1 = type$1.Player;
-	var type_39$1 = type$1.PlayersParam;
-	var type_40$1 = type$1.Reevaluation;
-	var type_41$1 = type$1.Relative;
-	var type_42$1 = type$1.RoundingType;
-	var type_43$1 = type$1.StartAcceleratingReevaluation;
-	var type_44$1 = type$1.Status;
-	var type_45$1 = type$1.String;
-	var type_46$1 = type$1.StringParam;
-	var type_47$1 = type$1.Subtract;
-	var type_48$1 = type$1.Team;
-	var type_49$1 = type$1.Text;
-	var type_50$1 = type$1.TextId;
-	var type_51$1 = type$1.Transformation;
-	var type_52$1 = type$1.Value;
-	var type_53$1 = type$1.VariableOperation;
-	var type_54$1 = type$1.Vector;
-	var type_55$1 = type$1.WaitBehavior;
+	var type_2$1 = type$1.SlotRange;
+	var type_3$1 = type$1.TeamConstant;
+	var type_4$1 = type$1.Variable;
+	var type_5$1 = type$1.EventPlayer;
+	var type_6$1 = type$1.Add;
+	var type_7$1 = type$1.Array;
+	var type_8$1 = type$1.AssisterParam;
+	var type_9$1 = type$1.Barrier;
+	var type_10$1 = type$1.Beam;
+	var type_11$1 = type$1.BeamReevaluation;
+	var type_12$1 = type$1.Bool;
+	var type_13$1 = type$1.Button;
+	var type_14$1 = type$1.Clipping;
+	var type_15$1 = type$1.Color;
+	var type_16$1 = type$1.Communication;
+	var type_17$1 = type$1.DamageModificationId;
+	var type_18$1 = type$1.DamageModificationReevaluation;
+	var type_19$1 = type$1.DamageOverTimeId;
+	var type_20$1 = type$1.DestinationParam;
+	var type_21$1 = type$1.Divide;
+	var type_22$1 = type$1.Effect;
+	var type_23$1 = type$1.EffectReevaluation;
+	var type_24$1 = type$1.Entity;
+	var type_25$1 = type$1.FacingReevaluation;
+	var type_26$1 = type$1.HealOverTimeId;
+	var type_27$1 = type$1.Hero;
+	var type_28$1 = type$1.HudTextReevaluation;
+	var type_29$1 = type$1.Icon;
+	var type_30$1 = type$1.IconReevaluation;
+	var type_31$1 = type$1.InvisibleTo;
+	var type_32$1 = type$1.InWorldTextReevaluation;
+	var type_33$1 = type$1.Location;
+	var type_34$1 = type$1.LosCheck;
+	var type_35$1 = type$1.Motion;
+	var type_36$1 = type$1.Multiply;
+	var type_37$1 = type$1.Number;
+	var type_38$1 = type$1.ObjectiveDescriptionReevaluation;
+	var type_39$1 = type$1.Operator;
+	var type_40$1 = type$1.PlayEffect;
+	var type_41$1 = type$1.Player;
+	var type_42$1 = type$1.PlayersParam;
+	var type_43$1 = type$1.Reevaluation;
+	var type_44$1 = type$1.Relative;
+	var type_45$1 = type$1.RoundingType;
+	var type_46$1 = type$1.Spectators;
+	var type_47$1 = type$1.StartAcceleratingReevaluation;
+	var type_48$1 = type$1.StartThrottleBehavior;
+	var type_49$1 = type$1.StartThrottleReevaluation;
+	var type_50$1 = type$1.Status;
+	var type_51$1 = type$1.String;
+	var type_52$1 = type$1.StringParam;
+	var type_53$1 = type$1.Subtract;
+	var type_54$1 = type$1.Team;
+	var type_55$1 = type$1.Text;
+	var type_56$1 = type$1.TextId;
+	var type_57$1 = type$1.Transformation;
+	var type_58$1 = type$1.Value;
+	var type_59$1 = type$1.VariableOperation;
+	var type_60$1 = type$1.Vector;
+	var type_61$1 = type$1.WaitBehavior;
 
 	var abort$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
@@ -17172,6 +17595,111 @@
 	unwrapExports(communicate$1);
 	var communicate_1$1 = communicate$1.communicate;
 
+	var createBeamEffect$1 = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * Creates an in-world beam effect entity.
+	 * This effect entity will persist until destroyed.
+	 * To obtain a reference to this entity,
+	 * use the last created entity value.
+	 * This action will fail if too many entities have been created.
+	 */
+	exports.createBeamEffect = function (
+	/**
+	 * One or more players who will be able to see the effect.
+	 * - `Type.Player.`
+	 */
+	visibleTo, 
+	/**
+	 * The type of effect to be created.
+	 * - `Type.Beam.`
+	 */
+	beamType, 
+	/**
+	 * The effect's start position. If this value is a player,
+	 * then the effect will move along with the player.
+	 * therwise, the value is interpreted as a position in the world.
+	 * - `Type.Vector.`
+	 */
+	startPosition, 
+	/**
+	 * The effect's end position. If this value is a player,
+	 * then the effect will move along with the player.
+	 * Otherwise, the value is interpreted as a position in the world.
+	 * - `Type.Vector.`
+	 */
+	endPosition, 
+	/**
+	 * The color of the beam effect to be created.
+	 * If a particular team is chosen, The effect will either
+	 * be red or blue, depending on whether the team hostile to viewer.
+	 * Does not apply to sound effects. Only the 'Good'
+	 * and 'Bad' beam effects can have color applied.
+	 * - `Type.Color.`
+	 */
+	color, 
+	/**
+	 * Specifies which of this action's inputs will be
+	 * continuously reevaluated. The effect will keep asking
+	 * for and using new values from reevaluated inputs.
+	 * - `Type.BeamReevaluation.`
+	 */
+	reevaluation) {
+	    return "Create Beam Effect(" + visibleTo + ", " + beamType + ", " + startPosition + ", " + endPosition + ", " + color + ", " + reevaluation + ")";
+	};
+	});
+
+	unwrapExports(createBeamEffect$1);
+	var createBeamEffect_1$1 = createBeamEffect$1.createBeamEffect;
+
+	var createDummyBot$1 = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * Adds a new bot to the specified slot on the
+	 * specified team so long as the slot is available.
+	 * This bot will only move, fire or use
+	 * abilities if executing workshop actions.
+	 */
+	exports.createDummyBot = function (
+	/**
+	 * The hero that the bot will be. If more than
+	 * one hero is provided, One will be chosen at random.
+	 * - `Type.Hero.`
+	 */
+	hero, 
+	/**
+	 * The team on which to create the bot, The 'All'
+	 * option only works in free-for-all game modes, will the
+	 * 'Team' options only work in team-based game modes.
+	 * - `Type.Team.`
+	 */
+	team, 
+	/**
+	 * The player slot which will receive the bot
+	 * (-1 for first available slot).
+	 * Up to 6 bots may be added to each team,
+	 * or 12 bots to the free-for-all team,
+	 * regardless of lobby settings.
+	 * - `Type.SlotRange.`
+	 */
+	slot, 
+	/**
+	 * The initial position where the bot will appear.
+	 * - `Type.Vector.`
+	 */
+	position, 
+	/**
+	 * The initial direction that the bot will face.
+	 * - `Type.Vector.`
+	 */
+	facing) {
+	    return "Create Dummy Bot(" + hero + ", " + team + ", " + slot + ", " + position + ", " + facing + ")";
+	};
+	});
+
+	unwrapExports(createDummyBot$1);
+	var createDummyBot_1$1 = createDummyBot$1.createDummyBot;
+
 	var createEffect$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
@@ -17331,8 +17859,13 @@
 	 * Syntax to select one or multiple players.
 	 * - `Type.HudTextReevaluation.`
 	 */
-	reevaluation) {
-	    return "Create Hud Text(" + visibleTo + ", " + header + ", " + subHeader + ", " + text + ", " + location + ", " + sortOrder + ", " + headerColor + ", " + subHeaderColor + ", " + textColor + ", " + reevaluation + ")";
+	reevaluation, 
+	/**
+	 * Whether spectators can see the text or not.
+	 * - `Type.Spectators.`
+	 */
+	spectators) {
+	    return "Create Hud Text(" + visibleTo + ", " + header + ", " + subHeader + ", " + text + ", " + location + ", " + sortOrder + ", " + headerColor + ", " + subHeaderColor + ", " + textColor + ", " + reevaluation + ", " + spectators + ")";
 	};
 	});
 
@@ -17476,8 +18009,13 @@
 	 * floors, ceilings, players, or other solid objects.
 	 * - `Type.InWorldTextReevaluation.`
 	 */
-	reevaluation) {
-	    return "Create In World Text(" + visibleTo + ", " + header + ", " + position + ", " + scale + ", " + clipping + ", " + reevaluation + ")";
+	reevaluation, 
+	/**
+	 * Whether spectators can see the text or not.
+	 * - `Type.Spectators.`
+	 */
+	spectators) {
+	    return "Create In World Text(" + visibleTo + ", " + header + ", " + position + ", " + scale + ", " + clipping + ", " + reevaluation + ", " + spectators + ")";
 	};
 	});
 
@@ -17596,6 +18134,19 @@
 	unwrapExports(declareTeamVictory$1);
 	var declareTeamVictory_1$1 = declareTeamVictory$1.declareTeamVictory;
 
+	var destroyAllDummyBot$1 = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * Removes all dummy bots from the match.
+	 */
+	exports.destroyAllDummyBot = function () {
+	    return "Destroy All Dummy Bot";
+	};
+	});
+
+	unwrapExports(destroyAllDummyBot$1);
+	var destroyAllDummyBot_1$1 = destroyAllDummyBot$1.destroyAllDummyBot;
+
 	var destroyAllEffects$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
@@ -17649,6 +18200,31 @@
 
 	unwrapExports(destroyAllInWorldText$1);
 	var destroyAllInWorldText_1$1 = destroyAllInWorldText$1.destroyAllInWorldText;
+
+	var destroyDummyBot$1 = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * Removes the specified dummy bot from the match.
+	 */
+	exports.destroyDummyBot = function (
+	/**
+	 * The team to remove the dummy bot from. The 'All'
+	 * option only works in free-for-all game modes,
+	 * while the 'team' options only work in team-based game modes.
+	 * - `Type.Team.`
+	 */
+	team, 
+	/**
+	 * The slot to remove the dummy bot from.
+	 * - `Type.SlotRange.`
+	 */
+	slot) {
+	    return "Destroy Dummy Bot(" + team + ", " + slot + ")";
+	};
+	});
+
+	unwrapExports(destroyDummyBot$1);
+	var destroyDummyBot_1$1 = destroyDummyBot$1.destroyDummyBot;
 
 	var destroyEffect$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
@@ -20071,6 +20647,58 @@
 	unwrapExports(startHoldingButton$1);
 	var startHoldingButton_1$1 = startHoldingButton$1.startHoldingButton;
 
+	var startThrottleInDirection$1 = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * Sets or adds to the throttle (directional input control)
+	 * of a player or players such that they begin moving
+	 * in a particular direction.
+	 * Any previous throttle in directon is cancelled.
+	 */
+	exports.startThrottleInDirection = function (
+	/**
+	 * The player or players whose throttle will be set or added to.
+	 * - `Type.Player.`
+	 */
+	player, 
+	/**
+	 * The unit direction in which the throttle will be
+	 * set or added to. This value is normalized internally.
+	 * - `Type.Vector.`
+	 */
+	direction, 
+	/**
+	 * The amount of throttle (or change to throttle).
+	 * A value of 1 denotes full throttle.
+	 * - `Type.Number.`
+	 */
+	magnitude, 
+	/**
+	 * Specifies whether direction is relative to world
+	 * coordinates or the local coordinates of the player or players.
+	 * - `Type.Relative.`
+	 */
+	relative, 
+	/**
+	 * Specifies whether preexisting
+	 * throttle is replaced or added to.
+	 * - `Type.StartThrottleBehavior.`
+	 */
+	behavior, 
+	/**
+	 * Specifies which of this action's inputs will be
+	 * continuously reevaluated. This action will keep asking
+	 * for and using new values from reevaluated inputs.
+	 * - `Type.StartThrottleReevaluation.`
+	 */
+	reevaluation) {
+	    return "Start Throttle In Direction(" + player + ", " + direction + ", " + magnitude + ", " + relative + ", " + behavior + ", " + reevaluation + ")";
+	};
+	});
+
+	unwrapExports(startThrottleInDirection$1);
+	var startThrottleInDirection_1$1 = startThrottleInDirection$1.startThrottleInDirection;
+
 	var startTransformingThrottle$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
@@ -20454,6 +21082,25 @@
 	unwrapExports(stopHoldingButton$1);
 	var stopHoldingButton_1$1 = stopHoldingButton$1.stopHoldingButton;
 
+	var stopThrottleInDirection$1 = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * Cancels the behavior caused by start throttle in direction.
+	 */
+	exports.stopThrottleInDirection = function (
+	/**
+	 * The player or players whose
+	 * default throttle control will be restored.
+	 * - `Type.Player.`
+	 */
+	player) {
+	    return "Stop Throttle In Direction(" + player + ")";
+	};
+	});
+
+	unwrapExports(stopThrottleInDirection$1);
+	var stopThrottleInDirection_1$1 = stopThrottleInDirection$1.stopThrottleInDirection;
+
 	var stopTransformingThrottle$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 	/**
@@ -20561,6 +21208,8 @@
 	tslib_es6.__exportStar(chasePlayerVariableOverTime$1, exports);
 	tslib_es6.__exportStar(clearStatus$1, exports);
 	tslib_es6.__exportStar(communicate$1, exports);
+	tslib_es6.__exportStar(createBeamEffect$1, exports);
+	tslib_es6.__exportStar(createDummyBot$1, exports);
 	tslib_es6.__exportStar(createEffect$1, exports);
 	tslib_es6.__exportStar(createHudText$1, exports);
 	tslib_es6.__exportStar(createIcon$1, exports);
@@ -20570,10 +21219,12 @@
 	tslib_es6.__exportStar(declarePlayerVictory$1, exports);
 	tslib_es6.__exportStar(declareRoundVictory$1, exports);
 	tslib_es6.__exportStar(declareTeamVictory$1, exports);
+	tslib_es6.__exportStar(destroyAllDummyBot$1, exports);
 	tslib_es6.__exportStar(destroyAllEffects$1, exports);
 	tslib_es6.__exportStar(destroyAllHudText$1, exports);
 	tslib_es6.__exportStar(destroyAllIcons$1, exports);
 	tslib_es6.__exportStar(destroyAllInWorldText$1, exports);
+	tslib_es6.__exportStar(destroyDummyBot$1, exports);
 	tslib_es6.__exportStar(destroyEffect$1, exports);
 	tslib_es6.__exportStar(destroyHudText$1, exports);
 	tslib_es6.__exportStar(destroyIcon$1, exports);
@@ -20656,6 +21307,7 @@
 	tslib_es6.__exportStar(startForcingThrottle$1, exports);
 	tslib_es6.__exportStar(startHealOverTime$1, exports);
 	tslib_es6.__exportStar(startHoldingButton$1, exports);
+	tslib_es6.__exportStar(startThrottleInDirection$1, exports);
 	tslib_es6.__exportStar(startTransformingThrottle$1, exports);
 	tslib_es6.__exportStar(stopAccelerating$1, exports);
 	tslib_es6.__exportStar(stopAllDamageModifications$1, exports);
@@ -20672,6 +21324,7 @@
 	tslib_es6.__exportStar(stopForcingThrottle$1, exports);
 	tslib_es6.__exportStar(stopHealOverTime$1, exports);
 	tslib_es6.__exportStar(stopHoldingButton$1, exports);
+	tslib_es6.__exportStar(stopThrottleInDirection$1, exports);
 	tslib_es6.__exportStar(stopTransformingThrottle$1, exports);
 	tslib_es6.__exportStar(teleport$1, exports);
 	tslib_es6.__exportStar(unpauseMatchTime$1, exports);
@@ -21002,6 +21655,24 @@
 	unwrapExports(hostPlayer$1);
 	var hostPlayer_1$1 = hostPlayer$1.hostPlayer;
 
+	var isDummyBot$1 = createCommonjsModule(function (module, exports) {
+	Object.defineProperty(exports, "__esModule", { value: true });
+	/**
+	 * Whether a player is a dummy bot.
+	 */
+	exports.isDummyBot = function (
+	/**
+	 * Player to consider.
+	 * - `Type.Player.`
+	 */
+	player) {
+	    return "Is Dummy Bot(" + player + ")";
+	};
+	});
+
+	unwrapExports(isDummyBot$1);
+	var isDummyBot_1$1 = isDummyBot$1.isDummyBot;
+
 	var value$3 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
 
@@ -21085,6 +21756,7 @@
 	tslib_es6.__exportStar(isCrouching$1, exports);
 	tslib_es6.__exportStar(isCTFModeInSuddenDeath$1, exports);
 	tslib_es6.__exportStar(isDead$1, exports);
+	tslib_es6.__exportStar(isDummyBot$1, exports);
 	tslib_es6.__exportStar(isFiringPrimary$1, exports);
 	tslib_es6.__exportStar(isFiringSecondary$1, exports);
 	tslib_es6.__exportStar(isFlagAtBase$1, exports);
