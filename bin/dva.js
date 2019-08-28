@@ -612,9 +612,16 @@
 
 	var globalVariable = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.globalVariable = function () {
+	/**
+	 * 게임 자체에 종속된 전역 변수의 현재 값입니다.
+	 */
+	exports.globalVariable = function (
+	/**
+	 * - `Type.Variable.`
+	 */
+	variable) {
 	    // @ts-ignore
-	    return "Global Variable";
+	    return "Global Variable(" + variable + ")";
 	};
 	});
 
@@ -9484,7 +9491,7 @@
 	 * - `Type.EventPlayer.`
 	 */
 	player) {
-	    return "Ongoing - Each Player(" + team + ", " + player + ")";
+	    return "Ongoing - Each Player;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -9531,7 +9538,7 @@
 	 * - `Type.EventPlayer.`
 	 */
 	player) {
-	    return "Player dealt damage(" + team + ", " + player + ")";
+	    return "Player dealt damage;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -9557,7 +9564,7 @@
 	 * - `Type.EventPlayer.`
 	 */
 	player) {
-	    return "Player dealt final blow(" + team + ", " + player + ")";
+	    return "Player dealt final blow;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -9580,7 +9587,7 @@
 	 * - `Type.Player.`
 	 */
 	player) {
-	    return "Player Dealt Healing(" + team + ", " + player + ")";
+	    return "Player Dealt Healing;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -9606,7 +9613,7 @@
 	 * - `Type.EventPlayer.`
 	 */
 	player) {
-	    return "Player Died(" + team + ", " + player + ")";
+	    return "Player Died;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -9632,7 +9639,7 @@
 	 * - `Type.EventPlayer.`
 	 */
 	player) {
-	    return "Player earned elimination(" + team + ", " + player + ")";
+	    return "Player earned elimination;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -9655,7 +9662,7 @@
 	 * - `Type.Player.`
 	 */
 	player) {
-	    return "Player Joined Match(" + team + ", " + player + ")";
+	    return "Player Joined Match;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -9678,7 +9685,7 @@
 	 * - `Type.Player.`
 	 */
 	player) {
-	    return "Player Left Match(" + team + ", " + player + ")";
+	    return "Player Left Match;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -9701,7 +9708,7 @@
 	 * - `Type.Player.`
 	 */
 	player) {
-	    return "Player Received Healing(" + team + ", " + player + ")";
+	    return "Player Received Healing;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -9727,7 +9734,7 @@
 	 * - `Type.EventPlayer.`
 	 */
 	player) {
-	    return "Player took damage(" + team + ", " + player + ")";
+	    return "Player took damage;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -11875,9 +11882,18 @@
 
 	var globalVariable$1 = createCommonjsModule(function (module, exports) {
 	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.globalVariable = function () {
+	/**
+	 * The current value of a global variable,
+	 * which is a variable which belongs to the
+	 * custom game itself.
+	 */
+	exports.globalVariable = function (
+	/**
+	 * - `Type.Variable.`
+	 */
+	variable) {
 	    // @ts-ignore
-	    return "Global Variable";
+	    return "Global Variable(" + variable + ")";
 	};
 	});
 
@@ -21359,7 +21375,7 @@
 	 * - `Type.EventPlayer.`
 	 */
 	player) {
-	    return "Ongoing - Each Player(" + team + ", " + player + ")";
+	    return "Ongoing - Each Player;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -21397,7 +21413,7 @@
 	 * - `Type.EventPlayer.`
 	 */
 	player) {
-	    return "Player dealt damage(" + team + ", " + player + ")";
+	    return "Player dealt damage;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -21421,7 +21437,7 @@
 	 * - `Type.EventPlayer.`
 	 */
 	player) {
-	    return "Player dealt final blow(" + team + ", " + player + ")";
+	    return "Player dealt final blow;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -21444,7 +21460,7 @@
 	 * - `Type.Player.`
 	 */
 	player) {
-	    return "Player Dealt Healing(" + team + ", " + player + ")";
+	    return "Player Dealt Healing;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -21466,7 +21482,7 @@
 	 * - `Type.EventPlayer.`
 	 */
 	player) {
-	    return "Player Died(" + team + ", " + player + ")";
+	    return "Player Died;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -21489,7 +21505,7 @@
 	 * - `Type.EventPlayer.`
 	 */
 	player) {
-	    return "Player earned elimination(" + team + ", " + player + ")";
+	    return "Player earned elimination;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -21512,7 +21528,7 @@
 	 * - `Type.Player.`
 	 */
 	player) {
-	    return "Player Joined Match(" + team + ", " + player + ")";
+	    return "Player Joined Match;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -21535,7 +21551,7 @@
 	 * - `Type.Player.`
 	 */
 	player) {
-	    return "Player Left Match(" + team + ", " + player + ")";
+	    return "Player Left Match;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -21558,7 +21574,7 @@
 	 * - `Type.Player.`
 	 */
 	player) {
-	    return "Player Received Healing(" + team + ", " + player + ")";
+	    return "Player Received Healing;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 
@@ -21581,7 +21597,7 @@
 	 * - `Type.EventPlayer.`
 	 */
 	player) {
-	    return "Player took damage(" + team + ", " + player + ")";
+	    return "Player took damage;\n\t\t" + team + ";\n\t\t" + player;
 	};
 	});
 

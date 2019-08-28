@@ -1326,9 +1326,14 @@ declare const controlModeScoringPercentage: (
 team: string | number | any[]
 ) => number;
 
+/**
+ * 게임 자체에 종속된 전역 변수의 현재 값입니다.
+ */
 declare const globalVariable: (
-
-
+/**
+ * - `Type.Variable.`
+ */
+variable: string | number | any[]
 ) => any[];
 
 /**
@@ -11763,9 +11768,16 @@ declare const controlModeScoringPercentage$1: (
 team: string | number | any[]
 ) => number;
 
+/**
+ * The current value of a global variable,
+ * which is a variable which belongs to the
+ * custom game itself.
+ */
 declare const globalVariable$1: (
-
-
+/**
+ * - `Type.Variable.`
+ */
+variable: string | number | any[]
 ) => any[];
 
 /**
