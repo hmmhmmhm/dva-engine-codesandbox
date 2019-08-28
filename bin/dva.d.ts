@@ -1037,6 +1037,8 @@ declare type ValueEffectReevaluationType = 'Visible To, Position, And Radius' | 
 
 declare type ValueLocationType = 'Left' | 'Top' | 'Right';
 
+declare type ValueHudTextReevaluationType = 'Visible To And String' | 'String';
+
 declare type ValueIconReevaluationType = 'Visible To And Position' | 'Position' | 'Visible To' | 'None';
 
 declare type ValueIconType = 'Arrow: Down' | 'Arrow: Left' | 'Arrow: Right' | 'Arrow: Up' | 'Asterisk' | 'Bolt' | 'Checkmark' | 'Circle' | 'Club' | 'Diamond' | 'Dizzy' | 'Exclamation Mark' | 'Eye' | 'Fire' | 'Flag' | 'Halo' | 'Happy' | 'Heart' | 'Moon' | 'No' | 'Plus' | 'Position' | 'Position 2' | 'Question Mark' | 'Radioactive' | 'Recycle' | 'Ring Thick' | 'Ring Thin' | 'Sad' | 'Skull' | 'Spade' | 'Spiral' | 'Stop' | 'Trashcan' | 'Warning' | 'X';
@@ -1045,13 +1047,11 @@ declare type ValueInWorldTextReevaluationType = 'Visible To, Position, And Strin
 
 declare type ValueClippingType = 'Clip Against Surfaces' | 'Do Not Clip';
 
-declare type ValueVariableOperation = 'Add' | 'Subtract' | 'Multiply' | 'Divide' | 'Modulo' | 'Raise To Power' | 'Min' | 'Max' | 'Append To Array' | 'Remove From Array By Value' | 'Remove From Array By Index';
+declare type ValueVariableOperationType = 'Add' | 'Subtract' | 'Multiply' | 'Divide' | 'Modulo' | 'Raise To Power' | 'Min' | 'Max' | 'Append To Array' | 'Remove From Array By Value' | 'Remove From Array By Index';
 
 declare type ValuePlayEffect = 'Good Explosion' | 'Bad Explosion' | 'Ring Explosion' | 'Good Pickup Effect' | 'Bad Pickup Effect' | 'Debuff Impact Sound' | 'Buff Impact Sound' | 'Ring Explosion Sound' | 'Buff Explosion Sound' | 'Explosion Sound';
 
 declare type ValueInvisibleToType = 'All' | 'Enemies' | 'None';
-
-declare type ValueObjectiveDescriptionReevaluationType = 'Visible To And String' | 'String';
 
 declare type ValueStartAcceleratingReevaluationType = 'Direction, Rate, And Max Speed' | 'None';
 
@@ -1071,7 +1071,7 @@ declare type ValueBeamReevaluationType = 'Visible To Position and Radius' | 'Pos
 
 declare type ValueSpectatorsType = 'Default Visibility' | 'Visible Always' | 'Visible Never';
 
-declare type SlotRangeType = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
+declare type SlotRangeType = -1 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 
 /**
  * {700}
@@ -1392,6 +1392,9 @@ value2: string | number | any[]
 declare const eventDamage: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -1493,6 +1496,9 @@ value: string | number | any[]
 declare const lastDamageModificationId: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -1502,6 +1508,9 @@ declare const lastDamageModificationId: (
 declare const lastDamageOverTimeId: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -1509,6 +1518,9 @@ declare const lastDamageOverTimeId: (
  * HEAL OVER TIME 액션의 ID입니다.
  */
 declare const lastHealOverTimeId: (
+
+
+
 
 
 ) => number;
@@ -1522,12 +1534,18 @@ declare const lastHealOverTimeId: (
 declare const lastTextId: (
 
 
+
+
+
 ) => number;
 
 /**
  * 경기의 현재 라운드입니다. 1부터 증가합니다.
  */
 declare const matchRound: (
+
+
+
 
 
 ) => number;
@@ -1711,6 +1729,9 @@ team: string | number | any[]
 declare const objectiveIndex: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -1719,12 +1740,18 @@ declare const objectiveIndex: (
 declare const payloadProgressPercentage: (
 
 
+
+
+
 ) => number;
 
 /**
  * 활성화된 거점에서, 점령 중인 거점의 점령 진척도입니다.(비율로 표시)
  */
 declare const pointCapturePercentage: (
+
+
+
 
 
 ) => number;
@@ -2027,6 +2054,9 @@ player: string | number | any[]
 declare const serverLoad: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -2038,6 +2068,9 @@ declare const serverLoad: (
 declare const serverLoadAverage: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -2047,6 +2080,9 @@ declare const serverLoadAverage: (
  * 종료될 가능성이 크게 증가합니다.
  */
 declare const serverLoadPeak: (
+
+
+
 
 
 ) => number;
@@ -2289,6 +2325,9 @@ endPos: string | number | any[]
 declare const backward: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -2361,6 +2400,9 @@ value2: string | number | any[]
 declare const down: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -2392,12 +2434,18 @@ team: string | number | any[]
 declare const forward: (
 
 
+
+
+
 ) => number;
 
 /**
  * 좌측을 가리키는 방향 벡터(1, 0,0)의 약칭입니다.
  */
 declare const left: (
+
+
+
 
 
 ) => number;
@@ -2444,6 +2492,9 @@ number: string | number | any[]
  * 월드 내의 활성화 된 화물 위치입니다.
  */
 declare const payloadPosition: (
+
+
+
 
 
 ) => number;
@@ -2586,6 +2637,9 @@ IncludePlayerOwnedObjects: string | number | any[]
 declare const right: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -2608,12 +2662,18 @@ player: string | number | any[]
 declare const totalTimeElapsed: (
 
 
+
+
+
 ) => number;
 
 /**
  * 위를 가리키는 방향 벡터(0, 1, 0)의 약칭입니다.
  */
 declare const up: (
+
+
+
 
 
 ) => number;
@@ -2968,6 +3028,9 @@ team: string | number | any[]
 declare const allHeroes: (
 
 
+
+
+
 ) => any[];
 
 /**
@@ -3055,6 +3118,9 @@ count: string | number | any[]
  * 요소가 없는 배열입니다.
  */
 declare const emptyArray: (
+
+
+
 
 
 ) => any[];
@@ -3271,6 +3337,9 @@ declare namespace array_d {
 declare const Null: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -3278,6 +3347,9 @@ declare const Null: (
  * ATTACKER 또는 VICTIM과 동일할 수 있습니다.
  */
 declare const eventPlayer: (
+
+
+
 
 
 ) => string;
@@ -3289,6 +3361,9 @@ declare const eventPlayer: (
 declare const victim: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -3296,6 +3371,9 @@ declare const victim: (
  * VICTIM 또는 EVENT PLAYER와 동일할 수 있습니다.
  */
 declare const attacker: (
+
+
+
 
 
 ) => string;
@@ -3459,12 +3537,18 @@ declare namespace beamReevaluation_d {
 declare const False: (
 
 
+
+
+
 ) => string;
 
 /**
  * TRUE의 부울 값입니다.
  */
 declare const True: (
+
+
+
 
 
 ) => string;
@@ -3579,6 +3663,9 @@ entity: string | number | any[]
 declare const eventWasCriticalHit: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -3627,12 +3714,18 @@ player: string | number | any[]
 declare const isAssemblingHeroes: (
 
 
+
+
+
 ) => string;
 
 /**
  * 경기 중 라운드 전환 시기인지 여부입니다.
  */
 declare const isBetweenRounds: (
+
+
+
 
 
 ) => string;
@@ -3716,6 +3809,9 @@ player: string | number | any[]
 declare const isControlModePointLocked: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -3733,6 +3829,9 @@ player: string | number | any[]
  * 현재 깃발 뺏기 게임이 승자 결정전인지 여부입니다.
  */
 declare const isCTFModeInSuddenDeath: (
+
+
+
 
 
 ) => string;
@@ -3796,6 +3895,9 @@ team: string | number | any[]
  * 경기의 주요 단계(전투 및 점수 산정이 허용되는 시기)가 진행 중인지 여부입니다.
  */
 declare const isGameInProgress: (
+
+
+
 
 
 ) => string;
@@ -3863,6 +3965,9 @@ barriers: string | number | any[]
 declare const isInSetup: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -3902,6 +4007,9 @@ viewAngle: string | number | any[]
  * 경기가 완료되었는지 여부입니다.
  */
 declare const isMatchComplete: (
+
+
+
 
 
 ) => string;
@@ -4095,6 +4203,9 @@ player: string | number | any[]
  * 기다리고 있는지 여부입니다.
  */
 declare const isWaitingForPlayers: (
+
+
+
 
 
 ) => string;
@@ -4741,6 +4852,9 @@ declare namespace effectReevaluation_d {
 declare const lastCreatedEntity: (
 
 
+
+
+
 ) => string;
 
 
@@ -4831,7 +4945,7 @@ declare namespace hero_d {
  * @param str Type '
  * Then can see list of available string lists.
  */
-declare const Default$g: (str: ValueObjectiveDescriptionReevaluationType) => ValueObjectiveDescriptionReevaluationType;
+declare const Default$g: (str: ValueHudTextReevaluationType) => ValueHudTextReevaluationType;
 
 declare namespace hudTextReevaluation_d {
   export {
@@ -5136,7 +5250,7 @@ declare namespace multiply_d {
  * @param str Type '
  * Then can see list of available string lists.
  */
-declare const Default$o: (str: ValueObjectiveDescriptionReevaluationType) => ValueObjectiveDescriptionReevaluationType;
+declare const Default$o: (str: ValueHudTextReevaluationType) => ValueHudTextReevaluationType;
 
 declare namespace objectiveDescriptionReevaluation_d {
   export {
@@ -5611,6 +5725,9 @@ team: string | number | any[]
 declare const controlModeScoringTeam: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -5656,7 +5773,7 @@ declare namespace team_d {
  * @param str Type '
  * Then can see list of available string lists.
  */
-declare const Default$z: (str: "" | "Up" | "Down" | "White" | "Yellow" | "Green" | "Purple" | "Red" | "Blue" | "None" | "Primary Fire" | "Secondary Fire" | "Ability 1" | "Ability 2" | "Interact" | "Jump" | "Crouch" | "Hacked" | "Burning" | "Frozen" | "Stunned" | "Min" | "Max" | "Club" | "Diamond" | "Heart" | "No" | "Position" | "Spade" | "Stop" | "Warning" | "Left" | "Right" | "Sphere" | "Cloud" | "Pick" | "Hello" | "Thanks" | "----------" | "-> {0}" | "!" | "!!" | "!!!" | "#{0}" | "({0})" | "*" | "..." | "?" | "??" | "???" | "{0} - {1}" | "{0} - {1} - {2}" | "{0} ->" | "{0} -> {1}" | "{0} * {1}" | "{0} / {1}" | "{0} : {1} : {2}" | "{0} {1}" | "{0} {1} {2}" | "{0} + {1}" | "{0} <-" | "{0} <- {1}" | "{0} <->" | "{0} <-> {1}" | "{0} < {1}" | "{0} > {1}" | "{0} and {1}" | "{0} m" | "{0} m/s" | "{0} sec" | "{0} vs {1}" | "{0}!" | "{0}!!" | "{0}!!!" | "{0}%" | "{0}, {1}" | "{0}, {1}, and {2}" | "{0}:" | "{0}: {1}" | "{0}: {1} and {2}" | "{0}:{1}" | "{0}?" | "{0}??" | "{0}???" | "<- {0}" | "<-> {0}" | "Abilities" | "Ability" | "Agility" | "Alert" | "Alive" | "Allies" | "Ally" | "Ammunition" | "Angle" | "Attack" | "Attacked" | "Attacking" | "Attempt" | "Attempts" | "Average" | "Avoid" | "Avoided" | "Avoiding" | "Backward" | "Bad" | "Ban" | "Banned" | "Banning" | "Best" | "Better" | "Bid" | "Bids" | "Block" | "Blocked" | "Blocking" | "Bonus" | "Bonuses" | "Boss" | "Bosses" | "Bought" | "Build" | "Building" | "Built" | "Burn" | "Burnt" | "Buy" | "Buying" | "Capture" | "Captured" | "Capturing" | "Caution" | "Center" | "Cahllenge Accepted" | "Charisma" | "Chase" | "Chased" | "Chasing" | "Checkpoint" | "Checkpoints" | "Clouds" | "Clubs" | "Combo" | "Come Here" | "Condiition" | "Congratulations" | "Connect" | "Connected" | "Connecting" | "Constitution" | "Control Point" | "Control Points" | "Cooldown" | "Cooldowns" | "Corrupt" | "Corrupted" | "Corrupting" | "Credit" | "Credits" | "Critical" | "Crouched" | "Crouching" | "Current" | "Current Allies" | "Current Ally" | "Current Attempt" | "Current Checkpoint" | "Current Enemies" | "Current Enemy" | "Current Form" | "Current Game" | "Current Hero" | "Current Heroes" | "Current Hostage" | "Current Hostages" | "Current Level" | "Current Mission" | "Current Object" | "Current Objective" | "Current Objects" | "Current Phase" | "Current Player" | "Current Players" | "Current Round" | "Current Target" | "Current Targets" | "Current Upgrade" | "Damage" | "Damaged" | "Damaging" | "Danger" | "Dead" | "Deal" | "Dealing" | "Dealt" | "Deck" | "Decks" | "Defeat" | "Defend" | "Defended" | "Defending" | "Defense" | "Deliver" | "Delivered" | "Delivering" | "Depth" | "Destabilize" | "Destabilized" | "Destabilizing" | "Destroy" | "Destroyed" | "Destroying" | "Detect" | "Detected" | "Detecting" | "Dexterity" | "Diamonds" | "Die" | "Discard" | "Discarded" | "Discarding" | "Disconnect" | "Disconnected" | "Disconnecting" | "Distance" | "Distances" | "Dodge" | "Dodged" | "Dodging" | "Dome" | "Domes" | "Download" | "Downloaded" | "Downloading" | "Draw" | "Drawing" | "Drawn" | "Drop" | "Dropped" | "Dropping" | "Dying" | "East" | "Eliminate" | "Eliminated" | "Eliminating" | "Elimination" | "Eliminations" | "Enemiies" | "Enemy" | "Enterance" | "Escort" | "Escorted" | "Escorting" | "Excellent" | "Exit" | "Experience" | "Extreme" | "Face" | "Faces" | "Facing" | "Failed" | "Failing" | "Failure" | "Fall" | "Fallen" | "Failling" | "Far" | "Fast" | "Faster" | "Fastest" | "Fault" | "Faults" | "Final" | "Final Allies" | "Final Ally" | "Final Attempt" | "Final Checkpoint" | "Final Enemies" | "Final Enemy" | "Final Form" | "Final Game" | "Final Hero" | "Final Heroes" | "Final Hostage" | "Final Hostages" | "Final Item" | "Final Level" | "Final Mission" | "Final Object" | "Final Objective" | "Final Objects" | "Final Phase" | "Final Player" | "Final Players" | "Final Round" | "Final Target" | "Final Targets" | "Final Time" | "Final Upgrade" | "Find" | "Finding" | "Finish" | "Finished" | "Finishing" | "Flown" | "Fly" | "Flying" | "Fold" | "Folded" | "Folding" | "Form" | "Forms" | "Forward" | "Found" | "Freeze" | "Freezing" | "Game" | "Games" | "Games Lost" | "Games Won" | "Gg" | "Go" | "Goal" | "Goals" | "Going" | "Good" | "Good Luck" | "Goodbye" | "Guilt" | "Hack" | "Hacking" | "Hand" | "Hands" | "Heal" | "Healed" | "Healer" | "Healers" | "Healing" | "Hearts" | "Height" | "Help" | "Here" | "Hero" | "Heroes" | "Hidden" | "Hide" | "Hiding" | "High Score" | "High Scores" | "Hit" | "Hitting" | "Hmmm" | "Hostage" | "Hostages" | "Huh" | "Hunt" | "Hunted" | "Hunter" | "Hunters" | "Hunting" | "I Give Up" | "I Tried" | "In View" | "Income" | "Incoming" | "Initial" | "Initial Allies" | "Initial Ally" | "Initial Attempt" | "Initial Checkpoint" | "Initial Enemies" | "Initial Enemy" | "Initial Form" | "Initial Game" | "Initial Hero" | "Initial Heroes" | "Initial Hostage" | "Initial Level" | "Initial Mission" | "Initial Object" | "Initial Objective" | "Initial Objects" | "Initial Phase" | "Initial Player" | "Initial Players" | "Initial Round" | "Initial Target" | "Initial Targets" | "Initial Upgrade" | "Innocent" | "Inside" | "Intelligence" | "Invisible" | "Item" | "Items" | "Join" | "Joined" | "Joining" | "Jumping" | "Kill" | "Kills" | "Killstreak" | "Killstreaks" | "Leader" | "Leaders" | "Least" | "Less" | "Level" | "Level Down" | "Levels" | "Life" | "Limited" | "Lives" | "Load" | "Loaded" | "Loading" | "Lock" | "Locked" | "Locking" | "Loser" | "Losers" | "Loss" | "Losses" | "Mild" | "Mission" | "Mission Aborted" | "Mission Accomplished" | "Mission Failed" | "Missions" | "Moderate" | "Money" | "Monster" | "Monsters" | "More" | "Most" | "My Mistake" | "Near" | "New High Score" | "New Record" | "Next" | "Next Allies" | "Next Ally" | "Next Attempt" | "Next Checkpoint" | "Next Enemies" | "Next Enemy" | "Next Form" | "Next Game" | "Next Hero" | "Next Heroes" | "Next Hostage" | "Next Hostages" | "Next Level" | "Next Mission" | "Next Object" | "Next Objective" | "Next Objects" | "Next Phase" | "Next Player" | "Next Players" | "Next Round" | "Next Target" | "Next Targets" | "Next Upgrade" | "Nice Try" | "No Thanks" | "Normal" | "North" | "Northeast" | "Northwest" | "Not Today" | "Object" | "Objective" | "Objectives" | "Objects" | "Obtain" | "Obtained" | "Obtaining" | "Off" | "On" | "Oof" | "Oops" | "Optimal" | "Optimize" | "Optimized" | "Optimizing" | "Out Of View" | "Outgoing" | "Outside" | "Over" | "Overtime" | "Participant" | "Participants" | "Payload" | "Payloads" | "Phase" | "Phases" | "Picked" | "Picking" | "Pile" | "Piles" | "Play" | "Played" | "Player" | "Players" | "Point" | "Points" | "Points Earned" | "Points Lost" | "Power" | "Power-up" | "Power-ups" | "Price" | "Projectile" | "Projectiles" | "Protect" | "Protected" | "Protecting" | "Purified" | "Purify" | "Purifying" | "Raise" | "Raised" | "Rank" | "Rank A" | "Rank B" | "Rank C" | "Rank D" | "Rank E" | "Rank F" | "Rank S" | "Reach" | "Reached" | "Reaching" | "Ready" | "Record" | "Records" | "Recover" | "Recovered" | "Recovering" | "Remain" | "Remaining" | "Rescue" | "Rescued" | "Rescuing" | "Resource" | "Resources" | "Resurrect" | "Resurrected" | "Resurrecting" | "Reveal" | "Revealed" | "Revealing" | "Reverse" | "Reversed" | "Reversing" | "Round" | "Round {0}" | "Rounds" | "Rounds Lost" | "Rounds Won" | "Run" | "Running" | "Safe" | "Save" | "Saved" | "Saving" | "Score" | "Scores" | "Secure" | "Secured" | "Securing" | "Select" | "Selected" | "Selecting" | "Sell" | "Selling" | "Server Load" | "Server Load Average" | "Server Load Peak" | "Sever" | "Severe" | "Severed" | "Severing" | "Shop" | "Shops" | "Shuffle" | "Shuffled" | "Shuffling" | "Sink" | "Sinking" | "Skip" | "Skipped" | "Skipping" | "Sleep" | "Sleeping" | "Slept" | "Slow" | "Slower" | "Slowest" | "Sold" | "Sorry" | "South" | "Southeast" | "Southwest" | "Spades" | "Sparklers" | "Spawn" | "Spawned" | "Spaning" | "Speed" | "Speeds" | "Spheres" | "Stabilize" | "Stabilized" | "Stabilizing" | "Stable" | "Star" | "Stars" | "Start" | "Started" | "Starting" | "Status" | "Stay" | "Stay Away" | "Stayed" | "Staying" | "Stopped" | "Stopping" | "Stun" | "Stunning" | "Suboptimal" | "Success" | "Sudden Death" | "Sunk" | "Superb" | "Survive" | "Survived" | "Surviving" | "Target" | "Targets" | "Team" | "Teammate" | "Teammates" | "Teams" | "Terrible" | "Thank You" | "That Was Awesome" | "Threat" | "Threat Level" | "Threat Levels" | "Threats" | "Tiebreker" | "Time" | "Times" | "Total" | "Trade" | "Traded" | "Trading" | "Traitor" | "Traitors" | "Transfer" | "Transferred" | "Transferring" | "Try Again" | "Turret" | "Turrets" | "Ugh" | "Ultimate Ability" | "Under" | "Unknown" | "Unlimited" | "Unlock" | "Unlocked" | "Unlocking" | "Unsafe" | "Unstable" | "Upgrade" | "Upgraders" | "Upload" | "Uploaded" | "Uploading" | "Use Ability 1" | "Use Ability 2" | "Use Ultimate Abiility" | "Victory" | "Visible" | "Vortex" | "Vortices" | "Wait" | "Waiting" | "Wall" | "Walls" | "Welcome" | "Well Played" | "West" | "Wild" | "Win" | "Winner" | "Winners" | "Wins" | "Wisdom" | "Worse" | "Worst" | "Wow" | "Yes" | "You" | "You Lose" | "You Win" | "Zone" | "Zones" | "¡{0}!" | "¿{0}?" | "{0} !{1}" | "{0} <{1}" | "{0} ={1}" | "{0} >{1}") => "" | "Up" | "Down" | "White" | "Yellow" | "Green" | "Purple" | "Red" | "Blue" | "None" | "Primary Fire" | "Secondary Fire" | "Ability 1" | "Ability 2" | "Interact" | "Jump" | "Crouch" | "Hacked" | "Burning" | "Frozen" | "Stunned" | "Min" | "Max" | "Club" | "Diamond" | "Heart" | "No" | "Position" | "Spade" | "Stop" | "Warning" | "Left" | "Right" | "Sphere" | "Cloud" | "Pick" | "Hello" | "Thanks" | "----------" | "-> {0}" | "!" | "!!" | "!!!" | "#{0}" | "({0})" | "*" | "..." | "?" | "??" | "???" | "{0} - {1}" | "{0} - {1} - {2}" | "{0} ->" | "{0} -> {1}" | "{0} * {1}" | "{0} / {1}" | "{0} : {1} : {2}" | "{0} {1}" | "{0} {1} {2}" | "{0} + {1}" | "{0} <-" | "{0} <- {1}" | "{0} <->" | "{0} <-> {1}" | "{0} < {1}" | "{0} > {1}" | "{0} and {1}" | "{0} m" | "{0} m/s" | "{0} sec" | "{0} vs {1}" | "{0}!" | "{0}!!" | "{0}!!!" | "{0}%" | "{0}, {1}" | "{0}, {1}, and {2}" | "{0}:" | "{0}: {1}" | "{0}: {1} and {2}" | "{0}:{1}" | "{0}?" | "{0}??" | "{0}???" | "<- {0}" | "<-> {0}" | "Abilities" | "Ability" | "Agility" | "Alert" | "Alive" | "Allies" | "Ally" | "Ammunition" | "Angle" | "Attack" | "Attacked" | "Attacking" | "Attempt" | "Attempts" | "Average" | "Avoid" | "Avoided" | "Avoiding" | "Backward" | "Bad" | "Ban" | "Banned" | "Banning" | "Best" | "Better" | "Bid" | "Bids" | "Block" | "Blocked" | "Blocking" | "Bonus" | "Bonuses" | "Boss" | "Bosses" | "Bought" | "Build" | "Building" | "Built" | "Burn" | "Burnt" | "Buy" | "Buying" | "Capture" | "Captured" | "Capturing" | "Caution" | "Center" | "Cahllenge Accepted" | "Charisma" | "Chase" | "Chased" | "Chasing" | "Checkpoint" | "Checkpoints" | "Clouds" | "Clubs" | "Combo" | "Come Here" | "Condiition" | "Congratulations" | "Connect" | "Connected" | "Connecting" | "Constitution" | "Control Point" | "Control Points" | "Cooldown" | "Cooldowns" | "Corrupt" | "Corrupted" | "Corrupting" | "Credit" | "Credits" | "Critical" | "Crouched" | "Crouching" | "Current" | "Current Allies" | "Current Ally" | "Current Attempt" | "Current Checkpoint" | "Current Enemies" | "Current Enemy" | "Current Form" | "Current Game" | "Current Hero" | "Current Heroes" | "Current Hostage" | "Current Hostages" | "Current Level" | "Current Mission" | "Current Object" | "Current Objective" | "Current Objects" | "Current Phase" | "Current Player" | "Current Players" | "Current Round" | "Current Target" | "Current Targets" | "Current Upgrade" | "Damage" | "Damaged" | "Damaging" | "Danger" | "Dead" | "Deal" | "Dealing" | "Dealt" | "Deck" | "Decks" | "Defeat" | "Defend" | "Defended" | "Defending" | "Defense" | "Deliver" | "Delivered" | "Delivering" | "Depth" | "Destabilize" | "Destabilized" | "Destabilizing" | "Destroy" | "Destroyed" | "Destroying" | "Detect" | "Detected" | "Detecting" | "Dexterity" | "Diamonds" | "Die" | "Discard" | "Discarded" | "Discarding" | "Disconnect" | "Disconnected" | "Disconnecting" | "Distance" | "Distances" | "Dodge" | "Dodged" | "Dodging" | "Dome" | "Domes" | "Download" | "Downloaded" | "Downloading" | "Draw" | "Drawing" | "Drawn" | "Drop" | "Dropped" | "Dropping" | "Dying" | "East" | "Eliminate" | "Eliminated" | "Eliminating" | "Elimination" | "Eliminations" | "Enemiies" | "Enemy" | "Enterance" | "Escort" | "Escorted" | "Escorting" | "Excellent" | "Exit" | "Experience" | "Extreme" | "Face" | "Faces" | "Facing" | "Failed" | "Failing" | "Failure" | "Fall" | "Fallen" | "Failling" | "Far" | "Fast" | "Faster" | "Fastest" | "Fault" | "Faults" | "Final" | "Final Allies" | "Final Ally" | "Final Attempt" | "Final Checkpoint" | "Final Enemies" | "Final Enemy" | "Final Form" | "Final Game" | "Final Hero" | "Final Heroes" | "Final Hostage" | "Final Hostages" | "Final Item" | "Final Level" | "Final Mission" | "Final Object" | "Final Objective" | "Final Objects" | "Final Phase" | "Final Player" | "Final Players" | "Final Round" | "Final Target" | "Final Targets" | "Final Time" | "Final Upgrade" | "Find" | "Finding" | "Finish" | "Finished" | "Finishing" | "Flown" | "Fly" | "Flying" | "Fold" | "Folded" | "Folding" | "Form" | "Forms" | "Forward" | "Found" | "Freeze" | "Freezing" | "Game" | "Games" | "Games Lost" | "Games Won" | "Gg" | "Go" | "Goal" | "Goals" | "Going" | "Good" | "Good Luck" | "Goodbye" | "Guilt" | "Hack" | "Hacking" | "Hand" | "Hands" | "Heal" | "Healed" | "Healer" | "Healers" | "Healing" | "Hearts" | "Height" | "Help" | "Here" | "Hero" | "Heroes" | "Hidden" | "Hide" | "Hiding" | "High Score" | "High Scores" | "Hit" | "Hitting" | "Hmmm" | "Hostage" | "Hostages" | "Huh" | "Hunt" | "Hunted" | "Hunter" | "Hunters" | "Hunting" | "I Give Up" | "I Tried" | "In View" | "Income" | "Incoming" | "Initial" | "Initial Allies" | "Initial Ally" | "Initial Attempt" | "Initial Checkpoint" | "Initial Enemies" | "Initial Enemy" | "Initial Form" | "Initial Game" | "Initial Hero" | "Initial Heroes" | "Initial Hostage" | "Initial Level" | "Initial Mission" | "Initial Object" | "Initial Objective" | "Initial Objects" | "Initial Phase" | "Initial Player" | "Initial Players" | "Initial Round" | "Initial Target" | "Initial Targets" | "Initial Upgrade" | "Innocent" | "Inside" | "Intelligence" | "Invisible" | "Item" | "Items" | "Join" | "Joined" | "Joining" | "Jumping" | "Kill" | "Kills" | "Killstreak" | "Killstreaks" | "Leader" | "Leaders" | "Least" | "Less" | "Level" | "Level Down" | "Levels" | "Life" | "Limited" | "Lives" | "Load" | "Loaded" | "Loading" | "Lock" | "Locked" | "Locking" | "Loser" | "Losers" | "Loss" | "Losses" | "Mild" | "Mission" | "Mission Aborted" | "Mission Accomplished" | "Mission Failed" | "Missions" | "Moderate" | "Money" | "Monster" | "Monsters" | "More" | "Most" | "My Mistake" | "Near" | "New High Score" | "New Record" | "Next" | "Next Allies" | "Next Ally" | "Next Attempt" | "Next Checkpoint" | "Next Enemies" | "Next Enemy" | "Next Form" | "Next Game" | "Next Hero" | "Next Heroes" | "Next Hostage" | "Next Hostages" | "Next Level" | "Next Mission" | "Next Object" | "Next Objective" | "Next Objects" | "Next Phase" | "Next Player" | "Next Players" | "Next Round" | "Next Target" | "Next Targets" | "Next Upgrade" | "Nice Try" | "No Thanks" | "Normal" | "North" | "Northeast" | "Northwest" | "Not Today" | "Object" | "Objective" | "Objectives" | "Objects" | "Obtain" | "Obtained" | "Obtaining" | "Off" | "On" | "Oof" | "Oops" | "Optimal" | "Optimize" | "Optimized" | "Optimizing" | "Out Of View" | "Outgoing" | "Outside" | "Over" | "Overtime" | "Participant" | "Participants" | "Payload" | "Payloads" | "Phase" | "Phases" | "Picked" | "Picking" | "Pile" | "Piles" | "Play" | "Played" | "Player" | "Players" | "Point" | "Points" | "Points Earned" | "Points Lost" | "Power" | "Power-up" | "Power-ups" | "Price" | "Projectile" | "Projectiles" | "Protect" | "Protected" | "Protecting" | "Purified" | "Purify" | "Purifying" | "Raise" | "Raised" | "Rank" | "Rank A" | "Rank B" | "Rank C" | "Rank D" | "Rank E" | "Rank F" | "Rank S" | "Reach" | "Reached" | "Reaching" | "Ready" | "Record" | "Records" | "Recover" | "Recovered" | "Recovering" | "Remain" | "Remaining" | "Rescue" | "Rescued" | "Rescuing" | "Resource" | "Resources" | "Resurrect" | "Resurrected" | "Resurrecting" | "Reveal" | "Revealed" | "Revealing" | "Reverse" | "Reversed" | "Reversing" | "Round" | "Round {0}" | "Rounds" | "Rounds Lost" | "Rounds Won" | "Run" | "Running" | "Safe" | "Save" | "Saved" | "Saving" | "Score" | "Scores" | "Secure" | "Secured" | "Securing" | "Select" | "Selected" | "Selecting" | "Sell" | "Selling" | "Server Load" | "Server Load Average" | "Server Load Peak" | "Sever" | "Severe" | "Severed" | "Severing" | "Shop" | "Shops" | "Shuffle" | "Shuffled" | "Shuffling" | "Sink" | "Sinking" | "Skip" | "Skipped" | "Skipping" | "Sleep" | "Sleeping" | "Slept" | "Slow" | "Slower" | "Slowest" | "Sold" | "Sorry" | "South" | "Southeast" | "Southwest" | "Spades" | "Sparklers" | "Spawn" | "Spawned" | "Spaning" | "Speed" | "Speeds" | "Spheres" | "Stabilize" | "Stabilized" | "Stabilizing" | "Stable" | "Star" | "Stars" | "Start" | "Started" | "Starting" | "Status" | "Stay" | "Stay Away" | "Stayed" | "Staying" | "Stopped" | "Stopping" | "Stun" | "Stunning" | "Suboptimal" | "Success" | "Sudden Death" | "Sunk" | "Superb" | "Survive" | "Survived" | "Surviving" | "Target" | "Targets" | "Team" | "Teammate" | "Teammates" | "Teams" | "Terrible" | "Thank You" | "That Was Awesome" | "Threat" | "Threat Level" | "Threat Levels" | "Threats" | "Tiebreker" | "Time" | "Times" | "Total" | "Trade" | "Traded" | "Trading" | "Traitor" | "Traitors" | "Transfer" | "Transferred" | "Transferring" | "Try Again" | "Turret" | "Turrets" | "Ugh" | "Ultimate Ability" | "Under" | "Unknown" | "Unlimited" | "Unlock" | "Unlocked" | "Unlocking" | "Unsafe" | "Unstable" | "Upgrade" | "Upgraders" | "Upload" | "Uploaded" | "Uploading" | "Use Ability 1" | "Use Ability 2" | "Use Ultimate Abiility" | "Victory" | "Visible" | "Vortex" | "Vortices" | "Wait" | "Waiting" | "Wall" | "Walls" | "Welcome" | "Well Played" | "West" | "Wild" | "Win" | "Winner" | "Winners" | "Wins" | "Wisdom" | "Worse" | "Worst" | "Wow" | "Yes" | "You" | "You Lose" | "You Win" | "Zone" | "Zones" | "¡{0}!" | "¿{0}?" | "{0} !{1}" | "{0} <{1}" | "{0} ={1}" | "{0} >{1}";
+declare const Default$z: (str: "" | "Up" | "Down" | "Hacked" | "Burning" | "Frozen" | "Stunned" | "Primary Fire" | "Secondary Fire" | "Ability 1" | "Ability 2" | "Interact" | "Jump" | "Crouch" | "Hello" | "Thanks" | "Off" | "----------" | "-> {0}" | "!" | "!!" | "!!!" | "#{0}" | "({0})" | "*" | "..." | "?" | "??" | "???" | "{0} - {1}" | "{0} - {1} - {2}" | "{0} ->" | "{0} -> {1}" | "{0} * {1}" | "{0} / {1}" | "{0} : {1} : {2}" | "{0} {1}" | "{0} {1} {2}" | "{0} + {1}" | "{0} <-" | "{0} <- {1}" | "{0} <->" | "{0} <-> {1}" | "{0} < {1}" | "{0} > {1}" | "{0} and {1}" | "{0} m" | "{0} m/s" | "{0} sec" | "{0} vs {1}" | "{0}!" | "{0}!!" | "{0}!!!" | "{0}%" | "{0}, {1}" | "{0}, {1}, and {2}" | "{0}:" | "{0}: {1}" | "{0}: {1} and {2}" | "{0}:{1}" | "{0}?" | "{0}??" | "{0}???" | "<- {0}" | "<-> {0}" | "Abilities" | "Ability" | "Agility" | "Alert" | "Alive" | "Allies" | "Ally" | "Ammunition" | "Angle" | "Attack" | "Attacked" | "Attacking" | "Attempt" | "Attempts" | "Average" | "Avoid" | "Avoided" | "Avoiding" | "Backward" | "Bad" | "Ban" | "Banned" | "Banning" | "Best" | "Better" | "Bid" | "Bids" | "Block" | "Blocked" | "Blocking" | "Blue" | "Bonus" | "Bonuses" | "Boss" | "Bosses" | "Bought" | "Build" | "Building" | "Built" | "Burn" | "Burnt" | "Buy" | "Buying" | "Capture" | "Captured" | "Capturing" | "Caution" | "Center" | "Cahllenge Accepted" | "Charisma" | "Chase" | "Chased" | "Chasing" | "Checkpoint" | "Checkpoints" | "Cloud" | "Clouds" | "Club" | "Clubs" | "Combo" | "Come Here" | "Condiition" | "Congratulations" | "Connect" | "Connected" | "Connecting" | "Constitution" | "Control Point" | "Control Points" | "Cooldown" | "Cooldowns" | "Corrupt" | "Corrupted" | "Corrupting" | "Credit" | "Credits" | "Critical" | "Crouched" | "Crouching" | "Current" | "Current Allies" | "Current Ally" | "Current Attempt" | "Current Checkpoint" | "Current Enemies" | "Current Enemy" | "Current Form" | "Current Game" | "Current Hero" | "Current Heroes" | "Current Hostage" | "Current Hostages" | "Current Level" | "Current Mission" | "Current Object" | "Current Objective" | "Current Objects" | "Current Phase" | "Current Player" | "Current Players" | "Current Round" | "Current Target" | "Current Targets" | "Current Upgrade" | "Damage" | "Damaged" | "Damaging" | "Danger" | "Dead" | "Deal" | "Dealing" | "Dealt" | "Deck" | "Decks" | "Defeat" | "Defend" | "Defended" | "Defending" | "Defense" | "Deliver" | "Delivered" | "Delivering" | "Depth" | "Destabilize" | "Destabilized" | "Destabilizing" | "Destroy" | "Destroyed" | "Destroying" | "Detect" | "Detected" | "Detecting" | "Dexterity" | "Diamond" | "Diamonds" | "Die" | "Discard" | "Discarded" | "Discarding" | "Disconnect" | "Disconnected" | "Disconnecting" | "Distance" | "Distances" | "Dodge" | "Dodged" | "Dodging" | "Dome" | "Domes" | "Download" | "Downloaded" | "Downloading" | "Draw" | "Drawing" | "Drawn" | "Drop" | "Dropped" | "Dropping" | "Dying" | "East" | "Eliminate" | "Eliminated" | "Eliminating" | "Elimination" | "Eliminations" | "Enemiies" | "Enemy" | "Enterance" | "Escort" | "Escorted" | "Escorting" | "Excellent" | "Exit" | "Experience" | "Extreme" | "Face" | "Faces" | "Facing" | "Failed" | "Failing" | "Failure" | "Fall" | "Fallen" | "Failling" | "Far" | "Fast" | "Faster" | "Fastest" | "Fault" | "Faults" | "Final" | "Final Allies" | "Final Ally" | "Final Attempt" | "Final Checkpoint" | "Final Enemies" | "Final Enemy" | "Final Form" | "Final Game" | "Final Hero" | "Final Heroes" | "Final Hostage" | "Final Hostages" | "Final Item" | "Final Level" | "Final Mission" | "Final Object" | "Final Objective" | "Final Objects" | "Final Phase" | "Final Player" | "Final Players" | "Final Round" | "Final Target" | "Final Targets" | "Final Time" | "Final Upgrade" | "Find" | "Finding" | "Finish" | "Finished" | "Finishing" | "Flown" | "Fly" | "Flying" | "Fold" | "Folded" | "Folding" | "Form" | "Forms" | "Forward" | "Found" | "Freeze" | "Freezing" | "Game" | "Games" | "Games Lost" | "Games Won" | "Gg" | "Go" | "Goal" | "Goals" | "Going" | "Good" | "Good Luck" | "Goodbye" | "Green" | "Guilt" | "Hack" | "Hacking" | "Hand" | "Hands" | "Heal" | "Healed" | "Healer" | "Healers" | "Healing" | "Heart" | "Hearts" | "Height" | "Help" | "Here" | "Hero" | "Heroes" | "Hidden" | "Hide" | "Hiding" | "High Score" | "High Scores" | "Hit" | "Hitting" | "Hmmm" | "Hostage" | "Hostages" | "Huh" | "Hunt" | "Hunted" | "Hunter" | "Hunters" | "Hunting" | "I Give Up" | "I Tried" | "In View" | "Income" | "Incoming" | "Initial" | "Initial Allies" | "Initial Ally" | "Initial Attempt" | "Initial Checkpoint" | "Initial Enemies" | "Initial Enemy" | "Initial Form" | "Initial Game" | "Initial Hero" | "Initial Heroes" | "Initial Hostage" | "Initial Level" | "Initial Mission" | "Initial Object" | "Initial Objective" | "Initial Objects" | "Initial Phase" | "Initial Player" | "Initial Players" | "Initial Round" | "Initial Target" | "Initial Targets" | "Initial Upgrade" | "Innocent" | "Inside" | "Intelligence" | "Invisible" | "Item" | "Items" | "Join" | "Joined" | "Joining" | "Jumping" | "Kill" | "Kills" | "Killstreak" | "Killstreaks" | "Leader" | "Leaders" | "Least" | "Left" | "Less" | "Level" | "Level Down" | "Levels" | "Life" | "Limited" | "Lives" | "Load" | "Loaded" | "Loading" | "Lock" | "Locked" | "Locking" | "Loser" | "Losers" | "Loss" | "Losses" | "Max" | "Mild" | "Min" | "Mission" | "Mission Aborted" | "Mission Accomplished" | "Mission Failed" | "Missions" | "Moderate" | "Money" | "Monster" | "Monsters" | "More" | "Most" | "My Mistake" | "Near" | "New High Score" | "New Record" | "Next" | "Next Allies" | "Next Ally" | "Next Attempt" | "Next Checkpoint" | "Next Enemies" | "Next Enemy" | "Next Form" | "Next Game" | "Next Hero" | "Next Heroes" | "Next Hostage" | "Next Hostages" | "Next Level" | "Next Mission" | "Next Object" | "Next Objective" | "Next Objects" | "Next Phase" | "Next Player" | "Next Players" | "Next Round" | "Next Target" | "Next Targets" | "Next Upgrade" | "Nice Try" | "No" | "No Thanks" | "None" | "Normal" | "North" | "Northeast" | "Northwest" | "Not Today" | "Object" | "Objective" | "Objectives" | "Objects" | "Obtain" | "Obtained" | "Obtaining" | "On" | "Oof" | "Oops" | "Optimal" | "Optimize" | "Optimized" | "Optimizing" | "Out Of View" | "Outgoing" | "Outside" | "Over" | "Overtime" | "Participant" | "Participants" | "Payload" | "Payloads" | "Phase" | "Phases" | "Pick" | "Picked" | "Picking" | "Pile" | "Piles" | "Play" | "Played" | "Player" | "Players" | "Point" | "Points" | "Points Earned" | "Points Lost" | "Position" | "Power" | "Power-up" | "Power-ups" | "Price" | "Projectile" | "Projectiles" | "Protect" | "Protected" | "Protecting" | "Purified" | "Purify" | "Purifying" | "Purple" | "Raise" | "Raised" | "Rank" | "Rank A" | "Rank B" | "Rank C" | "Rank D" | "Rank E" | "Rank F" | "Rank S" | "Reach" | "Reached" | "Reaching" | "Ready" | "Record" | "Records" | "Recover" | "Recovered" | "Recovering" | "Red" | "Remain" | "Remaining" | "Rescue" | "Rescued" | "Rescuing" | "Resource" | "Resources" | "Resurrect" | "Resurrected" | "Resurrecting" | "Reveal" | "Revealed" | "Revealing" | "Reverse" | "Reversed" | "Reversing" | "Right" | "Round" | "Round {0}" | "Rounds" | "Rounds Lost" | "Rounds Won" | "Run" | "Running" | "Safe" | "Save" | "Saved" | "Saving" | "Score" | "Scores" | "Secure" | "Secured" | "Securing" | "Select" | "Selected" | "Selecting" | "Sell" | "Selling" | "Server Load" | "Server Load Average" | "Server Load Peak" | "Sever" | "Severe" | "Severed" | "Severing" | "Shop" | "Shops" | "Shuffle" | "Shuffled" | "Shuffling" | "Sink" | "Sinking" | "Skip" | "Skipped" | "Skipping" | "Sleep" | "Sleeping" | "Slept" | "Slow" | "Slower" | "Slowest" | "Sold" | "Sorry" | "South" | "Southeast" | "Southwest" | "Spade" | "Spades" | "Sparklers" | "Spawn" | "Spawned" | "Spaning" | "Speed" | "Speeds" | "Sphere" | "Spheres" | "Stabilize" | "Stabilized" | "Stabilizing" | "Stable" | "Star" | "Stars" | "Start" | "Started" | "Starting" | "Status" | "Stay" | "Stay Away" | "Stayed" | "Staying" | "Stop" | "Stopped" | "Stopping" | "Stun" | "Stunning" | "Suboptimal" | "Success" | "Sudden Death" | "Sunk" | "Superb" | "Survive" | "Survived" | "Surviving" | "Target" | "Targets" | "Team" | "Teammate" | "Teammates" | "Teams" | "Terrible" | "Thank You" | "That Was Awesome" | "Threat" | "Threat Level" | "Threat Levels" | "Threats" | "Tiebreker" | "Time" | "Times" | "Total" | "Trade" | "Traded" | "Trading" | "Traitor" | "Traitors" | "Transfer" | "Transferred" | "Transferring" | "Try Again" | "Turret" | "Turrets" | "Ugh" | "Ultimate Ability" | "Under" | "Unknown" | "Unlimited" | "Unlock" | "Unlocked" | "Unlocking" | "Unsafe" | "Unstable" | "Upgrade" | "Upgraders" | "Upload" | "Uploaded" | "Uploading" | "Use Ability 1" | "Use Ability 2" | "Use Ultimate Abiility" | "Victory" | "Visible" | "Vortex" | "Vortices" | "Wait" | "Waiting" | "Wall" | "Walls" | "Warning" | "Welcome" | "Well Played" | "West" | "White" | "Wild" | "Win" | "Winner" | "Winners" | "Wins" | "Wisdom" | "Worse" | "Worst" | "Wow" | "Yellow" | "Yes" | "You" | "You Lose" | "You Win" | "Zone" | "Zones" | "¡{0}!" | "¿{0}?" | "{0} !{1}" | "{0} <{1}" | "{0} ={1}" | "{0} >{1}") => "" | "Up" | "Down" | "Hacked" | "Burning" | "Frozen" | "Stunned" | "Primary Fire" | "Secondary Fire" | "Ability 1" | "Ability 2" | "Interact" | "Jump" | "Crouch" | "Hello" | "Thanks" | "Off" | "----------" | "-> {0}" | "!" | "!!" | "!!!" | "#{0}" | "({0})" | "*" | "..." | "?" | "??" | "???" | "{0} - {1}" | "{0} - {1} - {2}" | "{0} ->" | "{0} -> {1}" | "{0} * {1}" | "{0} / {1}" | "{0} : {1} : {2}" | "{0} {1}" | "{0} {1} {2}" | "{0} + {1}" | "{0} <-" | "{0} <- {1}" | "{0} <->" | "{0} <-> {1}" | "{0} < {1}" | "{0} > {1}" | "{0} and {1}" | "{0} m" | "{0} m/s" | "{0} sec" | "{0} vs {1}" | "{0}!" | "{0}!!" | "{0}!!!" | "{0}%" | "{0}, {1}" | "{0}, {1}, and {2}" | "{0}:" | "{0}: {1}" | "{0}: {1} and {2}" | "{0}:{1}" | "{0}?" | "{0}??" | "{0}???" | "<- {0}" | "<-> {0}" | "Abilities" | "Ability" | "Agility" | "Alert" | "Alive" | "Allies" | "Ally" | "Ammunition" | "Angle" | "Attack" | "Attacked" | "Attacking" | "Attempt" | "Attempts" | "Average" | "Avoid" | "Avoided" | "Avoiding" | "Backward" | "Bad" | "Ban" | "Banned" | "Banning" | "Best" | "Better" | "Bid" | "Bids" | "Block" | "Blocked" | "Blocking" | "Blue" | "Bonus" | "Bonuses" | "Boss" | "Bosses" | "Bought" | "Build" | "Building" | "Built" | "Burn" | "Burnt" | "Buy" | "Buying" | "Capture" | "Captured" | "Capturing" | "Caution" | "Center" | "Cahllenge Accepted" | "Charisma" | "Chase" | "Chased" | "Chasing" | "Checkpoint" | "Checkpoints" | "Cloud" | "Clouds" | "Club" | "Clubs" | "Combo" | "Come Here" | "Condiition" | "Congratulations" | "Connect" | "Connected" | "Connecting" | "Constitution" | "Control Point" | "Control Points" | "Cooldown" | "Cooldowns" | "Corrupt" | "Corrupted" | "Corrupting" | "Credit" | "Credits" | "Critical" | "Crouched" | "Crouching" | "Current" | "Current Allies" | "Current Ally" | "Current Attempt" | "Current Checkpoint" | "Current Enemies" | "Current Enemy" | "Current Form" | "Current Game" | "Current Hero" | "Current Heroes" | "Current Hostage" | "Current Hostages" | "Current Level" | "Current Mission" | "Current Object" | "Current Objective" | "Current Objects" | "Current Phase" | "Current Player" | "Current Players" | "Current Round" | "Current Target" | "Current Targets" | "Current Upgrade" | "Damage" | "Damaged" | "Damaging" | "Danger" | "Dead" | "Deal" | "Dealing" | "Dealt" | "Deck" | "Decks" | "Defeat" | "Defend" | "Defended" | "Defending" | "Defense" | "Deliver" | "Delivered" | "Delivering" | "Depth" | "Destabilize" | "Destabilized" | "Destabilizing" | "Destroy" | "Destroyed" | "Destroying" | "Detect" | "Detected" | "Detecting" | "Dexterity" | "Diamond" | "Diamonds" | "Die" | "Discard" | "Discarded" | "Discarding" | "Disconnect" | "Disconnected" | "Disconnecting" | "Distance" | "Distances" | "Dodge" | "Dodged" | "Dodging" | "Dome" | "Domes" | "Download" | "Downloaded" | "Downloading" | "Draw" | "Drawing" | "Drawn" | "Drop" | "Dropped" | "Dropping" | "Dying" | "East" | "Eliminate" | "Eliminated" | "Eliminating" | "Elimination" | "Eliminations" | "Enemiies" | "Enemy" | "Enterance" | "Escort" | "Escorted" | "Escorting" | "Excellent" | "Exit" | "Experience" | "Extreme" | "Face" | "Faces" | "Facing" | "Failed" | "Failing" | "Failure" | "Fall" | "Fallen" | "Failling" | "Far" | "Fast" | "Faster" | "Fastest" | "Fault" | "Faults" | "Final" | "Final Allies" | "Final Ally" | "Final Attempt" | "Final Checkpoint" | "Final Enemies" | "Final Enemy" | "Final Form" | "Final Game" | "Final Hero" | "Final Heroes" | "Final Hostage" | "Final Hostages" | "Final Item" | "Final Level" | "Final Mission" | "Final Object" | "Final Objective" | "Final Objects" | "Final Phase" | "Final Player" | "Final Players" | "Final Round" | "Final Target" | "Final Targets" | "Final Time" | "Final Upgrade" | "Find" | "Finding" | "Finish" | "Finished" | "Finishing" | "Flown" | "Fly" | "Flying" | "Fold" | "Folded" | "Folding" | "Form" | "Forms" | "Forward" | "Found" | "Freeze" | "Freezing" | "Game" | "Games" | "Games Lost" | "Games Won" | "Gg" | "Go" | "Goal" | "Goals" | "Going" | "Good" | "Good Luck" | "Goodbye" | "Green" | "Guilt" | "Hack" | "Hacking" | "Hand" | "Hands" | "Heal" | "Healed" | "Healer" | "Healers" | "Healing" | "Heart" | "Hearts" | "Height" | "Help" | "Here" | "Hero" | "Heroes" | "Hidden" | "Hide" | "Hiding" | "High Score" | "High Scores" | "Hit" | "Hitting" | "Hmmm" | "Hostage" | "Hostages" | "Huh" | "Hunt" | "Hunted" | "Hunter" | "Hunters" | "Hunting" | "I Give Up" | "I Tried" | "In View" | "Income" | "Incoming" | "Initial" | "Initial Allies" | "Initial Ally" | "Initial Attempt" | "Initial Checkpoint" | "Initial Enemies" | "Initial Enemy" | "Initial Form" | "Initial Game" | "Initial Hero" | "Initial Heroes" | "Initial Hostage" | "Initial Level" | "Initial Mission" | "Initial Object" | "Initial Objective" | "Initial Objects" | "Initial Phase" | "Initial Player" | "Initial Players" | "Initial Round" | "Initial Target" | "Initial Targets" | "Initial Upgrade" | "Innocent" | "Inside" | "Intelligence" | "Invisible" | "Item" | "Items" | "Join" | "Joined" | "Joining" | "Jumping" | "Kill" | "Kills" | "Killstreak" | "Killstreaks" | "Leader" | "Leaders" | "Least" | "Left" | "Less" | "Level" | "Level Down" | "Levels" | "Life" | "Limited" | "Lives" | "Load" | "Loaded" | "Loading" | "Lock" | "Locked" | "Locking" | "Loser" | "Losers" | "Loss" | "Losses" | "Max" | "Mild" | "Min" | "Mission" | "Mission Aborted" | "Mission Accomplished" | "Mission Failed" | "Missions" | "Moderate" | "Money" | "Monster" | "Monsters" | "More" | "Most" | "My Mistake" | "Near" | "New High Score" | "New Record" | "Next" | "Next Allies" | "Next Ally" | "Next Attempt" | "Next Checkpoint" | "Next Enemies" | "Next Enemy" | "Next Form" | "Next Game" | "Next Hero" | "Next Heroes" | "Next Hostage" | "Next Hostages" | "Next Level" | "Next Mission" | "Next Object" | "Next Objective" | "Next Objects" | "Next Phase" | "Next Player" | "Next Players" | "Next Round" | "Next Target" | "Next Targets" | "Next Upgrade" | "Nice Try" | "No" | "No Thanks" | "None" | "Normal" | "North" | "Northeast" | "Northwest" | "Not Today" | "Object" | "Objective" | "Objectives" | "Objects" | "Obtain" | "Obtained" | "Obtaining" | "On" | "Oof" | "Oops" | "Optimal" | "Optimize" | "Optimized" | "Optimizing" | "Out Of View" | "Outgoing" | "Outside" | "Over" | "Overtime" | "Participant" | "Participants" | "Payload" | "Payloads" | "Phase" | "Phases" | "Pick" | "Picked" | "Picking" | "Pile" | "Piles" | "Play" | "Played" | "Player" | "Players" | "Point" | "Points" | "Points Earned" | "Points Lost" | "Position" | "Power" | "Power-up" | "Power-ups" | "Price" | "Projectile" | "Projectiles" | "Protect" | "Protected" | "Protecting" | "Purified" | "Purify" | "Purifying" | "Purple" | "Raise" | "Raised" | "Rank" | "Rank A" | "Rank B" | "Rank C" | "Rank D" | "Rank E" | "Rank F" | "Rank S" | "Reach" | "Reached" | "Reaching" | "Ready" | "Record" | "Records" | "Recover" | "Recovered" | "Recovering" | "Red" | "Remain" | "Remaining" | "Rescue" | "Rescued" | "Rescuing" | "Resource" | "Resources" | "Resurrect" | "Resurrected" | "Resurrecting" | "Reveal" | "Revealed" | "Revealing" | "Reverse" | "Reversed" | "Reversing" | "Right" | "Round" | "Round {0}" | "Rounds" | "Rounds Lost" | "Rounds Won" | "Run" | "Running" | "Safe" | "Save" | "Saved" | "Saving" | "Score" | "Scores" | "Secure" | "Secured" | "Securing" | "Select" | "Selected" | "Selecting" | "Sell" | "Selling" | "Server Load" | "Server Load Average" | "Server Load Peak" | "Sever" | "Severe" | "Severed" | "Severing" | "Shop" | "Shops" | "Shuffle" | "Shuffled" | "Shuffling" | "Sink" | "Sinking" | "Skip" | "Skipped" | "Skipping" | "Sleep" | "Sleeping" | "Slept" | "Slow" | "Slower" | "Slowest" | "Sold" | "Sorry" | "South" | "Southeast" | "Southwest" | "Spade" | "Spades" | "Sparklers" | "Spawn" | "Spawned" | "Spaning" | "Speed" | "Speeds" | "Sphere" | "Spheres" | "Stabilize" | "Stabilized" | "Stabilizing" | "Stable" | "Star" | "Stars" | "Start" | "Started" | "Starting" | "Status" | "Stay" | "Stay Away" | "Stayed" | "Staying" | "Stop" | "Stopped" | "Stopping" | "Stun" | "Stunning" | "Suboptimal" | "Success" | "Sudden Death" | "Sunk" | "Superb" | "Survive" | "Survived" | "Surviving" | "Target" | "Targets" | "Team" | "Teammate" | "Teammates" | "Teams" | "Terrible" | "Thank You" | "That Was Awesome" | "Threat" | "Threat Level" | "Threat Levels" | "Threats" | "Tiebreker" | "Time" | "Times" | "Total" | "Trade" | "Traded" | "Trading" | "Traitor" | "Traitors" | "Transfer" | "Transferred" | "Transferring" | "Try Again" | "Turret" | "Turrets" | "Ugh" | "Ultimate Ability" | "Under" | "Unknown" | "Unlimited" | "Unlock" | "Unlocked" | "Unlocking" | "Unsafe" | "Unstable" | "Upgrade" | "Upgraders" | "Upload" | "Uploaded" | "Uploading" | "Use Ability 1" | "Use Ability 2" | "Use Ultimate Abiility" | "Victory" | "Visible" | "Vortex" | "Vortices" | "Wait" | "Waiting" | "Wall" | "Walls" | "Warning" | "Welcome" | "Well Played" | "West" | "White" | "Wild" | "Win" | "Winner" | "Winners" | "Wins" | "Wisdom" | "Worse" | "Worst" | "Wow" | "Yellow" | "Yes" | "You" | "You Lose" | "You Win" | "Zone" | "Zones" | "¡{0}!" | "¿{0}?" | "{0} !{1}" | "{0} <{1}" | "{0} ={1}" | "{0} >{1}";
 
 declare namespace text_d {
   export {
@@ -5725,6 +5842,9 @@ value: string | number | any[]
 declare const currentArrayElement: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -5755,6 +5875,9 @@ array: string | number | any[]
  * 현재 게임 모드 단계의 잔여 시간(초)입니다.
  */
 declare const matchTime: (
+
+
+
 
 
 ) => string;
@@ -6203,7 +6326,7 @@ declare namespace value_d {
  * @param str Type '
  * Then can see list of available string lists.
  */
-declare const Default$B: (str: ValueVariableOperation) => ValueVariableOperation;
+declare const Default$B: (str: ValueVariableOperationType) => ValueVariableOperationType;
 
 declare namespace variableOperation_d {
   export {
@@ -6297,6 +6420,9 @@ declare namespace index_d$1 {
 declare const abort: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -6319,6 +6445,9 @@ condition: string | number | any[]
 declare const abortIfConditionIsFalse: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -6327,6 +6456,9 @@ declare const abortIfConditionIsFalse: (
  * 모든 조건이 FALSE인 경우 다음 액션을 진행합니다.
  */
 declare const abortIfConditionIsTrue: (
+
+
+
 
 
 ) => string;
@@ -6966,6 +7098,9 @@ amount: string | number | any[]
 declare const declareMatchDraw: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -7010,6 +7145,9 @@ team: string | number | any[]
 declare const destroyAllDummyBot: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -7017,6 +7155,9 @@ declare const destroyAllDummyBot: (
  * 모든 효과 개체를 제거합니다.
  */
 declare const destroyAllEffects: (
+
+
+
 
 
 ) => string;
@@ -7028,6 +7169,9 @@ declare const destroyAllEffects: (
 declare const destroyAllHudText: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -7037,6 +7181,9 @@ declare const destroyAllHudText: (
 declare const destroyAllIcons: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -7044,6 +7191,9 @@ declare const destroyAllIcons: (
  * 생성된 월드 내 텍스트를 모두 제거합니다.
  */
 declare const destroyAllInWorldText: (
+
+
+
 
 
 ) => string;
@@ -7137,6 +7287,9 @@ textId: string | number | any[]
 declare const disableBuiltInGameModeAnnouncer: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -7148,6 +7301,9 @@ declare const disableBuiltInGameModeAnnouncer: (
 declare const disableBuiltInGameModeCompletion: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -7157,6 +7313,9 @@ declare const disableBuiltInGameModeCompletion: (
  * 사용하지 않도록 합니다.
  */
 declare const disableBuiltInGameModeMusic: (
+
+
+
 
 
 ) => string;
@@ -7184,6 +7343,9 @@ players: string | number | any[]
  * 점수 변경이 가능하도록 합니다.
  */
 declare const disableBuiltInGameModeScoring: (
+
+
+
 
 
 ) => string;
@@ -7243,6 +7405,9 @@ button: string | number | any[]
 declare const enableBuiltInGameModeAnnouncer: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -7252,6 +7417,9 @@ declare const enableBuiltInGameModeAnnouncer: (
 declare const enableBuiltInGameModeCompletion: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -7259,6 +7427,9 @@ declare const enableBuiltInGameModeCompletion: (
  * 액션의 효과를 취소합니다.
  */
 declare const enableBuiltInGameModeMusic: (
+
+
+
 
 
 ) => string;
@@ -7282,6 +7453,9 @@ players: string | number | any[]
  * 액션의 효과를 취소합니다.
  */
 declare const enableBuiltInGameModeScoring: (
+
+
+
 
 
 ) => string;
@@ -7323,6 +7497,9 @@ player: string | number | any[]
  * 게임이 진행 중일 때만 작동합니다.
  */
 declare const goToAssembleHeroes: (
+
+
+
 
 
 ) => string;
@@ -7388,6 +7565,9 @@ killer: string | number | any[]
 declare const loop: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -7415,6 +7595,9 @@ condition: string | number | any[]
 declare const loopIfConditionIsFalse: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -7427,6 +7610,9 @@ declare const loopIfConditionIsFalse: (
 declare const loopIfConditionIsTrue: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -7436,7 +7622,7 @@ declare const loopIfConditionIsTrue: (
 declare const modifyGlobalVariable: (
 /**
  * 수정할 전역 변수입니다.
- * - `Type.IGlobal.`
+ * - `Type.Variable.`
  */
 variable: string | number | any[],
 /**
@@ -7444,7 +7630,7 @@ variable: string | number | any[],
  * 일반적인 사칙연산,
  * 그리고 값의 추가 및 제거를 위한
  * ARRAY 연산 등의 옵션이 있습니다.
- * - `Type.Variable.`
+ * - `Type.VariableOperation.`
  */
 operation: string | number | any[],
 /**
@@ -7467,7 +7653,7 @@ value: string | number | any[]
 declare const modifyGlobalVariableAtIndex: (
 /**
  * 수정할 전역 변수입니다.
- * - `Type.IGlobal.`
+ * - `Type.Variable.`
  */
 variable: string | number | any[],
 /**
@@ -7483,7 +7669,7 @@ index: string | number | any[],
  * 일반적인 사칙연산,
  * 그리고 값의 추가 및 제거를 위한
  * ARRAY 연산 등의 옵션이 있습니다.
- * - `Type.Variable.`
+ * - `Type.VariableOperation.`
  */
 operation: string | number | any[],
 /**
@@ -7532,7 +7718,7 @@ declare const modifyPlayerVariable: (
 player: string | number | any[],
 /**
  * 수정할 플레이어의 변수입니다.
- * - `Type.IPlayer.`
+ * - `Type.Variable.`
  */
 variable: string | number | any[],
 /**
@@ -7540,7 +7726,7 @@ variable: string | number | any[],
  * 일반적인 사칙연산,
  * 그리고 값의 추가 및 제거를 위한
  * ARRAY 연산 등의 옵션이 있습니다.
- * - `Type.Variable.`
+ * - `Type.VariableOperation.`
  */
 operation: string | number | any[],
 /**
@@ -7572,7 +7758,7 @@ player: string | number | any[],
  * 변수를 수정할 플레이어입니다.
  * 플레이어가 다수인 경우,
  * 각각의 변수가 설정됩니다.
- * - `Type.IPlayer.`
+ * - `Type.Variable.`
  */
 variable: string | number | any[],
 /**
@@ -7588,7 +7774,7 @@ index: string | number | any[],
  * 일반적인 사칙연산,
  * 그리고 값의 추가 및 제거를 위한
  * ARRAY 연산 등의 옵션이 있습니다.
- * - `Type.Variable.`
+ * - `Type.VariableOperation.`
  */
 operation: string | number | any[],
 /**
@@ -7630,6 +7816,9 @@ score: string | number | any[]
  * 일시정지의 영향을 받지 않습니다.
  */
 declare const pauseMatchTime: (
+
+
+
 
 
 ) => string;
@@ -8958,6 +9147,9 @@ player: string | number | any[]
 declare const stopAllDamageModifications: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -9211,6 +9403,9 @@ position: string | number | any[]
  * 일시정지된 경기시간을 재개합니다.
  */
 declare const unpauseMatchTime: (
+
+
+
 
 
 ) => string;
@@ -9550,6 +9745,9 @@ player: string | number | any[]
 declare const onGoingGlobal: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -9747,6 +9945,9 @@ declare namespace index_d$3 {
 declare const eventHealing: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -9754,6 +9955,9 @@ declare const eventHealing: (
  * HEALER 또는 EVENT PLAYER와 동일할 수 있습니다.
  */
 declare const healee: (
+
+
+
 
 
 ) => string;
@@ -9765,6 +9969,9 @@ declare const healee: (
 declare const healer: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -9772,6 +9979,9 @@ declare const healer: (
  * 이 값은 현재 방장이 경기를 떠나면 변경됩니다.
  */
 declare const hostPlayer: (
+
+
+
 
 
 ) => string;
@@ -11844,6 +12054,9 @@ value2: string | number | any[]
 declare const eventDamage$1: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -11964,6 +12177,9 @@ value: string | number | any[]
 declare const lastDamageModificationId$1: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -11974,6 +12190,9 @@ declare const lastDamageModificationId$1: (
 declare const lastDamageOverTimeId$1: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -11982,6 +12201,9 @@ declare const lastDamageOverTimeId$1: (
  * event player (or executed at the global level).
  */
 declare const lastHealOverTimeId$1: (
+
+
+
 
 
 ) => number;
@@ -11995,6 +12217,9 @@ declare const lastHealOverTimeId$1: (
 declare const lastTextId$1: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -12002,6 +12227,9 @@ declare const lastTextId$1: (
  * up from 1. This will return a numerical value
  */
 declare const matchRound$1: (
+
+
+
 
 
 ) => number;
@@ -12215,6 +12443,9 @@ team: string | number | any[]
 declare const objectiveIndex$1: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -12224,6 +12455,9 @@ declare const objectiveIndex$1: (
 declare const payloadProgressPercentage$1: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -12231,6 +12465,9 @@ declare const payloadProgressPercentage$1: (
  * the active control point (expressed as a percentage).
  */
 declare const pointCapturePercentage$1: (
+
+
+
 
 
 ) => number;
@@ -12585,6 +12822,9 @@ player: string | number | any[]
 declare const serverLoad$1: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -12598,6 +12838,9 @@ declare const serverLoad$1: (
 declare const serverLoadAverage$1: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -12609,6 +12852,9 @@ declare const serverLoadAverage$1: (
  * because it is consuming too many resources.
  */
 declare const serverLoadPeak$1: (
+
+
+
 
 
 ) => number;
@@ -12807,6 +13053,9 @@ endPos: string | number | any[]
 declare const backward$1: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -12897,6 +13146,9 @@ value2: string | number | any[]
 declare const down$1: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -12931,6 +13183,9 @@ team: string | number | any[]
 declare const forward$1: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -12938,6 +13193,9 @@ declare const forward$1: (
  * 0, 0), which points to the left.
  */
 declare const left$1: (
+
+
+
 
 
 ) => number;
@@ -12991,6 +13249,9 @@ number: string | number | any[]
  * The position in the world of the active payload.
  */
 declare const payloadPosition$1: (
+
+
+
 
 
 ) => number;
@@ -13156,6 +13417,9 @@ IncludePlayerOwnedObjects: string | number | any[]
 declare const right$1: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -13182,6 +13446,9 @@ player: string | number | any[]
 declare const totalTimeElapsed$1: (
 
 
+
+
+
 ) => number;
 
 /**
@@ -13189,6 +13456,9 @@ declare const totalTimeElapsed$1: (
  * 1, 0). Which points upward.
  */
 declare const up$1: (
+
+
+
 
 
 ) => number;
@@ -13422,6 +13692,9 @@ team: string | number | any[]
 declare const allHeroes$1: (
 
 
+
+
+
 ) => any[];
 
 /**
@@ -13524,6 +13797,9 @@ count: string | number | any[]
  * An array with no elements.
  */
 declare const emptyArray$1: (
+
+
+
 
 
 ) => any[];
@@ -13768,6 +14044,9 @@ declare namespace array_d$1 {
 declare const Null$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -13775,6 +14054,9 @@ declare const Null$1: (
  * by the event, may be the same as the attacker or victim.
  */
 declare const eventPlayer$1: (
+
+
+
 
 
 ) => string;
@@ -13788,6 +14070,9 @@ declare const eventPlayer$1: (
 declare const victim$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -13796,6 +14081,9 @@ declare const victim$1: (
  * May be the same as the victim or the event player.
  */
 declare const attacker$1: (
+
+
+
 
 
 ) => string;
@@ -13953,12 +14241,18 @@ declare namespace beamReevaluation_d$1 {
 declare const False$1: (
 
 
+
+
+
 ) => string;
 
 /**
  * The Boolean value of true.
  */
 declare const True$1: (
+
+
+
 
 
 ) => string;
@@ -14088,6 +14382,9 @@ entity: string | number | any[]
 declare const eventWasCriticalHit$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -14143,12 +14440,18 @@ player: string | number | any[]
 declare const isAssemblingHeroes$1: (
 
 
+
+
+
 ) => string;
 
 /**
  * Whether the match is between rounds.
  */
 declare const isBetweenRounds$1: (
+
+
+
 
 
 ) => string;
@@ -14248,6 +14551,9 @@ player: string | number | any[]
 declare const isControlModePointLocked$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -14268,6 +14574,9 @@ player: string | number | any[]
  * flag is in sudden death.
  */
 declare const isCTFModeInSuddenDeath$1: (
+
+
+
 
 
 ) => string;
@@ -14349,6 +14658,9 @@ team: string | number | any[]
 declare const isGameInProgress$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -14422,6 +14734,9 @@ barriers: string | number | any[]
 declare const isInSetup$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -14470,6 +14785,9 @@ viewAngle: string | number | any[]
  * Whether the match has finished.
  */
 declare const isMatchComplete$1: (
+
+
+
 
 
 ) => string;
@@ -14693,6 +15011,9 @@ player: string | number | any[]
  * to join before starting.
  */
 declare const isWaitingForPlayers$1: (
+
+
+
 
 
 ) => string;
@@ -15082,6 +15403,9 @@ declare namespace effectReevaluation_d$1 {
 declare const lastCreatedEntity$1: (
 
 
+
+
+
 ) => string;
 
 
@@ -15160,7 +15484,7 @@ declare namespace hero_d$1 {
  * @param str Type '
  * Then can see list of available string lists.
  */
-declare const Default$T: (str: ValueObjectiveDescriptionReevaluationType) => ValueObjectiveDescriptionReevaluationType;
+declare const Default$T: (str: ValueHudTextReevaluationType) => ValueHudTextReevaluationType;
 
 declare namespace hudTextReevaluation_d$1 {
   export {
@@ -15364,7 +15688,7 @@ declare namespace multiply_d$1 {
  * @param str Type '
  * Then can see list of available string lists.
  */
-declare const Default$$: (str: ValueObjectiveDescriptionReevaluationType) => ValueObjectiveDescriptionReevaluationType;
+declare const Default$$: (str: ValueHudTextReevaluationType) => ValueHudTextReevaluationType;
 
 declare namespace objectiveDescriptionReevaluation_d$1 {
   export {
@@ -15711,6 +16035,9 @@ team: string | number | any[]
 declare const controlModeScoringTeam$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -15755,7 +16082,7 @@ declare namespace team_d$1 {
  * @param str Type '
  * Then can see list of available string lists.
  */
-declare const Default$1a: (str: "" | "Up" | "Down" | "White" | "Yellow" | "Green" | "Purple" | "Red" | "Blue" | "None" | "Primary Fire" | "Secondary Fire" | "Ability 1" | "Ability 2" | "Interact" | "Jump" | "Crouch" | "Hacked" | "Burning" | "Frozen" | "Stunned" | "Min" | "Max" | "Club" | "Diamond" | "Heart" | "No" | "Position" | "Spade" | "Stop" | "Warning" | "Left" | "Right" | "Sphere" | "Cloud" | "Pick" | "Hello" | "Thanks" | "----------" | "-> {0}" | "!" | "!!" | "!!!" | "#{0}" | "({0})" | "*" | "..." | "?" | "??" | "???" | "{0} - {1}" | "{0} - {1} - {2}" | "{0} ->" | "{0} -> {1}" | "{0} * {1}" | "{0} / {1}" | "{0} : {1} : {2}" | "{0} {1}" | "{0} {1} {2}" | "{0} + {1}" | "{0} <-" | "{0} <- {1}" | "{0} <->" | "{0} <-> {1}" | "{0} < {1}" | "{0} > {1}" | "{0} and {1}" | "{0} m" | "{0} m/s" | "{0} sec" | "{0} vs {1}" | "{0}!" | "{0}!!" | "{0}!!!" | "{0}%" | "{0}, {1}" | "{0}, {1}, and {2}" | "{0}:" | "{0}: {1}" | "{0}: {1} and {2}" | "{0}:{1}" | "{0}?" | "{0}??" | "{0}???" | "<- {0}" | "<-> {0}" | "Abilities" | "Ability" | "Agility" | "Alert" | "Alive" | "Allies" | "Ally" | "Ammunition" | "Angle" | "Attack" | "Attacked" | "Attacking" | "Attempt" | "Attempts" | "Average" | "Avoid" | "Avoided" | "Avoiding" | "Backward" | "Bad" | "Ban" | "Banned" | "Banning" | "Best" | "Better" | "Bid" | "Bids" | "Block" | "Blocked" | "Blocking" | "Bonus" | "Bonuses" | "Boss" | "Bosses" | "Bought" | "Build" | "Building" | "Built" | "Burn" | "Burnt" | "Buy" | "Buying" | "Capture" | "Captured" | "Capturing" | "Caution" | "Center" | "Cahllenge Accepted" | "Charisma" | "Chase" | "Chased" | "Chasing" | "Checkpoint" | "Checkpoints" | "Clouds" | "Clubs" | "Combo" | "Come Here" | "Condiition" | "Congratulations" | "Connect" | "Connected" | "Connecting" | "Constitution" | "Control Point" | "Control Points" | "Cooldown" | "Cooldowns" | "Corrupt" | "Corrupted" | "Corrupting" | "Credit" | "Credits" | "Critical" | "Crouched" | "Crouching" | "Current" | "Current Allies" | "Current Ally" | "Current Attempt" | "Current Checkpoint" | "Current Enemies" | "Current Enemy" | "Current Form" | "Current Game" | "Current Hero" | "Current Heroes" | "Current Hostage" | "Current Hostages" | "Current Level" | "Current Mission" | "Current Object" | "Current Objective" | "Current Objects" | "Current Phase" | "Current Player" | "Current Players" | "Current Round" | "Current Target" | "Current Targets" | "Current Upgrade" | "Damage" | "Damaged" | "Damaging" | "Danger" | "Dead" | "Deal" | "Dealing" | "Dealt" | "Deck" | "Decks" | "Defeat" | "Defend" | "Defended" | "Defending" | "Defense" | "Deliver" | "Delivered" | "Delivering" | "Depth" | "Destabilize" | "Destabilized" | "Destabilizing" | "Destroy" | "Destroyed" | "Destroying" | "Detect" | "Detected" | "Detecting" | "Dexterity" | "Diamonds" | "Die" | "Discard" | "Discarded" | "Discarding" | "Disconnect" | "Disconnected" | "Disconnecting" | "Distance" | "Distances" | "Dodge" | "Dodged" | "Dodging" | "Dome" | "Domes" | "Download" | "Downloaded" | "Downloading" | "Draw" | "Drawing" | "Drawn" | "Drop" | "Dropped" | "Dropping" | "Dying" | "East" | "Eliminate" | "Eliminated" | "Eliminating" | "Elimination" | "Eliminations" | "Enemiies" | "Enemy" | "Enterance" | "Escort" | "Escorted" | "Escorting" | "Excellent" | "Exit" | "Experience" | "Extreme" | "Face" | "Faces" | "Facing" | "Failed" | "Failing" | "Failure" | "Fall" | "Fallen" | "Failling" | "Far" | "Fast" | "Faster" | "Fastest" | "Fault" | "Faults" | "Final" | "Final Allies" | "Final Ally" | "Final Attempt" | "Final Checkpoint" | "Final Enemies" | "Final Enemy" | "Final Form" | "Final Game" | "Final Hero" | "Final Heroes" | "Final Hostage" | "Final Hostages" | "Final Item" | "Final Level" | "Final Mission" | "Final Object" | "Final Objective" | "Final Objects" | "Final Phase" | "Final Player" | "Final Players" | "Final Round" | "Final Target" | "Final Targets" | "Final Time" | "Final Upgrade" | "Find" | "Finding" | "Finish" | "Finished" | "Finishing" | "Flown" | "Fly" | "Flying" | "Fold" | "Folded" | "Folding" | "Form" | "Forms" | "Forward" | "Found" | "Freeze" | "Freezing" | "Game" | "Games" | "Games Lost" | "Games Won" | "Gg" | "Go" | "Goal" | "Goals" | "Going" | "Good" | "Good Luck" | "Goodbye" | "Guilt" | "Hack" | "Hacking" | "Hand" | "Hands" | "Heal" | "Healed" | "Healer" | "Healers" | "Healing" | "Hearts" | "Height" | "Help" | "Here" | "Hero" | "Heroes" | "Hidden" | "Hide" | "Hiding" | "High Score" | "High Scores" | "Hit" | "Hitting" | "Hmmm" | "Hostage" | "Hostages" | "Huh" | "Hunt" | "Hunted" | "Hunter" | "Hunters" | "Hunting" | "I Give Up" | "I Tried" | "In View" | "Income" | "Incoming" | "Initial" | "Initial Allies" | "Initial Ally" | "Initial Attempt" | "Initial Checkpoint" | "Initial Enemies" | "Initial Enemy" | "Initial Form" | "Initial Game" | "Initial Hero" | "Initial Heroes" | "Initial Hostage" | "Initial Level" | "Initial Mission" | "Initial Object" | "Initial Objective" | "Initial Objects" | "Initial Phase" | "Initial Player" | "Initial Players" | "Initial Round" | "Initial Target" | "Initial Targets" | "Initial Upgrade" | "Innocent" | "Inside" | "Intelligence" | "Invisible" | "Item" | "Items" | "Join" | "Joined" | "Joining" | "Jumping" | "Kill" | "Kills" | "Killstreak" | "Killstreaks" | "Leader" | "Leaders" | "Least" | "Less" | "Level" | "Level Down" | "Levels" | "Life" | "Limited" | "Lives" | "Load" | "Loaded" | "Loading" | "Lock" | "Locked" | "Locking" | "Loser" | "Losers" | "Loss" | "Losses" | "Mild" | "Mission" | "Mission Aborted" | "Mission Accomplished" | "Mission Failed" | "Missions" | "Moderate" | "Money" | "Monster" | "Monsters" | "More" | "Most" | "My Mistake" | "Near" | "New High Score" | "New Record" | "Next" | "Next Allies" | "Next Ally" | "Next Attempt" | "Next Checkpoint" | "Next Enemies" | "Next Enemy" | "Next Form" | "Next Game" | "Next Hero" | "Next Heroes" | "Next Hostage" | "Next Hostages" | "Next Level" | "Next Mission" | "Next Object" | "Next Objective" | "Next Objects" | "Next Phase" | "Next Player" | "Next Players" | "Next Round" | "Next Target" | "Next Targets" | "Next Upgrade" | "Nice Try" | "No Thanks" | "Normal" | "North" | "Northeast" | "Northwest" | "Not Today" | "Object" | "Objective" | "Objectives" | "Objects" | "Obtain" | "Obtained" | "Obtaining" | "Off" | "On" | "Oof" | "Oops" | "Optimal" | "Optimize" | "Optimized" | "Optimizing" | "Out Of View" | "Outgoing" | "Outside" | "Over" | "Overtime" | "Participant" | "Participants" | "Payload" | "Payloads" | "Phase" | "Phases" | "Picked" | "Picking" | "Pile" | "Piles" | "Play" | "Played" | "Player" | "Players" | "Point" | "Points" | "Points Earned" | "Points Lost" | "Power" | "Power-up" | "Power-ups" | "Price" | "Projectile" | "Projectiles" | "Protect" | "Protected" | "Protecting" | "Purified" | "Purify" | "Purifying" | "Raise" | "Raised" | "Rank" | "Rank A" | "Rank B" | "Rank C" | "Rank D" | "Rank E" | "Rank F" | "Rank S" | "Reach" | "Reached" | "Reaching" | "Ready" | "Record" | "Records" | "Recover" | "Recovered" | "Recovering" | "Remain" | "Remaining" | "Rescue" | "Rescued" | "Rescuing" | "Resource" | "Resources" | "Resurrect" | "Resurrected" | "Resurrecting" | "Reveal" | "Revealed" | "Revealing" | "Reverse" | "Reversed" | "Reversing" | "Round" | "Round {0}" | "Rounds" | "Rounds Lost" | "Rounds Won" | "Run" | "Running" | "Safe" | "Save" | "Saved" | "Saving" | "Score" | "Scores" | "Secure" | "Secured" | "Securing" | "Select" | "Selected" | "Selecting" | "Sell" | "Selling" | "Server Load" | "Server Load Average" | "Server Load Peak" | "Sever" | "Severe" | "Severed" | "Severing" | "Shop" | "Shops" | "Shuffle" | "Shuffled" | "Shuffling" | "Sink" | "Sinking" | "Skip" | "Skipped" | "Skipping" | "Sleep" | "Sleeping" | "Slept" | "Slow" | "Slower" | "Slowest" | "Sold" | "Sorry" | "South" | "Southeast" | "Southwest" | "Spades" | "Sparklers" | "Spawn" | "Spawned" | "Spaning" | "Speed" | "Speeds" | "Spheres" | "Stabilize" | "Stabilized" | "Stabilizing" | "Stable" | "Star" | "Stars" | "Start" | "Started" | "Starting" | "Status" | "Stay" | "Stay Away" | "Stayed" | "Staying" | "Stopped" | "Stopping" | "Stun" | "Stunning" | "Suboptimal" | "Success" | "Sudden Death" | "Sunk" | "Superb" | "Survive" | "Survived" | "Surviving" | "Target" | "Targets" | "Team" | "Teammate" | "Teammates" | "Teams" | "Terrible" | "Thank You" | "That Was Awesome" | "Threat" | "Threat Level" | "Threat Levels" | "Threats" | "Tiebreker" | "Time" | "Times" | "Total" | "Trade" | "Traded" | "Trading" | "Traitor" | "Traitors" | "Transfer" | "Transferred" | "Transferring" | "Try Again" | "Turret" | "Turrets" | "Ugh" | "Ultimate Ability" | "Under" | "Unknown" | "Unlimited" | "Unlock" | "Unlocked" | "Unlocking" | "Unsafe" | "Unstable" | "Upgrade" | "Upgraders" | "Upload" | "Uploaded" | "Uploading" | "Use Ability 1" | "Use Ability 2" | "Use Ultimate Abiility" | "Victory" | "Visible" | "Vortex" | "Vortices" | "Wait" | "Waiting" | "Wall" | "Walls" | "Welcome" | "Well Played" | "West" | "Wild" | "Win" | "Winner" | "Winners" | "Wins" | "Wisdom" | "Worse" | "Worst" | "Wow" | "Yes" | "You" | "You Lose" | "You Win" | "Zone" | "Zones" | "¡{0}!" | "¿{0}?" | "{0} !{1}" | "{0} <{1}" | "{0} ={1}" | "{0} >{1}") => "" | "Up" | "Down" | "White" | "Yellow" | "Green" | "Purple" | "Red" | "Blue" | "None" | "Primary Fire" | "Secondary Fire" | "Ability 1" | "Ability 2" | "Interact" | "Jump" | "Crouch" | "Hacked" | "Burning" | "Frozen" | "Stunned" | "Min" | "Max" | "Club" | "Diamond" | "Heart" | "No" | "Position" | "Spade" | "Stop" | "Warning" | "Left" | "Right" | "Sphere" | "Cloud" | "Pick" | "Hello" | "Thanks" | "----------" | "-> {0}" | "!" | "!!" | "!!!" | "#{0}" | "({0})" | "*" | "..." | "?" | "??" | "???" | "{0} - {1}" | "{0} - {1} - {2}" | "{0} ->" | "{0} -> {1}" | "{0} * {1}" | "{0} / {1}" | "{0} : {1} : {2}" | "{0} {1}" | "{0} {1} {2}" | "{0} + {1}" | "{0} <-" | "{0} <- {1}" | "{0} <->" | "{0} <-> {1}" | "{0} < {1}" | "{0} > {1}" | "{0} and {1}" | "{0} m" | "{0} m/s" | "{0} sec" | "{0} vs {1}" | "{0}!" | "{0}!!" | "{0}!!!" | "{0}%" | "{0}, {1}" | "{0}, {1}, and {2}" | "{0}:" | "{0}: {1}" | "{0}: {1} and {2}" | "{0}:{1}" | "{0}?" | "{0}??" | "{0}???" | "<- {0}" | "<-> {0}" | "Abilities" | "Ability" | "Agility" | "Alert" | "Alive" | "Allies" | "Ally" | "Ammunition" | "Angle" | "Attack" | "Attacked" | "Attacking" | "Attempt" | "Attempts" | "Average" | "Avoid" | "Avoided" | "Avoiding" | "Backward" | "Bad" | "Ban" | "Banned" | "Banning" | "Best" | "Better" | "Bid" | "Bids" | "Block" | "Blocked" | "Blocking" | "Bonus" | "Bonuses" | "Boss" | "Bosses" | "Bought" | "Build" | "Building" | "Built" | "Burn" | "Burnt" | "Buy" | "Buying" | "Capture" | "Captured" | "Capturing" | "Caution" | "Center" | "Cahllenge Accepted" | "Charisma" | "Chase" | "Chased" | "Chasing" | "Checkpoint" | "Checkpoints" | "Clouds" | "Clubs" | "Combo" | "Come Here" | "Condiition" | "Congratulations" | "Connect" | "Connected" | "Connecting" | "Constitution" | "Control Point" | "Control Points" | "Cooldown" | "Cooldowns" | "Corrupt" | "Corrupted" | "Corrupting" | "Credit" | "Credits" | "Critical" | "Crouched" | "Crouching" | "Current" | "Current Allies" | "Current Ally" | "Current Attempt" | "Current Checkpoint" | "Current Enemies" | "Current Enemy" | "Current Form" | "Current Game" | "Current Hero" | "Current Heroes" | "Current Hostage" | "Current Hostages" | "Current Level" | "Current Mission" | "Current Object" | "Current Objective" | "Current Objects" | "Current Phase" | "Current Player" | "Current Players" | "Current Round" | "Current Target" | "Current Targets" | "Current Upgrade" | "Damage" | "Damaged" | "Damaging" | "Danger" | "Dead" | "Deal" | "Dealing" | "Dealt" | "Deck" | "Decks" | "Defeat" | "Defend" | "Defended" | "Defending" | "Defense" | "Deliver" | "Delivered" | "Delivering" | "Depth" | "Destabilize" | "Destabilized" | "Destabilizing" | "Destroy" | "Destroyed" | "Destroying" | "Detect" | "Detected" | "Detecting" | "Dexterity" | "Diamonds" | "Die" | "Discard" | "Discarded" | "Discarding" | "Disconnect" | "Disconnected" | "Disconnecting" | "Distance" | "Distances" | "Dodge" | "Dodged" | "Dodging" | "Dome" | "Domes" | "Download" | "Downloaded" | "Downloading" | "Draw" | "Drawing" | "Drawn" | "Drop" | "Dropped" | "Dropping" | "Dying" | "East" | "Eliminate" | "Eliminated" | "Eliminating" | "Elimination" | "Eliminations" | "Enemiies" | "Enemy" | "Enterance" | "Escort" | "Escorted" | "Escorting" | "Excellent" | "Exit" | "Experience" | "Extreme" | "Face" | "Faces" | "Facing" | "Failed" | "Failing" | "Failure" | "Fall" | "Fallen" | "Failling" | "Far" | "Fast" | "Faster" | "Fastest" | "Fault" | "Faults" | "Final" | "Final Allies" | "Final Ally" | "Final Attempt" | "Final Checkpoint" | "Final Enemies" | "Final Enemy" | "Final Form" | "Final Game" | "Final Hero" | "Final Heroes" | "Final Hostage" | "Final Hostages" | "Final Item" | "Final Level" | "Final Mission" | "Final Object" | "Final Objective" | "Final Objects" | "Final Phase" | "Final Player" | "Final Players" | "Final Round" | "Final Target" | "Final Targets" | "Final Time" | "Final Upgrade" | "Find" | "Finding" | "Finish" | "Finished" | "Finishing" | "Flown" | "Fly" | "Flying" | "Fold" | "Folded" | "Folding" | "Form" | "Forms" | "Forward" | "Found" | "Freeze" | "Freezing" | "Game" | "Games" | "Games Lost" | "Games Won" | "Gg" | "Go" | "Goal" | "Goals" | "Going" | "Good" | "Good Luck" | "Goodbye" | "Guilt" | "Hack" | "Hacking" | "Hand" | "Hands" | "Heal" | "Healed" | "Healer" | "Healers" | "Healing" | "Hearts" | "Height" | "Help" | "Here" | "Hero" | "Heroes" | "Hidden" | "Hide" | "Hiding" | "High Score" | "High Scores" | "Hit" | "Hitting" | "Hmmm" | "Hostage" | "Hostages" | "Huh" | "Hunt" | "Hunted" | "Hunter" | "Hunters" | "Hunting" | "I Give Up" | "I Tried" | "In View" | "Income" | "Incoming" | "Initial" | "Initial Allies" | "Initial Ally" | "Initial Attempt" | "Initial Checkpoint" | "Initial Enemies" | "Initial Enemy" | "Initial Form" | "Initial Game" | "Initial Hero" | "Initial Heroes" | "Initial Hostage" | "Initial Level" | "Initial Mission" | "Initial Object" | "Initial Objective" | "Initial Objects" | "Initial Phase" | "Initial Player" | "Initial Players" | "Initial Round" | "Initial Target" | "Initial Targets" | "Initial Upgrade" | "Innocent" | "Inside" | "Intelligence" | "Invisible" | "Item" | "Items" | "Join" | "Joined" | "Joining" | "Jumping" | "Kill" | "Kills" | "Killstreak" | "Killstreaks" | "Leader" | "Leaders" | "Least" | "Less" | "Level" | "Level Down" | "Levels" | "Life" | "Limited" | "Lives" | "Load" | "Loaded" | "Loading" | "Lock" | "Locked" | "Locking" | "Loser" | "Losers" | "Loss" | "Losses" | "Mild" | "Mission" | "Mission Aborted" | "Mission Accomplished" | "Mission Failed" | "Missions" | "Moderate" | "Money" | "Monster" | "Monsters" | "More" | "Most" | "My Mistake" | "Near" | "New High Score" | "New Record" | "Next" | "Next Allies" | "Next Ally" | "Next Attempt" | "Next Checkpoint" | "Next Enemies" | "Next Enemy" | "Next Form" | "Next Game" | "Next Hero" | "Next Heroes" | "Next Hostage" | "Next Hostages" | "Next Level" | "Next Mission" | "Next Object" | "Next Objective" | "Next Objects" | "Next Phase" | "Next Player" | "Next Players" | "Next Round" | "Next Target" | "Next Targets" | "Next Upgrade" | "Nice Try" | "No Thanks" | "Normal" | "North" | "Northeast" | "Northwest" | "Not Today" | "Object" | "Objective" | "Objectives" | "Objects" | "Obtain" | "Obtained" | "Obtaining" | "Off" | "On" | "Oof" | "Oops" | "Optimal" | "Optimize" | "Optimized" | "Optimizing" | "Out Of View" | "Outgoing" | "Outside" | "Over" | "Overtime" | "Participant" | "Participants" | "Payload" | "Payloads" | "Phase" | "Phases" | "Picked" | "Picking" | "Pile" | "Piles" | "Play" | "Played" | "Player" | "Players" | "Point" | "Points" | "Points Earned" | "Points Lost" | "Power" | "Power-up" | "Power-ups" | "Price" | "Projectile" | "Projectiles" | "Protect" | "Protected" | "Protecting" | "Purified" | "Purify" | "Purifying" | "Raise" | "Raised" | "Rank" | "Rank A" | "Rank B" | "Rank C" | "Rank D" | "Rank E" | "Rank F" | "Rank S" | "Reach" | "Reached" | "Reaching" | "Ready" | "Record" | "Records" | "Recover" | "Recovered" | "Recovering" | "Remain" | "Remaining" | "Rescue" | "Rescued" | "Rescuing" | "Resource" | "Resources" | "Resurrect" | "Resurrected" | "Resurrecting" | "Reveal" | "Revealed" | "Revealing" | "Reverse" | "Reversed" | "Reversing" | "Round" | "Round {0}" | "Rounds" | "Rounds Lost" | "Rounds Won" | "Run" | "Running" | "Safe" | "Save" | "Saved" | "Saving" | "Score" | "Scores" | "Secure" | "Secured" | "Securing" | "Select" | "Selected" | "Selecting" | "Sell" | "Selling" | "Server Load" | "Server Load Average" | "Server Load Peak" | "Sever" | "Severe" | "Severed" | "Severing" | "Shop" | "Shops" | "Shuffle" | "Shuffled" | "Shuffling" | "Sink" | "Sinking" | "Skip" | "Skipped" | "Skipping" | "Sleep" | "Sleeping" | "Slept" | "Slow" | "Slower" | "Slowest" | "Sold" | "Sorry" | "South" | "Southeast" | "Southwest" | "Spades" | "Sparklers" | "Spawn" | "Spawned" | "Spaning" | "Speed" | "Speeds" | "Spheres" | "Stabilize" | "Stabilized" | "Stabilizing" | "Stable" | "Star" | "Stars" | "Start" | "Started" | "Starting" | "Status" | "Stay" | "Stay Away" | "Stayed" | "Staying" | "Stopped" | "Stopping" | "Stun" | "Stunning" | "Suboptimal" | "Success" | "Sudden Death" | "Sunk" | "Superb" | "Survive" | "Survived" | "Surviving" | "Target" | "Targets" | "Team" | "Teammate" | "Teammates" | "Teams" | "Terrible" | "Thank You" | "That Was Awesome" | "Threat" | "Threat Level" | "Threat Levels" | "Threats" | "Tiebreker" | "Time" | "Times" | "Total" | "Trade" | "Traded" | "Trading" | "Traitor" | "Traitors" | "Transfer" | "Transferred" | "Transferring" | "Try Again" | "Turret" | "Turrets" | "Ugh" | "Ultimate Ability" | "Under" | "Unknown" | "Unlimited" | "Unlock" | "Unlocked" | "Unlocking" | "Unsafe" | "Unstable" | "Upgrade" | "Upgraders" | "Upload" | "Uploaded" | "Uploading" | "Use Ability 1" | "Use Ability 2" | "Use Ultimate Abiility" | "Victory" | "Visible" | "Vortex" | "Vortices" | "Wait" | "Waiting" | "Wall" | "Walls" | "Welcome" | "Well Played" | "West" | "Wild" | "Win" | "Winner" | "Winners" | "Wins" | "Wisdom" | "Worse" | "Worst" | "Wow" | "Yes" | "You" | "You Lose" | "You Win" | "Zone" | "Zones" | "¡{0}!" | "¿{0}?" | "{0} !{1}" | "{0} <{1}" | "{0} ={1}" | "{0} >{1}";
+declare const Default$1a: (str: "" | "Up" | "Down" | "Hacked" | "Burning" | "Frozen" | "Stunned" | "Primary Fire" | "Secondary Fire" | "Ability 1" | "Ability 2" | "Interact" | "Jump" | "Crouch" | "Hello" | "Thanks" | "Off" | "----------" | "-> {0}" | "!" | "!!" | "!!!" | "#{0}" | "({0})" | "*" | "..." | "?" | "??" | "???" | "{0} - {1}" | "{0} - {1} - {2}" | "{0} ->" | "{0} -> {1}" | "{0} * {1}" | "{0} / {1}" | "{0} : {1} : {2}" | "{0} {1}" | "{0} {1} {2}" | "{0} + {1}" | "{0} <-" | "{0} <- {1}" | "{0} <->" | "{0} <-> {1}" | "{0} < {1}" | "{0} > {1}" | "{0} and {1}" | "{0} m" | "{0} m/s" | "{0} sec" | "{0} vs {1}" | "{0}!" | "{0}!!" | "{0}!!!" | "{0}%" | "{0}, {1}" | "{0}, {1}, and {2}" | "{0}:" | "{0}: {1}" | "{0}: {1} and {2}" | "{0}:{1}" | "{0}?" | "{0}??" | "{0}???" | "<- {0}" | "<-> {0}" | "Abilities" | "Ability" | "Agility" | "Alert" | "Alive" | "Allies" | "Ally" | "Ammunition" | "Angle" | "Attack" | "Attacked" | "Attacking" | "Attempt" | "Attempts" | "Average" | "Avoid" | "Avoided" | "Avoiding" | "Backward" | "Bad" | "Ban" | "Banned" | "Banning" | "Best" | "Better" | "Bid" | "Bids" | "Block" | "Blocked" | "Blocking" | "Blue" | "Bonus" | "Bonuses" | "Boss" | "Bosses" | "Bought" | "Build" | "Building" | "Built" | "Burn" | "Burnt" | "Buy" | "Buying" | "Capture" | "Captured" | "Capturing" | "Caution" | "Center" | "Cahllenge Accepted" | "Charisma" | "Chase" | "Chased" | "Chasing" | "Checkpoint" | "Checkpoints" | "Cloud" | "Clouds" | "Club" | "Clubs" | "Combo" | "Come Here" | "Condiition" | "Congratulations" | "Connect" | "Connected" | "Connecting" | "Constitution" | "Control Point" | "Control Points" | "Cooldown" | "Cooldowns" | "Corrupt" | "Corrupted" | "Corrupting" | "Credit" | "Credits" | "Critical" | "Crouched" | "Crouching" | "Current" | "Current Allies" | "Current Ally" | "Current Attempt" | "Current Checkpoint" | "Current Enemies" | "Current Enemy" | "Current Form" | "Current Game" | "Current Hero" | "Current Heroes" | "Current Hostage" | "Current Hostages" | "Current Level" | "Current Mission" | "Current Object" | "Current Objective" | "Current Objects" | "Current Phase" | "Current Player" | "Current Players" | "Current Round" | "Current Target" | "Current Targets" | "Current Upgrade" | "Damage" | "Damaged" | "Damaging" | "Danger" | "Dead" | "Deal" | "Dealing" | "Dealt" | "Deck" | "Decks" | "Defeat" | "Defend" | "Defended" | "Defending" | "Defense" | "Deliver" | "Delivered" | "Delivering" | "Depth" | "Destabilize" | "Destabilized" | "Destabilizing" | "Destroy" | "Destroyed" | "Destroying" | "Detect" | "Detected" | "Detecting" | "Dexterity" | "Diamond" | "Diamonds" | "Die" | "Discard" | "Discarded" | "Discarding" | "Disconnect" | "Disconnected" | "Disconnecting" | "Distance" | "Distances" | "Dodge" | "Dodged" | "Dodging" | "Dome" | "Domes" | "Download" | "Downloaded" | "Downloading" | "Draw" | "Drawing" | "Drawn" | "Drop" | "Dropped" | "Dropping" | "Dying" | "East" | "Eliminate" | "Eliminated" | "Eliminating" | "Elimination" | "Eliminations" | "Enemiies" | "Enemy" | "Enterance" | "Escort" | "Escorted" | "Escorting" | "Excellent" | "Exit" | "Experience" | "Extreme" | "Face" | "Faces" | "Facing" | "Failed" | "Failing" | "Failure" | "Fall" | "Fallen" | "Failling" | "Far" | "Fast" | "Faster" | "Fastest" | "Fault" | "Faults" | "Final" | "Final Allies" | "Final Ally" | "Final Attempt" | "Final Checkpoint" | "Final Enemies" | "Final Enemy" | "Final Form" | "Final Game" | "Final Hero" | "Final Heroes" | "Final Hostage" | "Final Hostages" | "Final Item" | "Final Level" | "Final Mission" | "Final Object" | "Final Objective" | "Final Objects" | "Final Phase" | "Final Player" | "Final Players" | "Final Round" | "Final Target" | "Final Targets" | "Final Time" | "Final Upgrade" | "Find" | "Finding" | "Finish" | "Finished" | "Finishing" | "Flown" | "Fly" | "Flying" | "Fold" | "Folded" | "Folding" | "Form" | "Forms" | "Forward" | "Found" | "Freeze" | "Freezing" | "Game" | "Games" | "Games Lost" | "Games Won" | "Gg" | "Go" | "Goal" | "Goals" | "Going" | "Good" | "Good Luck" | "Goodbye" | "Green" | "Guilt" | "Hack" | "Hacking" | "Hand" | "Hands" | "Heal" | "Healed" | "Healer" | "Healers" | "Healing" | "Heart" | "Hearts" | "Height" | "Help" | "Here" | "Hero" | "Heroes" | "Hidden" | "Hide" | "Hiding" | "High Score" | "High Scores" | "Hit" | "Hitting" | "Hmmm" | "Hostage" | "Hostages" | "Huh" | "Hunt" | "Hunted" | "Hunter" | "Hunters" | "Hunting" | "I Give Up" | "I Tried" | "In View" | "Income" | "Incoming" | "Initial" | "Initial Allies" | "Initial Ally" | "Initial Attempt" | "Initial Checkpoint" | "Initial Enemies" | "Initial Enemy" | "Initial Form" | "Initial Game" | "Initial Hero" | "Initial Heroes" | "Initial Hostage" | "Initial Level" | "Initial Mission" | "Initial Object" | "Initial Objective" | "Initial Objects" | "Initial Phase" | "Initial Player" | "Initial Players" | "Initial Round" | "Initial Target" | "Initial Targets" | "Initial Upgrade" | "Innocent" | "Inside" | "Intelligence" | "Invisible" | "Item" | "Items" | "Join" | "Joined" | "Joining" | "Jumping" | "Kill" | "Kills" | "Killstreak" | "Killstreaks" | "Leader" | "Leaders" | "Least" | "Left" | "Less" | "Level" | "Level Down" | "Levels" | "Life" | "Limited" | "Lives" | "Load" | "Loaded" | "Loading" | "Lock" | "Locked" | "Locking" | "Loser" | "Losers" | "Loss" | "Losses" | "Max" | "Mild" | "Min" | "Mission" | "Mission Aborted" | "Mission Accomplished" | "Mission Failed" | "Missions" | "Moderate" | "Money" | "Monster" | "Monsters" | "More" | "Most" | "My Mistake" | "Near" | "New High Score" | "New Record" | "Next" | "Next Allies" | "Next Ally" | "Next Attempt" | "Next Checkpoint" | "Next Enemies" | "Next Enemy" | "Next Form" | "Next Game" | "Next Hero" | "Next Heroes" | "Next Hostage" | "Next Hostages" | "Next Level" | "Next Mission" | "Next Object" | "Next Objective" | "Next Objects" | "Next Phase" | "Next Player" | "Next Players" | "Next Round" | "Next Target" | "Next Targets" | "Next Upgrade" | "Nice Try" | "No" | "No Thanks" | "None" | "Normal" | "North" | "Northeast" | "Northwest" | "Not Today" | "Object" | "Objective" | "Objectives" | "Objects" | "Obtain" | "Obtained" | "Obtaining" | "On" | "Oof" | "Oops" | "Optimal" | "Optimize" | "Optimized" | "Optimizing" | "Out Of View" | "Outgoing" | "Outside" | "Over" | "Overtime" | "Participant" | "Participants" | "Payload" | "Payloads" | "Phase" | "Phases" | "Pick" | "Picked" | "Picking" | "Pile" | "Piles" | "Play" | "Played" | "Player" | "Players" | "Point" | "Points" | "Points Earned" | "Points Lost" | "Position" | "Power" | "Power-up" | "Power-ups" | "Price" | "Projectile" | "Projectiles" | "Protect" | "Protected" | "Protecting" | "Purified" | "Purify" | "Purifying" | "Purple" | "Raise" | "Raised" | "Rank" | "Rank A" | "Rank B" | "Rank C" | "Rank D" | "Rank E" | "Rank F" | "Rank S" | "Reach" | "Reached" | "Reaching" | "Ready" | "Record" | "Records" | "Recover" | "Recovered" | "Recovering" | "Red" | "Remain" | "Remaining" | "Rescue" | "Rescued" | "Rescuing" | "Resource" | "Resources" | "Resurrect" | "Resurrected" | "Resurrecting" | "Reveal" | "Revealed" | "Revealing" | "Reverse" | "Reversed" | "Reversing" | "Right" | "Round" | "Round {0}" | "Rounds" | "Rounds Lost" | "Rounds Won" | "Run" | "Running" | "Safe" | "Save" | "Saved" | "Saving" | "Score" | "Scores" | "Secure" | "Secured" | "Securing" | "Select" | "Selected" | "Selecting" | "Sell" | "Selling" | "Server Load" | "Server Load Average" | "Server Load Peak" | "Sever" | "Severe" | "Severed" | "Severing" | "Shop" | "Shops" | "Shuffle" | "Shuffled" | "Shuffling" | "Sink" | "Sinking" | "Skip" | "Skipped" | "Skipping" | "Sleep" | "Sleeping" | "Slept" | "Slow" | "Slower" | "Slowest" | "Sold" | "Sorry" | "South" | "Southeast" | "Southwest" | "Spade" | "Spades" | "Sparklers" | "Spawn" | "Spawned" | "Spaning" | "Speed" | "Speeds" | "Sphere" | "Spheres" | "Stabilize" | "Stabilized" | "Stabilizing" | "Stable" | "Star" | "Stars" | "Start" | "Started" | "Starting" | "Status" | "Stay" | "Stay Away" | "Stayed" | "Staying" | "Stop" | "Stopped" | "Stopping" | "Stun" | "Stunning" | "Suboptimal" | "Success" | "Sudden Death" | "Sunk" | "Superb" | "Survive" | "Survived" | "Surviving" | "Target" | "Targets" | "Team" | "Teammate" | "Teammates" | "Teams" | "Terrible" | "Thank You" | "That Was Awesome" | "Threat" | "Threat Level" | "Threat Levels" | "Threats" | "Tiebreker" | "Time" | "Times" | "Total" | "Trade" | "Traded" | "Trading" | "Traitor" | "Traitors" | "Transfer" | "Transferred" | "Transferring" | "Try Again" | "Turret" | "Turrets" | "Ugh" | "Ultimate Ability" | "Under" | "Unknown" | "Unlimited" | "Unlock" | "Unlocked" | "Unlocking" | "Unsafe" | "Unstable" | "Upgrade" | "Upgraders" | "Upload" | "Uploaded" | "Uploading" | "Use Ability 1" | "Use Ability 2" | "Use Ultimate Abiility" | "Victory" | "Visible" | "Vortex" | "Vortices" | "Wait" | "Waiting" | "Wall" | "Walls" | "Warning" | "Welcome" | "Well Played" | "West" | "White" | "Wild" | "Win" | "Winner" | "Winners" | "Wins" | "Wisdom" | "Worse" | "Worst" | "Wow" | "Yellow" | "Yes" | "You" | "You Lose" | "You Win" | "Zone" | "Zones" | "¡{0}!" | "¿{0}?" | "{0} !{1}" | "{0} <{1}" | "{0} ={1}" | "{0} >{1}") => "" | "Up" | "Down" | "Hacked" | "Burning" | "Frozen" | "Stunned" | "Primary Fire" | "Secondary Fire" | "Ability 1" | "Ability 2" | "Interact" | "Jump" | "Crouch" | "Hello" | "Thanks" | "Off" | "----------" | "-> {0}" | "!" | "!!" | "!!!" | "#{0}" | "({0})" | "*" | "..." | "?" | "??" | "???" | "{0} - {1}" | "{0} - {1} - {2}" | "{0} ->" | "{0} -> {1}" | "{0} * {1}" | "{0} / {1}" | "{0} : {1} : {2}" | "{0} {1}" | "{0} {1} {2}" | "{0} + {1}" | "{0} <-" | "{0} <- {1}" | "{0} <->" | "{0} <-> {1}" | "{0} < {1}" | "{0} > {1}" | "{0} and {1}" | "{0} m" | "{0} m/s" | "{0} sec" | "{0} vs {1}" | "{0}!" | "{0}!!" | "{0}!!!" | "{0}%" | "{0}, {1}" | "{0}, {1}, and {2}" | "{0}:" | "{0}: {1}" | "{0}: {1} and {2}" | "{0}:{1}" | "{0}?" | "{0}??" | "{0}???" | "<- {0}" | "<-> {0}" | "Abilities" | "Ability" | "Agility" | "Alert" | "Alive" | "Allies" | "Ally" | "Ammunition" | "Angle" | "Attack" | "Attacked" | "Attacking" | "Attempt" | "Attempts" | "Average" | "Avoid" | "Avoided" | "Avoiding" | "Backward" | "Bad" | "Ban" | "Banned" | "Banning" | "Best" | "Better" | "Bid" | "Bids" | "Block" | "Blocked" | "Blocking" | "Blue" | "Bonus" | "Bonuses" | "Boss" | "Bosses" | "Bought" | "Build" | "Building" | "Built" | "Burn" | "Burnt" | "Buy" | "Buying" | "Capture" | "Captured" | "Capturing" | "Caution" | "Center" | "Cahllenge Accepted" | "Charisma" | "Chase" | "Chased" | "Chasing" | "Checkpoint" | "Checkpoints" | "Cloud" | "Clouds" | "Club" | "Clubs" | "Combo" | "Come Here" | "Condiition" | "Congratulations" | "Connect" | "Connected" | "Connecting" | "Constitution" | "Control Point" | "Control Points" | "Cooldown" | "Cooldowns" | "Corrupt" | "Corrupted" | "Corrupting" | "Credit" | "Credits" | "Critical" | "Crouched" | "Crouching" | "Current" | "Current Allies" | "Current Ally" | "Current Attempt" | "Current Checkpoint" | "Current Enemies" | "Current Enemy" | "Current Form" | "Current Game" | "Current Hero" | "Current Heroes" | "Current Hostage" | "Current Hostages" | "Current Level" | "Current Mission" | "Current Object" | "Current Objective" | "Current Objects" | "Current Phase" | "Current Player" | "Current Players" | "Current Round" | "Current Target" | "Current Targets" | "Current Upgrade" | "Damage" | "Damaged" | "Damaging" | "Danger" | "Dead" | "Deal" | "Dealing" | "Dealt" | "Deck" | "Decks" | "Defeat" | "Defend" | "Defended" | "Defending" | "Defense" | "Deliver" | "Delivered" | "Delivering" | "Depth" | "Destabilize" | "Destabilized" | "Destabilizing" | "Destroy" | "Destroyed" | "Destroying" | "Detect" | "Detected" | "Detecting" | "Dexterity" | "Diamond" | "Diamonds" | "Die" | "Discard" | "Discarded" | "Discarding" | "Disconnect" | "Disconnected" | "Disconnecting" | "Distance" | "Distances" | "Dodge" | "Dodged" | "Dodging" | "Dome" | "Domes" | "Download" | "Downloaded" | "Downloading" | "Draw" | "Drawing" | "Drawn" | "Drop" | "Dropped" | "Dropping" | "Dying" | "East" | "Eliminate" | "Eliminated" | "Eliminating" | "Elimination" | "Eliminations" | "Enemiies" | "Enemy" | "Enterance" | "Escort" | "Escorted" | "Escorting" | "Excellent" | "Exit" | "Experience" | "Extreme" | "Face" | "Faces" | "Facing" | "Failed" | "Failing" | "Failure" | "Fall" | "Fallen" | "Failling" | "Far" | "Fast" | "Faster" | "Fastest" | "Fault" | "Faults" | "Final" | "Final Allies" | "Final Ally" | "Final Attempt" | "Final Checkpoint" | "Final Enemies" | "Final Enemy" | "Final Form" | "Final Game" | "Final Hero" | "Final Heroes" | "Final Hostage" | "Final Hostages" | "Final Item" | "Final Level" | "Final Mission" | "Final Object" | "Final Objective" | "Final Objects" | "Final Phase" | "Final Player" | "Final Players" | "Final Round" | "Final Target" | "Final Targets" | "Final Time" | "Final Upgrade" | "Find" | "Finding" | "Finish" | "Finished" | "Finishing" | "Flown" | "Fly" | "Flying" | "Fold" | "Folded" | "Folding" | "Form" | "Forms" | "Forward" | "Found" | "Freeze" | "Freezing" | "Game" | "Games" | "Games Lost" | "Games Won" | "Gg" | "Go" | "Goal" | "Goals" | "Going" | "Good" | "Good Luck" | "Goodbye" | "Green" | "Guilt" | "Hack" | "Hacking" | "Hand" | "Hands" | "Heal" | "Healed" | "Healer" | "Healers" | "Healing" | "Heart" | "Hearts" | "Height" | "Help" | "Here" | "Hero" | "Heroes" | "Hidden" | "Hide" | "Hiding" | "High Score" | "High Scores" | "Hit" | "Hitting" | "Hmmm" | "Hostage" | "Hostages" | "Huh" | "Hunt" | "Hunted" | "Hunter" | "Hunters" | "Hunting" | "I Give Up" | "I Tried" | "In View" | "Income" | "Incoming" | "Initial" | "Initial Allies" | "Initial Ally" | "Initial Attempt" | "Initial Checkpoint" | "Initial Enemies" | "Initial Enemy" | "Initial Form" | "Initial Game" | "Initial Hero" | "Initial Heroes" | "Initial Hostage" | "Initial Level" | "Initial Mission" | "Initial Object" | "Initial Objective" | "Initial Objects" | "Initial Phase" | "Initial Player" | "Initial Players" | "Initial Round" | "Initial Target" | "Initial Targets" | "Initial Upgrade" | "Innocent" | "Inside" | "Intelligence" | "Invisible" | "Item" | "Items" | "Join" | "Joined" | "Joining" | "Jumping" | "Kill" | "Kills" | "Killstreak" | "Killstreaks" | "Leader" | "Leaders" | "Least" | "Left" | "Less" | "Level" | "Level Down" | "Levels" | "Life" | "Limited" | "Lives" | "Load" | "Loaded" | "Loading" | "Lock" | "Locked" | "Locking" | "Loser" | "Losers" | "Loss" | "Losses" | "Max" | "Mild" | "Min" | "Mission" | "Mission Aborted" | "Mission Accomplished" | "Mission Failed" | "Missions" | "Moderate" | "Money" | "Monster" | "Monsters" | "More" | "Most" | "My Mistake" | "Near" | "New High Score" | "New Record" | "Next" | "Next Allies" | "Next Ally" | "Next Attempt" | "Next Checkpoint" | "Next Enemies" | "Next Enemy" | "Next Form" | "Next Game" | "Next Hero" | "Next Heroes" | "Next Hostage" | "Next Hostages" | "Next Level" | "Next Mission" | "Next Object" | "Next Objective" | "Next Objects" | "Next Phase" | "Next Player" | "Next Players" | "Next Round" | "Next Target" | "Next Targets" | "Next Upgrade" | "Nice Try" | "No" | "No Thanks" | "None" | "Normal" | "North" | "Northeast" | "Northwest" | "Not Today" | "Object" | "Objective" | "Objectives" | "Objects" | "Obtain" | "Obtained" | "Obtaining" | "On" | "Oof" | "Oops" | "Optimal" | "Optimize" | "Optimized" | "Optimizing" | "Out Of View" | "Outgoing" | "Outside" | "Over" | "Overtime" | "Participant" | "Participants" | "Payload" | "Payloads" | "Phase" | "Phases" | "Pick" | "Picked" | "Picking" | "Pile" | "Piles" | "Play" | "Played" | "Player" | "Players" | "Point" | "Points" | "Points Earned" | "Points Lost" | "Position" | "Power" | "Power-up" | "Power-ups" | "Price" | "Projectile" | "Projectiles" | "Protect" | "Protected" | "Protecting" | "Purified" | "Purify" | "Purifying" | "Purple" | "Raise" | "Raised" | "Rank" | "Rank A" | "Rank B" | "Rank C" | "Rank D" | "Rank E" | "Rank F" | "Rank S" | "Reach" | "Reached" | "Reaching" | "Ready" | "Record" | "Records" | "Recover" | "Recovered" | "Recovering" | "Red" | "Remain" | "Remaining" | "Rescue" | "Rescued" | "Rescuing" | "Resource" | "Resources" | "Resurrect" | "Resurrected" | "Resurrecting" | "Reveal" | "Revealed" | "Revealing" | "Reverse" | "Reversed" | "Reversing" | "Right" | "Round" | "Round {0}" | "Rounds" | "Rounds Lost" | "Rounds Won" | "Run" | "Running" | "Safe" | "Save" | "Saved" | "Saving" | "Score" | "Scores" | "Secure" | "Secured" | "Securing" | "Select" | "Selected" | "Selecting" | "Sell" | "Selling" | "Server Load" | "Server Load Average" | "Server Load Peak" | "Sever" | "Severe" | "Severed" | "Severing" | "Shop" | "Shops" | "Shuffle" | "Shuffled" | "Shuffling" | "Sink" | "Sinking" | "Skip" | "Skipped" | "Skipping" | "Sleep" | "Sleeping" | "Slept" | "Slow" | "Slower" | "Slowest" | "Sold" | "Sorry" | "South" | "Southeast" | "Southwest" | "Spade" | "Spades" | "Sparklers" | "Spawn" | "Spawned" | "Spaning" | "Speed" | "Speeds" | "Sphere" | "Spheres" | "Stabilize" | "Stabilized" | "Stabilizing" | "Stable" | "Star" | "Stars" | "Start" | "Started" | "Starting" | "Status" | "Stay" | "Stay Away" | "Stayed" | "Staying" | "Stop" | "Stopped" | "Stopping" | "Stun" | "Stunning" | "Suboptimal" | "Success" | "Sudden Death" | "Sunk" | "Superb" | "Survive" | "Survived" | "Surviving" | "Target" | "Targets" | "Team" | "Teammate" | "Teammates" | "Teams" | "Terrible" | "Thank You" | "That Was Awesome" | "Threat" | "Threat Level" | "Threat Levels" | "Threats" | "Tiebreker" | "Time" | "Times" | "Total" | "Trade" | "Traded" | "Trading" | "Traitor" | "Traitors" | "Transfer" | "Transferred" | "Transferring" | "Try Again" | "Turret" | "Turrets" | "Ugh" | "Ultimate Ability" | "Under" | "Unknown" | "Unlimited" | "Unlock" | "Unlocked" | "Unlocking" | "Unsafe" | "Unstable" | "Upgrade" | "Upgraders" | "Upload" | "Uploaded" | "Uploading" | "Use Ability 1" | "Use Ability 2" | "Use Ultimate Abiility" | "Victory" | "Visible" | "Vortex" | "Vortices" | "Wait" | "Waiting" | "Wall" | "Walls" | "Warning" | "Welcome" | "Well Played" | "West" | "White" | "Wild" | "Win" | "Winner" | "Winners" | "Wins" | "Wisdom" | "Worse" | "Worst" | "Wow" | "Yellow" | "Yes" | "You" | "You Lose" | "You Win" | "Zone" | "Zones" | "¡{0}!" | "¿{0}?" | "{0} !{1}" | "{0} <{1}" | "{0} ={1}" | "{0} >{1}";
 
 declare namespace text_d$1 {
   export {
@@ -15830,6 +16157,9 @@ value: string | number | any[]
 declare const currentArrayElement$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -15866,6 +16196,9 @@ array: string | number | any[]
  * return a numerical value.
  */
 declare const matchTime$1: (
+
+
+
 
 
 ) => string;
@@ -16130,7 +16463,7 @@ declare namespace value_d$1 {
  * @param str Type '
  * Then can see list of available string lists.
  */
-declare const Default$1c: (str: ValueVariableOperation) => ValueVariableOperation;
+declare const Default$1c: (str: ValueVariableOperationType) => ValueVariableOperationType;
 
 declare namespace variableOperation_d$1 {
   export {
@@ -16224,6 +16557,9 @@ declare namespace index_d$7 {
 declare const abort$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -16250,6 +16586,9 @@ condition: string | number | any[]
 declare const abortIfConditionIsFalse$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -16259,6 +16598,9 @@ declare const abortIfConditionIsFalse$1: (
  * the next action.
  */
 declare const abortIfConditionIsTrue$1: (
+
+
+
 
 
 ) => string;
@@ -16982,6 +17324,9 @@ amount: string | number | any[]
 declare const declareMatchDraw$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -17031,12 +17376,18 @@ team: string | number | any[]
 declare const destroyAllDummyBot$1: (
 
 
+
+
+
 ) => string;
 
 /**
  * Destroys all effect entities created by create effect.
  */
 declare const destroyAllEffects$1: (
+
+
+
 
 
 ) => string;
@@ -17048,12 +17399,18 @@ declare const destroyAllEffects$1: (
 declare const destroyAllHudText$1: (
 
 
+
+
+
 ) => string;
 
 /**
  * Destroys all icon entities created by create icon.
  */
 declare const destroyAllIcons$1: (
+
+
+
 
 
 ) => string;
@@ -17063,6 +17420,9 @@ declare const destroyAllIcons$1: (
  * create in-world effect.
  */
 declare const destroyAllInWorldText$1: (
+
+
+
 
 
 ) => string;
@@ -17148,6 +17508,9 @@ textId: string | number | any[]
 declare const disableBuiltInGameModeAnnouncer$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -17158,6 +17521,9 @@ declare const disableBuiltInGameModeAnnouncer$1: (
 declare const disableBuiltInGameModeCompletion$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -17165,6 +17531,9 @@ declare const disableBuiltInGameModeCompletion$1: (
  * or the match ends.
  */
 declare const disableBuiltInGameModeMusic$1: (
+
+
+
 
 
 ) => string;
@@ -17190,6 +17559,9 @@ players: string | number | any[]
  * scores to be changed by scripting commands.
  */
 declare const disableBuiltInGameModeScoring$1: (
+
+
+
 
 
 ) => string;
@@ -17250,6 +17622,9 @@ button: string | number | any[]
 declare const enableBuiltInGameModeAnnouncer$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -17259,6 +17634,9 @@ declare const enableBuiltInGameModeAnnouncer$1: (
 declare const enableBuiltInGameModeCompletion$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -17266,6 +17644,9 @@ declare const enableBuiltInGameModeCompletion$1: (
  * game mode music action.
  */
 declare const enableBuiltInGameModeMusic$1: (
+
+
+
 
 
 ) => string;
@@ -17289,6 +17670,9 @@ players: string | number | any[]
  * game mode scoring action.
  */
 declare const enableBuiltInGameModeScoring$1: (
+
+
+
 
 
 ) => string;
@@ -17328,6 +17712,9 @@ player: string | number | any[]
  * mode. Only works if a game is in progress.
  */
 declare const goToAssembleHeroes$1: (
+
+
+
 
 
 ) => string;
@@ -17392,6 +17779,9 @@ killer: string | number | any[]
 declare const loop$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -17424,6 +17814,9 @@ condition: string | number | any[]
 declare const loopIfConditionIsFalse$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -17437,6 +17830,9 @@ declare const loopIfConditionIsFalse$1: (
 declare const loopIfConditionIsTrue$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -17445,22 +17841,24 @@ declare const loopIfConditionIsTrue$1: (
  */
 declare const modifyGlobalVariable$1: (
 /**
- * Variable - Variable specified by a single
- * alphabetic letter (A through Z).
- * - `Type.IGlobal.`
+ * Variable - The global variable to modify.
+ * - `Type.Variable.`
  */
 variable: string | number | any[],
 /**
- * Variable - Variable specified by a single
- * alphabetic letter (A through Z).
- * - `Type.Variable.`
+ * Operation - The way in which the variable’s
+ * value will be changed. Options include standard
+ * arithmetic operations as well as array operations
+ * for appending and removing values.
+ * - `Type.VariableOperation.`
  */
 operation: string | number | any[],
 /**
- * Index - The index of the array to modify.
- * If the index is beyond the end of the array,
- * the array is extended with new elements
- * given a value of 0.
+ * Value - The value used for the modification.
+ * For arithmetic operations, This is the second of
+ * the two operands, With the othher being the
+ * variable's existing value. For array operations,
+ *   This is the value to append or remove.
  * - `Type.Value.`
  */
 value: string | number | any[]
@@ -17473,30 +17871,32 @@ value: string | number | any[]
  */
 declare const modifyGlobalVariableAtIndex$1: (
 /**
- * Variable - Variable specified by a single
- * alphabetic letter (A through Z).
- * - `Type.IGlobal.`
- */
-variable: string | number | any[],
-/**
- * Player - The player or players whose variable
- * will be set. If multiple players are provided,
- * each of their variables will be set. Can
- * use most Player based Value Syntax for this value.
- * - `Type.Number.`
- */
-index: string | number | any[],
-/**
- * Variable - Variable specified by a single
- * alphabetic letter (A through Z).
+ * Variable - The global variable to modify.
  * - `Type.Variable.`
  */
-operation: string | number | any[],
+variable: string | number | any[],
 /**
  * Index - The index of the array to modify.
  * If the index is beyond the end of the array,
  * the array is extended with new elements
  * given a value of 0.
+ * - `Type.Number.`
+ */
+index: string | number | any[],
+/**
+ * Operation - The way in which the variable’s
+ * value will be changed. Options include standard
+ * arithmetic operations as well as array operations
+ * for appending and removing values.
+ * - `Type.VariableOperation.`
+ */
+operation: string | number | any[],
+/**
+ * Value - The value used for the modification.
+ * For arithmetic operations, This is the second of
+ * the two operands, With the othher being the
+ * variable's existing value. For array operations,
+ *   This is the value to append or remove.
  * - `Type.Value.`
  */
 value: string | number | any[]
@@ -17528,23 +17928,25 @@ score: string | number | any[]
  */
 declare const modifyPlayerVariable$1: (
 /**
- * Variable - Variable specified by a single
- * alphabetic letter (A through Z).
+ * Player - The player or players whose variable
+ * will be set. If multiple players are provided,
+ * each of their variables will be set. Can
+ * use most Player based Value Syntax for this value.
  * - `Type.Player.`
  */
 player: string | number | any[],
+/**
+ * Variable - Variable specified by a single
+ * alphabetic letter (A through Z).
+ * - `Type.Variable.`
+ */
+variable: string | number | any[],
 /**
  * Operation - The way in which the variable’s
  * value will be changed. Options include standard
  * arithmetic operations as well as array operations
  * for appending and removing values.
- * - `Type.IPlayer.`
- */
-variable: string | number | any[],
-/**
- * Variable - Variable specified by a single
- * alphabetic letter (A through Z).
- * - `Type.Variable.`
+ * - `Type.VariableOperation.`
  */
 operation: string | number | any[],
 /**
@@ -17580,28 +17982,31 @@ player: string | number | any[],
  * variable’s existing value. For array operations,
  * this is the value to append or remove. Various
  * Value Syntax can be used.
- * - `Type.IPlayer.`
- */
-variable: string | number | any[],
-/**
- * Player - The player or players whose variable
- * will be set. If multiple players are provided,
- * each of their variables will be set. Can
- * use most Player based Value Syntax for this value.
- * - `Type.Number.`
- */
-index: string | number | any[],
-/**
- * Variable - Variable specified by a single
- * alphabetic letter (A through Z).
  * - `Type.Variable.`
  */
-operation: string | number | any[],
+variable: string | number | any[],
 /**
  * Index - The index of the array to modify.
  * If the index is beyond the end of the array,
  * the array is extended with new elements
  * given a value of 0.
+ * - `Type.Number.`
+ */
+index: string | number | any[],
+/**
+ * Operation - The way in which the variable’s
+ * value will be changed. Options include standard
+ * arithmetic operations as well as array operations
+ * for appending and removing values.
+ * - `Type.VariableOperation.`
+ */
+operation: string | number | any[],
+/**
+ * Value - The value used for the modification.
+ * For arithmetic operations, This is the second of
+ * the two operands, With the othher being the
+ * variable's existing value. For array operations,
+ *   This is the value to append or remove.
  * - `Type.Value.`
  */
 value: string | number | any[]
@@ -17635,6 +18040,9 @@ score: string | number | any[]
  * are unaffected by the pause.
  */
 declare const pauseMatchTime$1: (
+
+
+
 
 
 ) => string;
@@ -17963,10 +18371,10 @@ declare const setGlobalVariableAtIndex$1: (
  */
 variable: string | number | any[],
 /**
- * Player - The player or players whose variable
- * will be set. If multiple players are provided,
- * each of their variables will be set. Can
- * use most Player based Value Syntax for this value.
+ * Index - The index of the array to modify.
+ * If the index is beyond the end of the array,
+ * the array is extended with new elements
+ * given a value of 0.
  * - `Type.Number.`
  */
 index: string | number | any[],
@@ -18261,10 +18669,10 @@ player: string | number | any[],
  */
 variable: string | number | any[],
 /**
- * Player - The player or players whose variable
- * will be set. If multiple players are provided,
- * each of their variables will be set. Can
- * use most Player based Value Syntax for this value.
+ * Index - The index of the array to modify.
+ * If the index is beyond the end of the array,
+ * the array is extended with new elements
+ * given a value of 0.
  * - `Type.Number.`
  */
 index: string | number | any[],
@@ -19071,6 +19479,9 @@ player: string | number | any[]
 declare const stopAllDamageModifications$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -19327,6 +19738,9 @@ position: string | number | any[]
 declare const unpauseMatchTime$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -19517,6 +19931,9 @@ player: string | number | any[]
 declare const onGoingGlobal$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -19689,6 +20106,9 @@ declare namespace index_d$9 {
 declare const eventHealing$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -19697,6 +20117,9 @@ declare const eventHealing$1: (
  * same as the healer or the event player.
  */
 declare const healee$1: (
+
+
+
 
 
 ) => string;
@@ -19709,6 +20132,9 @@ declare const healee$1: (
 declare const healer$1: (
 
 
+
+
+
 ) => string;
 
 /**
@@ -19717,6 +20143,9 @@ declare const healer$1: (
  * current host player leaves the match.
  */
 declare const hostPlayer$1: (
+
+
+
 
 
 ) => string;

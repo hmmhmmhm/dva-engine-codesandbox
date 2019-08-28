@@ -6987,7 +6987,7 @@
 	exports.modifyGlobalVariable = function (
 	/**
 	 * 수정할 전역 변수입니다.
-	 * - `Type.IGlobal.`
+	 * - `Type.Variable.`
 	 */
 	variable, 
 	/**
@@ -6995,7 +6995,7 @@
 	 * 일반적인 사칙연산,
 	 * 그리고 값의 추가 및 제거를 위한
 	 * ARRAY 연산 등의 옵션이 있습니다.
-	 * - `Type.Variable.`
+	 * - `Type.VariableOperation.`
 	 */
 	operation, 
 	/**
@@ -7025,7 +7025,7 @@
 	exports.modifyGlobalVariableAtIndex = function (
 	/**
 	 * 수정할 전역 변수입니다.
-	 * - `Type.IGlobal.`
+	 * - `Type.Variable.`
 	 */
 	variable, 
 	/**
@@ -7041,7 +7041,7 @@
 	 * 일반적인 사칙연산,
 	 * 그리고 값의 추가 및 제거를 위한
 	 * ARRAY 연산 등의 옵션이 있습니다.
-	 * - `Type.Variable.`
+	 * - `Type.VariableOperation.`
 	 */
 	operation, 
 	/**
@@ -7104,7 +7104,7 @@
 	player, 
 	/**
 	 * 수정할 플레이어의 변수입니다.
-	 * - `Type.IPlayer.`
+	 * - `Type.Variable.`
 	 */
 	variable, 
 	/**
@@ -7112,7 +7112,7 @@
 	 * 일반적인 사칙연산,
 	 * 그리고 값의 추가 및 제거를 위한
 	 * ARRAY 연산 등의 옵션이 있습니다.
-	 * - `Type.Variable.`
+	 * - `Type.VariableOperation.`
 	 */
 	operation, 
 	/**
@@ -7151,7 +7151,7 @@
 	 * 변수를 수정할 플레이어입니다.
 	 * 플레이어가 다수인 경우,
 	 * 각각의 변수가 설정됩니다.
-	 * - `Type.IPlayer.`
+	 * - `Type.Variable.`
 	 */
 	variable, 
 	/**
@@ -7167,7 +7167,7 @@
 	 * 일반적인 사칙연산,
 	 * 그리고 값의 추가 및 제거를 위한
 	 * ARRAY 연산 등의 옵션이 있습니다.
-	 * - `Type.Variable.`
+	 * - `Type.VariableOperation.`
 	 */
 	operation, 
 	/**
@@ -18772,22 +18772,24 @@
 	 */
 	exports.modifyGlobalVariable = function (
 	/**
-	 * Variable - Variable specified by a single
-	 * alphabetic letter (A through Z).
-	 * - `Type.IGlobal.`
+	 * Variable - The global variable to modify.
+	 * - `Type.Variable.`
 	 */
 	variable, 
 	/**
-	 * Variable - Variable specified by a single
-	 * alphabetic letter (A through Z).
-	 * - `Type.Variable.`
+	 * Operation - The way in which the variable’s
+	 * value will be changed. Options include standard
+	 * arithmetic operations as well as array operations
+	 * for appending and removing values.
+	 * - `Type.VariableOperation.`
 	 */
 	operation, 
 	/**
-	 * Index - The index of the array to modify.
-	 * If the index is beyond the end of the array,
-	 * the array is extended with new elements
-	 * given a value of 0.
+	 * Value - The value used for the modification.
+	 * For arithmetic operations, This is the second of
+	 * the two operands, With the othher being the
+	 * variable's existing value. For array operations,
+	 *   This is the value to append or remove.
 	 * - `Type.Value.`
 	 */
 	value) {
@@ -18807,30 +18809,32 @@
 	 */
 	exports.modifyGlobalVariableAtIndex = function (
 	/**
-	 * Variable - Variable specified by a single
-	 * alphabetic letter (A through Z).
-	 * - `Type.IGlobal.`
-	 */
-	variable, 
-	/**
-	 * Player - The player or players whose variable
-	 * will be set. If multiple players are provided,
-	 * each of their variables will be set. Can
-	 * use most Player based Value Syntax for this value.
-	 * - `Type.Number.`
-	 */
-	index, 
-	/**
-	 * Variable - Variable specified by a single
-	 * alphabetic letter (A through Z).
+	 * Variable - The global variable to modify.
 	 * - `Type.Variable.`
 	 */
-	operation, 
+	variable, 
 	/**
 	 * Index - The index of the array to modify.
 	 * If the index is beyond the end of the array,
 	 * the array is extended with new elements
 	 * given a value of 0.
+	 * - `Type.Number.`
+	 */
+	index, 
+	/**
+	 * Operation - The way in which the variable’s
+	 * value will be changed. Options include standard
+	 * arithmetic operations as well as array operations
+	 * for appending and removing values.
+	 * - `Type.VariableOperation.`
+	 */
+	operation, 
+	/**
+	 * Value - The value used for the modification.
+	 * For arithmetic operations, This is the second of
+	 * the two operands, With the othher being the
+	 * variable's existing value. For array operations,
+	 *   This is the value to append or remove.
 	 * - `Type.Value.`
 	 */
 	value) {
@@ -18876,23 +18880,25 @@
 	 */
 	exports.modifyPlayerVariable = function (
 	/**
-	 * Variable - Variable specified by a single
-	 * alphabetic letter (A through Z).
+	 * Player - The player or players whose variable
+	 * will be set. If multiple players are provided,
+	 * each of their variables will be set. Can
+	 * use most Player based Value Syntax for this value.
 	 * - `Type.Player.`
 	 */
 	player, 
+	/**
+	 * Variable - Variable specified by a single
+	 * alphabetic letter (A through Z).
+	 * - `Type.Variable.`
+	 */
+	variable, 
 	/**
 	 * Operation - The way in which the variable’s
 	 * value will be changed. Options include standard
 	 * arithmetic operations as well as array operations
 	 * for appending and removing values.
-	 * - `Type.IPlayer.`
-	 */
-	variable, 
-	/**
-	 * Variable - Variable specified by a single
-	 * alphabetic letter (A through Z).
-	 * - `Type.Variable.`
+	 * - `Type.VariableOperation.`
 	 */
 	operation, 
 	/**
@@ -18935,28 +18941,31 @@
 	 * variable’s existing value. For array operations,
 	 * this is the value to append or remove. Various
 	 * Value Syntax can be used.
-	 * - `Type.IPlayer.`
-	 */
-	variable, 
-	/**
-	 * Player - The player or players whose variable
-	 * will be set. If multiple players are provided,
-	 * each of their variables will be set. Can
-	 * use most Player based Value Syntax for this value.
-	 * - `Type.Number.`
-	 */
-	index, 
-	/**
-	 * Variable - Variable specified by a single
-	 * alphabetic letter (A through Z).
 	 * - `Type.Variable.`
 	 */
-	operation, 
+	variable, 
 	/**
 	 * Index - The index of the array to modify.
 	 * If the index is beyond the end of the array,
 	 * the array is extended with new elements
 	 * given a value of 0.
+	 * - `Type.Number.`
+	 */
+	index, 
+	/**
+	 * Operation - The way in which the variable’s
+	 * value will be changed. Options include standard
+	 * arithmetic operations as well as array operations
+	 * for appending and removing values.
+	 * - `Type.VariableOperation.`
+	 */
+	operation, 
+	/**
+	 * Value - The value used for the modification.
+	 * For arithmetic operations, This is the second of
+	 * the two operands, With the othher being the
+	 * variable's existing value. For array operations,
+	 *   This is the value to append or remove.
 	 * - `Type.Value.`
 	 */
 	value) {
@@ -19428,10 +19437,10 @@
 	 */
 	variable, 
 	/**
-	 * Player - The player or players whose variable
-	 * will be set. If multiple players are provided,
-	 * each of their variables will be set. Can
-	 * use most Player based Value Syntax for this value.
+	 * Index - The index of the array to modify.
+	 * If the index is beyond the end of the array,
+	 * the array is extended with new elements
+	 * given a value of 0.
 	 * - `Type.Number.`
 	 */
 	index, 
@@ -19810,10 +19819,10 @@
 	 */
 	variable, 
 	/**
-	 * Player - The player or players whose variable
-	 * will be set. If multiple players are provided,
-	 * each of their variables will be set. Can
-	 * use most Player based Value Syntax for this value.
+	 * Index - The index of the array to modify.
+	 * If the index is beyond the end of the array,
+	 * the array is extended with new elements
+	 * given a value of 0.
 	 * - `Type.Number.`
 	 */
 	index, 
