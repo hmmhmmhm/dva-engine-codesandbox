@@ -11,7 +11,7 @@
     "cross-spawn": "^6.0.5",
     "folder-logger": "^1.0.4",
     "node-cleanup": "^2.1.2",
-    "parcel": "^1.12.3",
+    "parcel": "^2.8.2",
     "temp-dir": "^2.0.0",
     "ts-node": "^8.3.0",
     "tsc-watch": "^2.4.0",
